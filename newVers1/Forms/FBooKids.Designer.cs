@@ -173,7 +173,7 @@ namespace Projeto_DA_BooKids.Forms
             this.LBBooKids.Location = new System.Drawing.Point(142, 96);
             this.LBBooKids.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBBooKids.Name = "LBBooKids";
-            this.LBBooKids.Size = new System.Drawing.Size(647, 106);
+            this.LBBooKids.Size = new System.Drawing.Size(635, 106);
             this.LBBooKids.TabIndex = 22;
             this.LBBooKids.Text = "BOOKIDS";
             this.LBBooKids.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -205,7 +205,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 630);
+            this.ClientSize = new System.Drawing.Size(907, 630);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);

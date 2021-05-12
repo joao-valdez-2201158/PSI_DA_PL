@@ -27,6 +27,8 @@ namespace Projeto_DA_BooKids.Forms
 
         private void Pessoas_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'booKids_DBDataSet.CompraSet' table. You can move, or remove it, as needed.
+            this.compraSetTableAdapter.Fill(this.booKids_DBDataSet.CompraSet);
             // TODO: This line of code loads data into the 'booKids_DBDataSet.PessoaSet' table. You can move, or remove it, as needed.
             this.pessoaSetTableAdapter.Fill(this.booKids_DBDataSet.PessoaSet);
 
@@ -37,7 +39,7 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void pessoaSetDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
 
         }

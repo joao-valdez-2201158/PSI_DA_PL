@@ -1026,8 +1026,7 @@ namespace Projeto_DA_BooKids {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIdPessoa}, true));
                 this.columnIdPessoa.AutoIncrement = true;
-                this.columnIdPessoa.AutoIncrementSeed = -1;
-                this.columnIdPessoa.AutoIncrementStep = -1;
+                this.columnIdPessoa.AutoIncrementSeed = 1;
                 this.columnIdPessoa.AllowDBNull = false;
                 this.columnIdPessoa.ReadOnly = true;
                 this.columnIdPessoa.Unique = true;
@@ -6772,8 +6771,13 @@ SELECT IdPessoa, Nome, Morada, Localidade, CodPostal, Telefone, Telemovel, Mail 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_IdPessoa) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_IdPessoa));
+        public virtual int Delete(global::System.Nullable<int> Original_IdPessoa) {
+            if ((Original_IdPessoa.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_IdPessoa.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6857,7 +6861,7 @@ SELECT IdPessoa, Nome, Morada, Localidade, CodPostal, Telefone, Telemovel, Mail 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Nome, string Morada, string Localidade, string CodPostal, string Telefone, string Telemovel, string Mail, int Original_IdPessoa, int IdPessoa) {
+        public virtual int Update(string Nome, string Morada, string Localidade, string CodPostal, string Telefone, string Telemovel, string Mail, global::System.Nullable<int> Original_IdPessoa, global::System.Nullable<int> IdPessoa) {
             if ((Nome == null)) {
                 throw new global::System.ArgumentNullException("Nome");
             }
@@ -6900,8 +6904,18 @@ SELECT IdPessoa, Nome, Morada, Localidade, CodPostal, Telefone, Telemovel, Mail 
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Mail));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_IdPessoa));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(IdPessoa));
+            if ((Original_IdPessoa.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_IdPessoa.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((IdPessoa.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(IdPessoa.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6922,7 +6936,7 @@ SELECT IdPessoa, Nome, Morada, Localidade, CodPostal, Telefone, Telemovel, Mail 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Nome, string Morada, string Localidade, string CodPostal, string Telefone, string Telemovel, string Mail, int Original_IdPessoa) {
+        public virtual int Update(string Nome, string Morada, string Localidade, string CodPostal, string Telefone, string Telemovel, string Mail, global::System.Nullable<int> Original_IdPessoa) {
             return this.Update(Nome, Morada, Localidade, CodPostal, Telefone, Telemovel, Mail, Original_IdPessoa, Original_IdPessoa);
         }
     }

@@ -31,5 +31,10 @@ namespace Projeto_DA_BooKids.Forms
             this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
 
         }
+
+        private void nrEventoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

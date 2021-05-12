@@ -34,6 +34,9 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        
+        private void produtoSetDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

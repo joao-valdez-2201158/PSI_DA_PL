@@ -58,6 +58,9 @@
     <Compile Include="Animador.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
+    <Compile Include="BooKids_DBDataSet.cs">
+      <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BooKids_DBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

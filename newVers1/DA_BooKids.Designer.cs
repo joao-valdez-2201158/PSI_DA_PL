@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\jpval\Desktop\Projeto_DA_BooKids\Projeto_DA_BooKids\DA_BooKids.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_DA_PL\newVers1\DA_BooKids.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

@@ -17,7 +17,7 @@ namespace Projeto_DA_BooKids.Forms
             InitializeComponent();
         }
 
-        private void compraSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void CompraSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.compraSetBindingSource.EndEdit();
@@ -36,7 +36,7 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void compraSetDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void CompraSetDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

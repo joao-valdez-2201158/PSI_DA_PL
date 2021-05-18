@@ -24,7 +24,7 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void escolaSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void EscolaSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.escolaSetBindingSource.EndEdit();
@@ -32,7 +32,12 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void localidadeLabel_Click(object sender, EventArgs e)
+        private void LocalidadeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void localidadeTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

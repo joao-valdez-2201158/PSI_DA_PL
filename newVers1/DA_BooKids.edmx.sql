@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/28/2021 22:09:29
--- Generated from EDMX file: C:\Users\Amado-PT\Desktop\IPL\1º ano 2º semestre\DA\Projeto\Projeto_DA_BooKids\Projeto_DA_BooKids\DA_BooKids.edmx
+-- Date Created: 05/12/2021 21:14:39
+-- Generated from EDMX file: C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_DA_PL\newVers1\DA_BooKids.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [DA_BooKids_DB];
+USE [BooKids_DB];
 GO
 IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO
@@ -129,7 +129,7 @@ CREATE TABLE [dbo].[CompraSet] (
     [Data] int  NOT NULL,
     [UtilizouCartao] int  NOT NULL,
     [IdCliente] int  NOT NULL,
-    [ProdutosCodPromocao] int  NOT NULL,
+    [ProdutosCodProduto] int  NOT NULL,
     [NrCompra] int  NOT NULL
 );
 GO

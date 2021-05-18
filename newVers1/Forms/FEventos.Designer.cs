@@ -105,12 +105,12 @@ namespace Projeto_DA_BooKids.Forms
             descricaoLabel.Name = "descricaoLabel";
             descricaoLabel.Size = new System.Drawing.Size(75, 17);
             descricaoLabel.TabIndex = 4;
-            descricaoLabel.Text = "Descricao:";
+            descricaoLabel.Text = "Descrição:";
             // 
             // localLabel
             // 
             localLabel.AutoSize = true;
-            localLabel.Location = new System.Drawing.Point(52, 380);
+            localLabel.Location = new System.Drawing.Point(56, 380);
             localLabel.Name = "localLabel";
             localLabel.Size = new System.Drawing.Size(46, 17);
             localLabel.TabIndex = 6;
@@ -123,21 +123,21 @@ namespace Projeto_DA_BooKids.Forms
             dataHoraLabel.Name = "dataHoraLabel";
             dataHoraLabel.Size = new System.Drawing.Size(77, 17);
             dataHoraLabel.TabIndex = 8;
-            dataHoraLabel.Text = "Data Hora:";
+            dataHoraLabel.Text = "Data/Hora:";
             // 
             // limiteParticipacaoLabel
             // 
             limiteParticipacaoLabel.AutoSize = true;
-            limiteParticipacaoLabel.Location = new System.Drawing.Point(52, 511);
+            limiteParticipacaoLabel.Location = new System.Drawing.Point(56, 513);
             limiteParticipacaoLabel.Name = "limiteParticipacaoLabel";
             limiteParticipacaoLabel.Size = new System.Drawing.Size(131, 17);
             limiteParticipacaoLabel.TabIndex = 10;
-            limiteParticipacaoLabel.Text = "Limite Participacao:";
+            limiteParticipacaoLabel.Text = "Limite Participação:";
             // 
             // idadeInferiorLabel
             // 
             idadeInferiorLabel.AutoSize = true;
-            idadeInferiorLabel.Location = new System.Drawing.Point(54, 564);
+            idadeInferiorLabel.Location = new System.Drawing.Point(56, 566);
             idadeInferiorLabel.Name = "idadeInferiorLabel";
             idadeInferiorLabel.Size = new System.Drawing.Size(95, 17);
             idadeInferiorLabel.TabIndex = 12;
@@ -146,7 +146,7 @@ namespace Projeto_DA_BooKids.Forms
             // idadeSuperiorLabel
             // 
             idadeSuperiorLabel.AutoSize = true;
-            idadeSuperiorLabel.Location = new System.Drawing.Point(52, 627);
+            idadeSuperiorLabel.Location = new System.Drawing.Point(56, 630);
             idadeSuperiorLabel.Name = "idadeSuperiorLabel";
             idadeSuperiorLabel.Size = new System.Drawing.Size(105, 17);
             idadeSuperiorLabel.TabIndex = 14;
@@ -155,7 +155,7 @@ namespace Projeto_DA_BooKids.Forms
             // tipoEventoLabel
             // 
             tipoEventoLabel.AutoSize = true;
-            tipoEventoLabel.Location = new System.Drawing.Point(55, 698);
+            tipoEventoLabel.Location = new System.Drawing.Point(56, 698);
             tipoEventoLabel.Name = "tipoEventoLabel";
             tipoEventoLabel.Size = new System.Drawing.Size(88, 17);
             tipoEventoLabel.TabIndex = 16;
@@ -220,7 +220,7 @@ namespace Projeto_DA_BooKids.Forms
             this.eventoSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.eventoSetBindingNavigator.Name = "eventoSetBindingNavigator";
             this.eventoSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.eventoSetBindingNavigator.Size = new System.Drawing.Size(1323, 39);
+            this.eventoSetBindingNavigator.Size = new System.Drawing.Size(1058, 31);
             this.eventoSetBindingNavigator.TabIndex = 0;
             this.eventoSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -230,13 +230,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 36);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 36);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -246,7 +246,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 36);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -255,7 +255,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 36);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -264,13 +264,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 36);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 39);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -285,7 +285,7 @@ namespace Projeto_DA_BooKids.Forms
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 39);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -293,7 +293,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 36);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -302,38 +302,37 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 36);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 39);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // eventoSetBindingNavigatorSaveItem
             // 
             this.eventoSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.eventoSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("eventoSetBindingNavigatorSaveItem.Image")));
             this.eventoSetBindingNavigatorSaveItem.Name = "eventoSetBindingNavigatorSaveItem";
-            this.eventoSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 36);
+            this.eventoSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.eventoSetBindingNavigatorSaveItem.Text = "Save Data";
-            this.eventoSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.eventoSetBindingNavigatorSaveItem_Click);
+            this.eventoSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.EventoSetBindingNavigatorSaveItem_Click);
             // 
             // nrEventoTextBox
             // 
             this.nrEventoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nrEventoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "NrEvento", true));
-            this.nrEventoTextBox.Location = new System.Drawing.Point(185, 256);
+            this.nrEventoTextBox.Location = new System.Drawing.Point(204, 256);
             this.nrEventoTextBox.Name = "nrEventoTextBox";
-            this.nrEventoTextBox.Size = new System.Drawing.Size(185, 22);
+            this.nrEventoTextBox.Size = new System.Drawing.Size(100, 22);
             this.nrEventoTextBox.TabIndex = 3;
-            this.nrEventoTextBox.TextChanged += new System.EventHandler(this.nrEventoTextBox_TextChanged);
             // 
             // descricaoTextBox
             // 
             this.descricaoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "Descricao", true));
-            this.descricaoTextBox.Location = new System.Drawing.Point(185, 316);
+            this.descricaoTextBox.Location = new System.Drawing.Point(204, 316);
             this.descricaoTextBox.Name = "descricaoTextBox";
             this.descricaoTextBox.Size = new System.Drawing.Size(185, 22);
             this.descricaoTextBox.TabIndex = 5;
@@ -342,7 +341,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.localTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.localTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "Local", true));
-            this.localTextBox.Location = new System.Drawing.Point(185, 380);
+            this.localTextBox.Location = new System.Drawing.Point(204, 380);
             this.localTextBox.Name = "localTextBox";
             this.localTextBox.Size = new System.Drawing.Size(185, 22);
             this.localTextBox.TabIndex = 7;
@@ -351,7 +350,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.dataHoraTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dataHoraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "DataHora", true));
-            this.dataHoraTextBox.Location = new System.Drawing.Point(185, 444);
+            this.dataHoraTextBox.Location = new System.Drawing.Point(204, 444);
             this.dataHoraTextBox.Name = "dataHoraTextBox";
             this.dataHoraTextBox.Size = new System.Drawing.Size(185, 22);
             this.dataHoraTextBox.TabIndex = 9;
@@ -360,7 +359,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.limiteParticipacaoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.limiteParticipacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "LimiteParticipacao", true));
-            this.limiteParticipacaoTextBox.Location = new System.Drawing.Point(185, 506);
+            this.limiteParticipacaoTextBox.Location = new System.Drawing.Point(204, 508);
             this.limiteParticipacaoTextBox.Name = "limiteParticipacaoTextBox";
             this.limiteParticipacaoTextBox.Size = new System.Drawing.Size(185, 22);
             this.limiteParticipacaoTextBox.TabIndex = 11;
@@ -369,7 +368,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.idadeInferiorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idadeInferiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeInferior", true));
-            this.idadeInferiorTextBox.Location = new System.Drawing.Point(185, 562);
+            this.idadeInferiorTextBox.Location = new System.Drawing.Point(204, 564);
             this.idadeInferiorTextBox.Name = "idadeInferiorTextBox";
             this.idadeInferiorTextBox.Size = new System.Drawing.Size(100, 22);
             this.idadeInferiorTextBox.TabIndex = 13;
@@ -378,7 +377,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.idadeSuperiorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idadeSuperiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeSuperior", true));
-            this.idadeSuperiorTextBox.Location = new System.Drawing.Point(185, 625);
+            this.idadeSuperiorTextBox.Location = new System.Drawing.Point(204, 625);
             this.idadeSuperiorTextBox.Name = "idadeSuperiorTextBox";
             this.idadeSuperiorTextBox.Size = new System.Drawing.Size(100, 22);
             this.idadeSuperiorTextBox.TabIndex = 15;
@@ -387,7 +386,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.tipoEventoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tipoEventoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "TipoEvento", true));
-            this.tipoEventoTextBox.Location = new System.Drawing.Point(185, 693);
+            this.tipoEventoTextBox.Location = new System.Drawing.Point(204, 693);
             this.tipoEventoTextBox.Name = "tipoEventoTextBox";
             this.tipoEventoTextBox.Size = new System.Drawing.Size(185, 22);
             this.tipoEventoTextBox.TabIndex = 17;
@@ -416,17 +415,17 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.eventoSetDataGridView.DataSource = this.eventoSetBindingSource;
-            this.eventoSetDataGridView.Location = new System.Drawing.Point(558, 256);
+            this.eventoSetDataGridView.Location = new System.Drawing.Point(553, 246);
             this.eventoSetDataGridView.Name = "eventoSetDataGridView";
             this.eventoSetDataGridView.RowHeadersWidth = 51;
             this.eventoSetDataGridView.RowTemplate.Height = 24;
-            this.eventoSetDataGridView.Size = new System.Drawing.Size(434, 416);
+            this.eventoSetDataGridView.Size = new System.Drawing.Size(434, 469);
             this.eventoSetDataGridView.TabIndex = 24;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "NrEvento";
-            this.dataGridViewTextBoxColumn1.HeaderText = "NrEvento";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nr. Evento";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -435,7 +434,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Descricao";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Descricao";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Descrição";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
@@ -451,7 +450,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "DataHora";
-            this.dataGridViewTextBoxColumn4.HeaderText = "DataHora";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Data e Hora";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
@@ -459,7 +458,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "LimiteParticipacao";
-            this.dataGridViewTextBoxColumn5.HeaderText = "LimiteParticipacao";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Limite de Participação";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 125;
@@ -467,7 +466,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "IdadeInferior";
-            this.dataGridViewTextBoxColumn6.HeaderText = "IdadeInferior";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Idade Min.";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
@@ -475,7 +474,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "IdadeSuperior";
-            this.dataGridViewTextBoxColumn7.HeaderText = "IdadeSuperior";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Idade Max.";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 125;
@@ -483,7 +482,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "TipoEvento";
-            this.dataGridViewTextBoxColumn8.HeaderText = "TipoEvento";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Tipo de Evento";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 125;
@@ -512,6 +511,7 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(nrEventoLabel);
             this.Controls.Add(this.nrEventoTextBox);
             this.Controls.Add(this.eventoSetBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FEventos";
             this.Text = "FormEventos";
             this.Load += new System.EventHandler(this.FormEventos_Load);

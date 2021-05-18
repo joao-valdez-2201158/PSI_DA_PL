@@ -51,10 +51,11 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pessoaSet_AnimadorBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.pessoaSet_AnimadorDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.especialidadeTextBox = new System.Windows.Forms.TextBox();
             this.idPessoaTextBox = new System.Windows.Forms.TextBox();
+            this.LBAnimadores = new System.Windows.Forms.Label();
             especialidadeLabel = new System.Windows.Forms.Label();
             idPessoaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.booKids_DBDataSet)).BeginInit();
@@ -67,20 +68,21 @@ namespace Projeto_DA_BooKids.Forms
             // especialidadeLabel
             // 
             especialidadeLabel.AutoSize = true;
-            especialidadeLabel.Location = new System.Drawing.Point(12, 119);
+            especialidadeLabel.Location = new System.Drawing.Point(21, 263);
             especialidadeLabel.Name = "especialidadeLabel";
             especialidadeLabel.Size = new System.Drawing.Size(100, 17);
             especialidadeLabel.TabIndex = 2;
             especialidadeLabel.Text = "Especialidade:";
+            especialidadeLabel.Click += new System.EventHandler(this.especialidadeLabel_Click);
             // 
             // idPessoaLabel
             // 
             idPessoaLabel.AutoSize = true;
-            idPessoaLabel.Location = new System.Drawing.Point(12, 215);
+            idPessoaLabel.Location = new System.Drawing.Point(98, 186);
             idPessoaLabel.Name = "idPessoaLabel";
-            idPessoaLabel.Size = new System.Drawing.Size(74, 17);
+            idPessoaLabel.Size = new System.Drawing.Size(23, 17);
             idPessoaLabel.TabIndex = 4;
-            idPessoaLabel.Text = "Id Pessoa:";
+            idPessoaLabel.Text = "Id ";
             // 
             // booKids_DBDataSet
             // 
@@ -141,7 +143,7 @@ namespace Projeto_DA_BooKids.Forms
             this.pessoaSet_AnimadorBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pessoaSet_AnimadorBindingNavigator.Name = "pessoaSet_AnimadorBindingNavigator";
             this.pessoaSet_AnimadorBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pessoaSet_AnimadorBindingNavigator.Size = new System.Drawing.Size(800, 31);
+            this.pessoaSet_AnimadorBindingNavigator.Size = new System.Drawing.Size(742, 27);
             this.pessoaSet_AnimadorBindingNavigator.TabIndex = 0;
             this.pessoaSet_AnimadorBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -151,13 +153,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -167,7 +169,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -176,7 +178,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -185,13 +187,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -206,7 +208,7 @@ namespace Projeto_DA_BooKids.Forms
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -214,7 +216,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -223,37 +225,45 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // pessoaSet_AnimadorBindingNavigatorSaveItem
             // 
             this.pessoaSet_AnimadorBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.pessoaSet_AnimadorBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pessoaSet_AnimadorBindingNavigatorSaveItem.Image")));
             this.pessoaSet_AnimadorBindingNavigatorSaveItem.Name = "pessoaSet_AnimadorBindingNavigatorSaveItem";
-            this.pessoaSet_AnimadorBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
+            this.pessoaSet_AnimadorBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.pessoaSet_AnimadorBindingNavigatorSaveItem.Text = "Save Data";
-            this.pessoaSet_AnimadorBindingNavigatorSaveItem.Click += new System.EventHandler(this.pessoaSet_AnimadorBindingNavigatorSaveItem_Click);
+            this.pessoaSet_AnimadorBindingNavigatorSaveItem.Click += new System.EventHandler(this.PessoaSet_AnimadorBindingNavigatorSaveItem_Click);
             // 
             // pessoaSet_AnimadorDataGridView
             // 
             this.pessoaSet_AnimadorDataGridView.AutoGenerateColumns = false;
             this.pessoaSet_AnimadorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pessoaSet_AnimadorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn1});
             this.pessoaSet_AnimadorDataGridView.DataSource = this.pessoaSet_AnimadorBindingSource;
-            this.pessoaSet_AnimadorDataGridView.Location = new System.Drawing.Point(454, 81);
+            this.pessoaSet_AnimadorDataGridView.Location = new System.Drawing.Point(387, 157);
             this.pessoaSet_AnimadorDataGridView.Name = "pessoaSet_AnimadorDataGridView";
             this.pessoaSet_AnimadorDataGridView.RowHeadersWidth = 51;
             this.pessoaSet_AnimadorDataGridView.RowTemplate.Height = 24;
-            this.pessoaSet_AnimadorDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.pessoaSet_AnimadorDataGridView.Size = new System.Drawing.Size(305, 155);
             this.pessoaSet_AnimadorDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "IdPessoa";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -263,45 +273,49 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "IdPessoa";
-            this.dataGridViewTextBoxColumn2.HeaderText = "IdPessoa";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
             // especialidadeTextBox
             // 
             this.especialidadeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.especialidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_AnimadorBindingSource, "Especialidade", true));
-            this.especialidadeTextBox.Location = new System.Drawing.Point(154, 114);
+            this.especialidadeTextBox.Location = new System.Drawing.Point(166, 258);
             this.especialidadeTextBox.Name = "especialidadeTextBox";
-            this.especialidadeTextBox.Size = new System.Drawing.Size(243, 22);
+            this.especialidadeTextBox.Size = new System.Drawing.Size(159, 22);
             this.especialidadeTextBox.TabIndex = 3;
-            this.especialidadeTextBox.TextChanged += new System.EventHandler(this.especialidadeTextBox_TextChanged);
+            this.especialidadeTextBox.TextChanged += new System.EventHandler(this.EspecialidadeTextBox_TextChanged);
             // 
             // idPessoaTextBox
             // 
             this.idPessoaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idPessoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_AnimadorBindingSource, "IdPessoa", true));
-            this.idPessoaTextBox.Location = new System.Drawing.Point(154, 210);
+            this.idPessoaTextBox.Location = new System.Drawing.Point(166, 181);
             this.idPessoaTextBox.Name = "idPessoaTextBox";
-            this.idPessoaTextBox.Size = new System.Drawing.Size(243, 22);
+            this.idPessoaTextBox.Size = new System.Drawing.Size(82, 22);
             this.idPessoaTextBox.TabIndex = 5;
+            // 
+            // LBAnimadores
+            // 
+            this.LBAnimadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBAnimadores.Location = new System.Drawing.Point(158, 61);
+            this.LBAnimadores.Name = "LBAnimadores";
+            this.LBAnimadores.Size = new System.Drawing.Size(429, 59);
+            this.LBAnimadores.TabIndex = 25;
+            this.LBAnimadores.Text = "Animadores";
+            this.LBAnimadores.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FAnimadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(742, 355);
+            this.Controls.Add(this.LBAnimadores);
             this.Controls.Add(idPessoaLabel);
             this.Controls.Add(this.idPessoaTextBox);
             this.Controls.Add(especialidadeLabel);
             this.Controls.Add(this.especialidadeTextBox);
             this.Controls.Add(this.pessoaSet_AnimadorDataGridView);
             this.Controls.Add(this.pessoaSet_AnimadorBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FAnimadores";
             this.Text = "FormAnimadores";
             this.Load += new System.EventHandler(this.FormAnimadores_Load);
@@ -336,9 +350,10 @@ namespace Projeto_DA_BooKids.Forms
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton pessoaSet_AnimadorBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView pessoaSet_AnimadorDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.TextBox especialidadeTextBox;
         private System.Windows.Forms.TextBox idPessoaTextBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Label LBAnimadores;
     }
 }

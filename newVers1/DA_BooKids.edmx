@@ -100,7 +100,7 @@
     <Property Name="Data" Type="int" Nullable="false" />
     <Property Name="UtilizouCartao" Type="int" Nullable="false" />
     <Property Name="IdCliente" Type="int" Nullable="false" />
-    <Property Name="ProdutosCodPromocao" Type="int" Nullable="false" />
+    <Property Name="ProdutosCodProduto" Type="int" Nullable="false" />
     <Property Name="NrCompra" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="InscricaoSet">
@@ -762,7 +762,7 @@
           <ScalarProperty Name="Data" ColumnName="Data" />
           <ScalarProperty Name="UtilizouCartao" ColumnName="UtilizouCartao" />
           <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
-          <ScalarProperty Name="ProdutosCodProduto" ColumnName="ProdutosCodPromocao" />
+          <ScalarProperty Name="ProdutosCodProduto" ColumnName="ProdutosCodProduto" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

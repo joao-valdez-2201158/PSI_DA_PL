@@ -26,7 +26,7 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void produtoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void ProdutoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.produtoSetBindingSource.EndEdit();
@@ -34,7 +34,7 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void produtoSetDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ProdutoSetDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

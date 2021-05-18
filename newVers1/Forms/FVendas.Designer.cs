@@ -34,7 +34,6 @@ namespace Projeto_DA_BooKids.Forms
             System.Windows.Forms.Label utilizouCartaoLabel;
             System.Windows.Forms.Label idClienteLabel;
             System.Windows.Forms.Label nrCompraLabel;
-            System.Windows.Forms.Label produtosCodPromocaoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVendas));
             this.booKids_DBDataSet = new Projeto_DA_BooKids.BooKids_DBDataSet();
             this.compraSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -54,11 +53,6 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.compraSetBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.compraSetDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataTextBox = new System.Windows.Forms.TextBox();
             this.utilizouCartaoTextBox = new System.Windows.Forms.TextBox();
             this.idClienteTextBox = new System.Windows.Forms.TextBox();
@@ -68,16 +62,17 @@ namespace Projeto_DA_BooKids.Forms
             this.detalheCompraSetDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LBVendaProdutos = new System.Windows.Forms.Label();
             this.produtoSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produtoSetTableAdapter = new Projeto_DA_BooKids.BooKids_DBDataSetTableAdapters.ProdutoSetTableAdapter();
-            this.produtosCodPromocaoTextBox = new System.Windows.Forms.TextBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             dataLabel = new System.Windows.Forms.Label();
             utilizouCartaoLabel = new System.Windows.Forms.Label();
             idClienteLabel = new System.Windows.Forms.Label();
             nrCompraLabel = new System.Windows.Forms.Label();
-            produtosCodPromocaoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.booKids_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.compraSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.compraSetBindingNavigator)).BeginInit();
@@ -91,7 +86,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataLabel
             // 
             dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(32, 361);
+            dataLabel.Location = new System.Drawing.Point(39, 394);
             dataLabel.Name = "dataLabel";
             dataLabel.Size = new System.Drawing.Size(42, 17);
             dataLabel.TabIndex = 2;
@@ -100,16 +95,16 @@ namespace Projeto_DA_BooKids.Forms
             // utilizouCartaoLabel
             // 
             utilizouCartaoLabel.AutoSize = true;
-            utilizouCartaoLabel.Location = new System.Drawing.Point(32, 480);
+            utilizouCartaoLabel.Location = new System.Drawing.Point(39, 450);
             utilizouCartaoLabel.Name = "utilizouCartaoLabel";
             utilizouCartaoLabel.Size = new System.Drawing.Size(104, 17);
             utilizouCartaoLabel.TabIndex = 4;
-            utilizouCartaoLabel.Text = "Utilizou Cartao:";
+            utilizouCartaoLabel.Text = "Utilizou Cartão:";
             // 
             // idClienteLabel
             // 
             idClienteLabel.AutoSize = true;
-            idClienteLabel.Location = new System.Drawing.Point(32, 259);
+            idClienteLabel.Location = new System.Drawing.Point(39, 292);
             idClienteLabel.Name = "idClienteLabel";
             idClienteLabel.Size = new System.Drawing.Size(70, 17);
             idClienteLabel.TabIndex = 8;
@@ -118,20 +113,11 @@ namespace Projeto_DA_BooKids.Forms
             // nrCompraLabel
             // 
             nrCompraLabel.AutoSize = true;
-            nrCompraLabel.Location = new System.Drawing.Point(32, 316);
+            nrCompraLabel.Location = new System.Drawing.Point(39, 349);
             nrCompraLabel.Name = "nrCompraLabel";
             nrCompraLabel.Size = new System.Drawing.Size(80, 17);
             nrCompraLabel.TabIndex = 10;
             nrCompraLabel.Text = "Nr Compra:";
-            // 
-            // produtosCodPromocaoLabel
-            // 
-            produtosCodPromocaoLabel.AutoSize = true;
-            produtosCodPromocaoLabel.Location = new System.Drawing.Point(32, 423);
-            produtosCodPromocaoLabel.Name = "produtosCodPromocaoLabel";
-            produtosCodPromocaoLabel.Size = new System.Drawing.Size(166, 17);
-            produtosCodPromocaoLabel.TabIndex = 24;
-            produtosCodPromocaoLabel.Text = "Produtos Cod Promocao:";
             // 
             // booKids_DBDataSet
             // 
@@ -192,7 +178,7 @@ namespace Projeto_DA_BooKids.Forms
             this.compraSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.compraSetBindingNavigator.Name = "compraSetBindingNavigator";
             this.compraSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.compraSetBindingNavigator.Size = new System.Drawing.Size(1148, 31);
+            this.compraSetBindingNavigator.Size = new System.Drawing.Size(1131, 27);
             this.compraSetBindingNavigator.TabIndex = 0;
             this.compraSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -202,13 +188,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -218,7 +204,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -227,7 +213,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -236,13 +222,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -257,7 +243,7 @@ namespace Projeto_DA_BooKids.Forms
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -265,7 +251,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -274,22 +260,22 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // compraSetBindingNavigatorSaveItem
             // 
             this.compraSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.compraSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("compraSetBindingNavigatorSaveItem.Image")));
             this.compraSetBindingNavigatorSaveItem.Name = "compraSetBindingNavigatorSaveItem";
-            this.compraSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
+            this.compraSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.compraSetBindingNavigatorSaveItem.Text = "Save Data";
-            this.compraSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.compraSetBindingNavigatorSaveItem_Click);
+            this.compraSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.CompraSetBindingNavigatorSaveItem_Click);
             // 
             // compraSetDataGridView
             // 
@@ -299,61 +285,20 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.compraSetDataGridView.DataSource = this.compraSetBindingSource;
-            this.compraSetDataGridView.Location = new System.Drawing.Point(482, 228);
+            this.compraSetDataGridView.Location = new System.Drawing.Point(418, 228);
             this.compraSetDataGridView.Name = "compraSetDataGridView";
             this.compraSetDataGridView.RowHeadersWidth = 51;
             this.compraSetDataGridView.RowTemplate.Height = 24;
             this.compraSetDataGridView.Size = new System.Drawing.Size(306, 277);
             this.compraSetDataGridView.TabIndex = 1;
-            this.compraSetDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.compraSetDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Data";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Data";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "UtilizouCartao";
-            this.dataGridViewTextBoxColumn2.HeaderText = "UtilizouCartao";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "IdCliente";
-            this.dataGridViewTextBoxColumn3.HeaderText = "IdCliente";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProdutosCodPromocao";
-            this.dataGridViewTextBoxColumn4.HeaderText = "ProdutosCodPromocao";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "NrCompra";
-            this.dataGridViewTextBoxColumn5.HeaderText = "NrCompra";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.compraSetDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CompraSetDataGridView_CellContentClick);
             // 
             // dataTextBox
             // 
             this.dataTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "Data", true));
-            this.dataTextBox.Location = new System.Drawing.Point(270, 361);
+            this.dataTextBox.Location = new System.Drawing.Point(206, 394);
             this.dataTextBox.Name = "dataTextBox";
             this.dataTextBox.Size = new System.Drawing.Size(178, 22);
             this.dataTextBox.TabIndex = 3;
@@ -361,7 +306,7 @@ namespace Projeto_DA_BooKids.Forms
             // utilizouCartaoTextBox
             // 
             this.utilizouCartaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "UtilizouCartao", true));
-            this.utilizouCartaoTextBox.Location = new System.Drawing.Point(270, 480);
+            this.utilizouCartaoTextBox.Location = new System.Drawing.Point(206, 447);
             this.utilizouCartaoTextBox.Name = "utilizouCartaoTextBox";
             this.utilizouCartaoTextBox.Size = new System.Drawing.Size(178, 22);
             this.utilizouCartaoTextBox.TabIndex = 5;
@@ -369,15 +314,15 @@ namespace Projeto_DA_BooKids.Forms
             // idClienteTextBox
             // 
             this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "IdCliente", true));
-            this.idClienteTextBox.Location = new System.Drawing.Point(270, 259);
+            this.idClienteTextBox.Location = new System.Drawing.Point(206, 292);
             this.idClienteTextBox.Name = "idClienteTextBox";
-            this.idClienteTextBox.Size = new System.Drawing.Size(178, 22);
+            this.idClienteTextBox.Size = new System.Drawing.Size(86, 22);
             this.idClienteTextBox.TabIndex = 9;
             // 
             // nrCompraTextBox
             // 
             this.nrCompraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "NrCompra", true));
-            this.nrCompraTextBox.Location = new System.Drawing.Point(270, 316);
+            this.nrCompraTextBox.Location = new System.Drawing.Point(206, 349);
             this.nrCompraTextBox.Name = "nrCompraTextBox";
             this.nrCompraTextBox.Size = new System.Drawing.Size(178, 22);
             this.nrCompraTextBox.TabIndex = 11;
@@ -397,10 +342,9 @@ namespace Projeto_DA_BooKids.Forms
             this.detalheCompraSetDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.detalheCompraSetDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
+            this.dataGridViewTextBoxColumn7});
             this.detalheCompraSetDataGridView.DataSource = this.detalheCompraSetBindingSource;
-            this.detalheCompraSetDataGridView.Location = new System.Drawing.Point(817, 228);
+            this.detalheCompraSetDataGridView.Location = new System.Drawing.Point(759, 228);
             this.detalheCompraSetDataGridView.Name = "detalheCompraSetDataGridView";
             this.detalheCompraSetDataGridView.RowHeadersWidth = 51;
             this.detalheCompraSetDataGridView.RowTemplate.Height = 24;
@@ -418,18 +362,10 @@ namespace Projeto_DA_BooKids.Forms
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "NrCompra";
-            this.dataGridViewTextBoxColumn7.HeaderText = "NrCompra";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Nr. Compra";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProdutoCodProduto";
-            this.dataGridViewTextBoxColumn8.HeaderText = "ProdutoCodProduto";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 125;
             // 
             // LBVendaProdutos
             // 
@@ -450,22 +386,43 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.produtoSetTableAdapter.ClearBeforeFill = true;
             // 
-            // produtosCodPromocaoTextBox
+            // dataGridViewTextBoxColumn1
             // 
-            this.produtosCodPromocaoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.produtosCodPromocaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "ProdutosCodPromocao", true));
-            this.produtosCodPromocaoTextBox.Location = new System.Drawing.Point(270, 423);
-            this.produtosCodPromocaoTextBox.Name = "produtosCodPromocaoTextBox";
-            this.produtosCodPromocaoTextBox.Size = new System.Drawing.Size(178, 22);
-            this.produtosCodPromocaoTextBox.TabIndex = 25;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Data";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Data";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "UtilizouCartao";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Cartão";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "IdCliente";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id Cliente";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "NrCompra";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Nr. Compra";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
             // 
             // FVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 536);
-            this.Controls.Add(produtosCodPromocaoLabel);
-            this.Controls.Add(this.produtosCodPromocaoTextBox);
+            this.ClientSize = new System.Drawing.Size(1131, 553);
             this.Controls.Add(this.LBVendaProdutos);
             this.Controls.Add(this.detalheCompraSetDataGridView);
             this.Controls.Add(nrCompraLabel);
@@ -478,6 +435,7 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(this.dataTextBox);
             this.Controls.Add(this.compraSetDataGridView);
             this.Controls.Add(this.compraSetBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FVendas";
             this.Text = "Form Vendas";
             this.Load += new System.EventHandler(this.FormVendas_Load);
@@ -515,11 +473,6 @@ namespace Projeto_DA_BooKids.Forms
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton compraSetBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView compraSetDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.TextBox dataTextBox;
         private System.Windows.Forms.TextBox utilizouCartaoTextBox;
         private System.Windows.Forms.TextBox idClienteTextBox;
@@ -527,12 +480,15 @@ namespace Projeto_DA_BooKids.Forms
         private System.Windows.Forms.BindingSource detalheCompraSetBindingSource;
         private BooKids_DBDataSetTableAdapters.DetalheCompraSetTableAdapter detalheCompraSetTableAdapter;
         private System.Windows.Forms.DataGridView detalheCompraSetDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.Label LBVendaProdutos;
         private System.Windows.Forms.BindingSource produtoSetBindingSource;
         private BooKids_DBDataSetTableAdapters.ProdutoSetTableAdapter produtoSetTableAdapter;
-        private System.Windows.Forms.TextBox produtosCodPromocaoTextBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

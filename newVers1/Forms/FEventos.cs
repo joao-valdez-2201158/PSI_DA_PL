@@ -24,7 +24,7 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void eventoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void EventoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.eventoSetBindingSource.EndEdit();
@@ -32,9 +32,6 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void nrEventoTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

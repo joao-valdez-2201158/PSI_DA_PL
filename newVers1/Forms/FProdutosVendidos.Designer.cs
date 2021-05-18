@@ -51,13 +51,11 @@ namespace Projeto_DA_BooKids.Forms
             this.produtoSetBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.tipoProdutoSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produtoSetDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LBProdutosVendidos = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.booKids_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoSetBindingNavigator)).BeginInit();
@@ -129,7 +127,7 @@ namespace Projeto_DA_BooKids.Forms
             this.produtoSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.produtoSetBindingNavigator.Name = "produtoSetBindingNavigator";
             this.produtoSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.produtoSetBindingNavigator.Size = new System.Drawing.Size(921, 31);
+            this.produtoSetBindingNavigator.Size = new System.Drawing.Size(890, 27);
             this.produtoSetBindingNavigator.TabIndex = 0;
             this.produtoSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -139,13 +137,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -155,7 +153,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -164,7 +162,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -173,13 +171,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -194,7 +192,7 @@ namespace Projeto_DA_BooKids.Forms
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -202,7 +200,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -211,22 +209,22 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // produtoSetBindingNavigatorSaveItem
             // 
             this.produtoSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.produtoSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("produtoSetBindingNavigatorSaveItem.Image")));
             this.produtoSetBindingNavigatorSaveItem.Name = "produtoSetBindingNavigatorSaveItem";
-            this.produtoSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
+            this.produtoSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.produtoSetBindingNavigatorSaveItem.Text = "Save Data";
-            this.produtoSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.produtoSetBindingNavigatorSaveItem_Click);
+            this.produtoSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.ProdutoSetBindingNavigatorSaveItem_Click);
             // 
             // tipoProdutoSetBindingSource
             // 
@@ -239,68 +237,17 @@ namespace Projeto_DA_BooKids.Forms
             this.produtoSetDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.produtoSetDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn5});
             this.produtoSetDataGridView.DataSource = this.produtoSetBindingSource;
-            this.produtoSetDataGridView.Location = new System.Drawing.Point(53, 217);
+            this.produtoSetDataGridView.Location = new System.Drawing.Point(172, 164);
             this.produtoSetDataGridView.Name = "produtoSetDataGridView";
             this.produtoSetDataGridView.RowHeadersWidth = 51;
             this.produtoSetDataGridView.RowTemplate.Height = 24;
-            this.produtoSetDataGridView.Size = new System.Drawing.Size(804, 351);
+            this.produtoSetDataGridView.Size = new System.Drawing.Size(550, 279);
             this.produtoSetDataGridView.TabIndex = 9;
-            this.produtoSetDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.produtoSetDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "CodProduto";
-            this.dataGridViewTextBoxColumn1.HeaderText = "CodProduto";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Designacao";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Designacao";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Preco";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Preco";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "CodTipoProduto";
-            this.dataGridViewTextBoxColumn4.HeaderText = "CodTipoProduto";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "StockExistente";
-            this.dataGridViewTextBoxColumn5.HeaderText = "StockExistente";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "TipoProduto_CodTipoProduto";
-            this.dataGridViewTextBoxColumn6.HeaderText = "TipoProduto_CodTipoProduto";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.produtoSetDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProdutoSetDataGridView_CellContentClick);
             // 
             // LBProdutosVendidos
             // 
@@ -312,14 +259,48 @@ namespace Projeto_DA_BooKids.Forms
             this.LBProdutosVendidos.Text = "Produtos Vendidos";
             this.LBProdutosVendidos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "CodProduto";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Código";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "CodTipoProduto";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Cod. Tipo Produto";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Designacao";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Designação";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "StockExistente";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Stock Existente";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
             // FProdutosVendidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 580);
+            this.ClientSize = new System.Drawing.Size(890, 508);
             this.Controls.Add(this.LBProdutosVendidos);
             this.Controls.Add(this.produtoSetDataGridView);
             this.Controls.Add(this.produtoSetBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FProdutosVendidos";
             this.Text = "FormProdutosVendidos";
             this.Load += new System.EventHandler(this.FormProdutosVendidos_Load);
@@ -357,12 +338,11 @@ namespace Projeto_DA_BooKids.Forms
         private BooKids_DBDataSetTableAdapters.TipoProdutoSetTableAdapter tipoProdutoSetTableAdapter;
         private System.Windows.Forms.BindingSource tipoProdutoSetBindingSource;
         private System.Windows.Forms.DataGridView produtoSetDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Label LBProdutosVendidos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

@@ -24,7 +24,7 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void pessoaSet_AnimadorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void PessoaSet_AnimadorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.pessoaSet_AnimadorBindingSource.EndEdit();
@@ -32,7 +32,17 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void especialidadeTextBox_TextChanged(object sender, EventArgs e)
+        private void EspecialidadeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void especialidadeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

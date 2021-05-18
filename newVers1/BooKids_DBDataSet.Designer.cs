@@ -1463,9 +1463,9 @@ namespace Projeto_DA_BooKids {
             
             private global::System.Data.DataColumn columnIdCliente;
             
-            private global::System.Data.DataColumn columnProdutosCodPromocao;
-            
             private global::System.Data.DataColumn columnNrCompra;
+            
+            private global::System.Data.DataColumn columnProdutosCodProduto;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -1526,17 +1526,17 @@ namespace Projeto_DA_BooKids {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ProdutosCodPromocaoColumn {
+            public global::System.Data.DataColumn NrCompraColumn {
                 get {
-                    return this.columnProdutosCodPromocao;
+                    return this.columnNrCompra;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NrCompraColumn {
+            public global::System.Data.DataColumn ProdutosCodProdutoColumn {
                 get {
-                    return this.columnNrCompra;
+                    return this.columnProdutosCodProduto;
                 }
             }
             
@@ -1577,14 +1577,14 @@ namespace Projeto_DA_BooKids {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CompraSetRow AddCompraSetRow(PessoaSet_ClienteRow parentPessoaSet_ClienteRowByFK_ClienteCompra, int UtilizouCartao, int IdCliente, int ProdutosCodPromocao, int NrCompra) {
+            public CompraSetRow AddCompraSetRow(PessoaSet_ClienteRow parentPessoaSet_ClienteRowByFK_ClienteCompra, int UtilizouCartao, int IdCliente, int NrCompra, int ProdutosCodProduto) {
                 CompraSetRow rowCompraSetRow = ((CompraSetRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         UtilizouCartao,
                         IdCliente,
-                        ProdutosCodPromocao,
-                        NrCompra};
+                        NrCompra,
+                        ProdutosCodProduto};
                 if ((parentPessoaSet_ClienteRowByFK_ClienteCompra != null)) {
                     columnValuesArray[0] = parentPessoaSet_ClienteRowByFK_ClienteCompra[2];
                 }
@@ -1620,8 +1620,8 @@ namespace Projeto_DA_BooKids {
                 this.columnData = base.Columns["Data"];
                 this.columnUtilizouCartao = base.Columns["UtilizouCartao"];
                 this.columnIdCliente = base.Columns["IdCliente"];
-                this.columnProdutosCodPromocao = base.Columns["ProdutosCodPromocao"];
                 this.columnNrCompra = base.Columns["NrCompra"];
+                this.columnProdutosCodProduto = base.Columns["ProdutosCodProduto"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1633,18 +1633,18 @@ namespace Projeto_DA_BooKids {
                 base.Columns.Add(this.columnUtilizouCartao);
                 this.columnIdCliente = new global::System.Data.DataColumn("IdCliente", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIdCliente);
-                this.columnProdutosCodPromocao = new global::System.Data.DataColumn("ProdutosCodPromocao", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProdutosCodPromocao);
                 this.columnNrCompra = new global::System.Data.DataColumn("NrCompra", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNrCompra);
+                this.columnProdutosCodProduto = new global::System.Data.DataColumn("ProdutosCodProduto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProdutosCodProduto);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnNrCompra}, true));
                 this.columnData.AllowDBNull = false;
                 this.columnUtilizouCartao.AllowDBNull = false;
                 this.columnIdCliente.AllowDBNull = false;
-                this.columnProdutosCodPromocao.AllowDBNull = false;
                 this.columnNrCompra.AllowDBNull = false;
                 this.columnNrCompra.Unique = true;
+                this.columnProdutosCodProduto.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1885,7 +1885,7 @@ namespace Projeto_DA_BooKids {
                         null,
                         null};
                 if ((parentCompraSetRowByFK_DetalheCompraCompra != null)) {
-                    columnValuesArray[1] = parentCompraSetRowByFK_DetalheCompraCompra[4];
+                    columnValuesArray[1] = parentCompraSetRowByFK_DetalheCompraCompra[3];
                 }
                 if ((parentProdutoSetRowByFK_DetalheCompraProduto != null)) {
                     columnValuesArray[2] = parentProdutoSetRowByFK_DetalheCompraProduto[0];
@@ -5167,23 +5167,23 @@ namespace Projeto_DA_BooKids {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int ProdutosCodPromocao {
-                get {
-                    return ((int)(this[this.tableCompraSet.ProdutosCodPromocaoColumn]));
-                }
-                set {
-                    this[this.tableCompraSet.ProdutosCodPromocaoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int NrCompra {
                 get {
                     return ((int)(this[this.tableCompraSet.NrCompraColumn]));
                 }
                 set {
                     this[this.tableCompraSet.NrCompraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ProdutosCodProduto {
+                get {
+                    return ((int)(this[this.tableCompraSet.ProdutosCodProdutoColumn]));
+                }
+                set {
+                    this[this.tableCompraSet.ProdutosCodProdutoColumn] = value;
                 }
             }
             
@@ -7366,46 +7366,46 @@ SELECT NrEvento, IdAnimador FROM ColaboracaoSet WHERE (IdAnimador = @IdAnimador)
             tableMapping.ColumnMappings.Add("Data", "Data");
             tableMapping.ColumnMappings.Add("UtilizouCartao", "UtilizouCartao");
             tableMapping.ColumnMappings.Add("IdCliente", "IdCliente");
-            tableMapping.ColumnMappings.Add("ProdutosCodPromocao", "ProdutosCodPromocao");
             tableMapping.ColumnMappings.Add("NrCompra", "NrCompra");
+            tableMapping.ColumnMappings.Add("ProdutosCodProduto", "ProdutosCodProduto");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[CompraSet] WHERE (([Data] = @Original_Data) AND ([UtilizouCart" +
-                "ao] = @Original_UtilizouCartao) AND ([IdCliente] = @Original_IdCliente) AND ([Pr" +
-                "odutosCodPromocao] = @Original_ProdutosCodPromocao) AND ([NrCompra] = @Original_" +
-                "NrCompra))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [CompraSet] WHERE (([Data] = @Original_Data) AND ([UtilizouCartao] = " +
+                "@Original_UtilizouCartao) AND ([IdCliente] = @Original_IdCliente) AND ([NrCompra" +
+                "] = @Original_NrCompra) AND ([ProdutosCodProduto] = @Original_ProdutosCodProduto" +
+                "))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Data", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Data", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UtilizouCartao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UtilizouCartao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdCliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProdutosCodPromocao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodPromocao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NrCompra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NrCompra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProdutosCodProduto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodProduto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[CompraSet] ([Data], [UtilizouCartao], [IdCliente], [ProdutosCodPromocao], [NrCompra]) VALUES (@Data, @UtilizouCartao, @IdCliente, @ProdutosCodPromocao, @NrCompra);
-SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM CompraSet WHERE (NrCompra = @NrCompra)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [CompraSet] ([Data], [UtilizouCartao], [IdCliente], [NrCompra], [ProdutosCodProduto]) VALUES (@Data, @UtilizouCartao, @IdCliente, @NrCompra, @ProdutosCodProduto);
+SELECT Data, UtilizouCartao, IdCliente, NrCompra, ProdutosCodProduto FROM CompraSet WHERE (NrCompra = @NrCompra)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Data", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Data", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UtilizouCartao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UtilizouCartao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProdutosCodPromocao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodPromocao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NrCompra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NrCompra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProdutosCodProduto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodProduto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[CompraSet] SET [Data] = @Data, [UtilizouCartao] = @UtilizouCartao, [IdCliente] = @IdCliente, [ProdutosCodPromocao] = @ProdutosCodPromocao, [NrCompra] = @NrCompra WHERE (([Data] = @Original_Data) AND ([UtilizouCartao] = @Original_UtilizouCartao) AND ([IdCliente] = @Original_IdCliente) AND ([ProdutosCodPromocao] = @Original_ProdutosCodPromocao) AND ([NrCompra] = @Original_NrCompra));
-SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM CompraSet WHERE (NrCompra = @NrCompra)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [CompraSet] SET [Data] = @Data, [UtilizouCartao] = @UtilizouCartao, [IdCliente] = @IdCliente, [NrCompra] = @NrCompra, [ProdutosCodProduto] = @ProdutosCodProduto WHERE (([Data] = @Original_Data) AND ([UtilizouCartao] = @Original_UtilizouCartao) AND ([IdCliente] = @Original_IdCliente) AND ([NrCompra] = @Original_NrCompra) AND ([ProdutosCodProduto] = @Original_ProdutosCodProduto));
+SELECT Data, UtilizouCartao, IdCliente, NrCompra, ProdutosCodProduto FROM CompraSet WHERE (NrCompra = @NrCompra)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Data", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Data", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UtilizouCartao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UtilizouCartao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProdutosCodPromocao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodPromocao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NrCompra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NrCompra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProdutosCodProduto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodProduto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Data", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Data", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UtilizouCartao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UtilizouCartao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdCliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProdutosCodPromocao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodPromocao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NrCompra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NrCompra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProdutosCodProduto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProdutosCodProduto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7422,8 +7422,8 @@ SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM Compr
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM dbo.Co" +
-                "mpraSet";
+            this._commandCollection[0].CommandText = "SELECT Data, UtilizouCartao, IdCliente, NrCompra, ProdutosCodProduto FROM CompraS" +
+                "et";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7484,12 +7484,12 @@ SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM Compr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Data, int Original_UtilizouCartao, int Original_IdCliente, int Original_ProdutosCodPromocao, int Original_NrCompra) {
+        public virtual int Delete(int Original_Data, int Original_UtilizouCartao, int Original_IdCliente, int Original_NrCompra, int Original_ProdutosCodProduto) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Data));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_UtilizouCartao));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_IdCliente));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_ProdutosCodPromocao));
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_NrCompra));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_NrCompra));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_ProdutosCodProduto));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7510,12 +7510,12 @@ SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM Compr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Data, int UtilizouCartao, int IdCliente, int ProdutosCodPromocao, int NrCompra) {
+        public virtual int Insert(int Data, int UtilizouCartao, int IdCliente, int NrCompra, int ProdutosCodProduto) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Data));
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(UtilizouCartao));
             this.Adapter.InsertCommand.Parameters[2].Value = ((int)(IdCliente));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(ProdutosCodPromocao));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(NrCompra));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(NrCompra));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(ProdutosCodProduto));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7536,17 +7536,17 @@ SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM Compr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Data, int UtilizouCartao, int IdCliente, int ProdutosCodPromocao, int NrCompra, int Original_Data, int Original_UtilizouCartao, int Original_IdCliente, int Original_ProdutosCodPromocao, int Original_NrCompra) {
+        public virtual int Update(int Data, int UtilizouCartao, int IdCliente, int NrCompra, int ProdutosCodProduto, int Original_Data, int Original_UtilizouCartao, int Original_IdCliente, int Original_NrCompra, int Original_ProdutosCodProduto) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Data));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(UtilizouCartao));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(IdCliente));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(ProdutosCodPromocao));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(NrCompra));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(NrCompra));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(ProdutosCodProduto));
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Data));
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_UtilizouCartao));
             this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_IdCliente));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_ProdutosCodPromocao));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_NrCompra));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_NrCompra));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_ProdutosCodProduto));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7567,8 +7567,8 @@ SELECT Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, NrCompra FROM Compr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Data, int UtilizouCartao, int IdCliente, int ProdutosCodPromocao, int Original_Data, int Original_UtilizouCartao, int Original_IdCliente, int Original_ProdutosCodPromocao, int Original_NrCompra) {
-            return this.Update(Data, UtilizouCartao, IdCliente, ProdutosCodPromocao, Original_NrCompra, Original_Data, Original_UtilizouCartao, Original_IdCliente, Original_ProdutosCodPromocao, Original_NrCompra);
+        public virtual int Update(int Data, int UtilizouCartao, int IdCliente, int ProdutosCodProduto, int Original_Data, int Original_UtilizouCartao, int Original_IdCliente, int Original_NrCompra, int Original_ProdutosCodProduto) {
+            return this.Update(Data, UtilizouCartao, IdCliente, Original_NrCompra, ProdutosCodProduto, Original_Data, Original_UtilizouCartao, Original_IdCliente, Original_NrCompra, Original_ProdutosCodProduto);
         }
     }
     

@@ -17,7 +17,7 @@ namespace Projeto_DA_BooKids.Forms
             InitializeComponent();
         }
 
-        private void pessoaSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void PessoaSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.pessoaSetBindingSource.EndEdit();
@@ -34,12 +34,19 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-        private void telefoneLabel_Click(object sender, EventArgs e)
+       
+
+        private void BindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        private void nomeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mailLabel_Click(object sender, EventArgs e)
         {
 
         }

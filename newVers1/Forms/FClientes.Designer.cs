@@ -96,7 +96,6 @@ namespace Projeto_DA_BooKids.Forms
             nomeLabel.Size = new System.Drawing.Size(49, 17);
             nomeLabel.TabIndex = 2;
             nomeLabel.Text = "Nome:";
-            nomeLabel.Click += new System.EventHandler(this.nomeLabel_Click);
             // 
             // moradaLabel
             // 
@@ -151,7 +150,6 @@ namespace Projeto_DA_BooKids.Forms
             mailLabel.Size = new System.Drawing.Size(51, 17);
             mailLabel.TabIndex = 14;
             mailLabel.Text = "E-Mail:";
-            mailLabel.Click += new System.EventHandler(this.mailLabel_Click);
             // 
             // booKids_DBDataSet
             // 

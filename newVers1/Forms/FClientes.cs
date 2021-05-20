@@ -34,21 +34,11 @@ namespace Projeto_DA_BooKids.Forms
 
         }
 
-       
-
+ 
         private void BindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void nomeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mailLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -19,9 +19,12 @@ namespace Projeto_DA_BooKids.Forms
 
         private void PessoaSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.pessoaSetBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+            if (this.Validate())
+            {
+
+                this.pessoaSetBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+            }
 
         }
 
@@ -37,7 +40,7 @@ namespace Projeto_DA_BooKids.Forms
 
         private void BindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
-    
+ 
         }
 
         private void nomeLabel_Click(object sender, EventArgs e)

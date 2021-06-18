@@ -33,6 +33,7 @@
         <EntityTypeShape EntityType="DA_BooKids.Colaboracao" Width="1.5" PointX="13.625" PointY="3.875" />
         <AssociationConnector Association="DA_BooKids.EventoColaboracao" />
         <AssociationConnector Association="DA_BooKids.AnimadorColaboracao" />
+        <AssociationConnector Association="DA_BooKids.ColaboracaoSet" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

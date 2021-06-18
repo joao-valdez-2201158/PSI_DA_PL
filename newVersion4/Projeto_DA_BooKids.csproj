@@ -58,6 +58,11 @@
     <Compile Include="Animador.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
+    <Compile Include="BooKids_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BooKids_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BooKids_DBDataSet.cs">
       <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
     </Compile>
@@ -102,6 +107,12 @@
     </Compile>
     <Compile Include="Filho.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientesForm.Designer.cs">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FAnimadores.cs">
       <SubType>Form</SubType>
@@ -162,6 +173,9 @@
     <Compile Include="TipoProduto.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\ClientesForm.resx">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FAnimadores.resx">
       <DependentUpon>FAnimadores.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +210,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DA_BooKids.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="BooKids_DataSet.xsc">
+      <DependentUpon>BooKids_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BooKids_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooKids_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BooKids_DataSet.xss">
+      <DependentUpon>BooKids_DataSet.xsd</DependentUpon>
+    </None>
     <None Include="BooKids_DBDataSet.xsc">
       <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
     </None>
@@ -211,6 +236,7 @@
       <DependentUpon>DA_BooKids.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Pessoa.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

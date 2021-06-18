@@ -24,7 +24,7 @@ namespace Projeto_DA_BooKids.Forms
 
         private void BTN_GestaoClientes_Click(object sender, EventArgs e)
         {
-            FClientes fClientes = new FClientes();
+            ClientesForm fClientes = new ClientesForm();
             fClientes.Show();
         }
 

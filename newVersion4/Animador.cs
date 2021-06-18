@@ -18,11 +18,14 @@ namespace Projeto_DA_BooKids
         public Animador()
         {
             this.Colaboracoes = new HashSet<Colaboracao>();
+            this.EventoSet = new HashSet<Evento>();
         }
     
         public string Especialidade { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Colaboracao> Colaboracoes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Evento> EventoSet { get; set; }
     }
 }

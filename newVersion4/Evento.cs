@@ -20,6 +20,7 @@ namespace Projeto_DA_BooKids
             this.Inscricoes = new HashSet<Inscricao>();
             this.Participacoes = new HashSet<Participacao>();
             this.Colaboracoes = new HashSet<Colaboracao>();
+            this.PessoaSet_Animador = new HashSet<Animador>();
         }
     
         public int NrEvento { get; set; }
@@ -37,5 +38,7 @@ namespace Projeto_DA_BooKids
         public virtual ICollection<Participacao> Participacoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Colaboracao> Colaboracoes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Animador> PessoaSet_Animador { get; set; }
     }
 }

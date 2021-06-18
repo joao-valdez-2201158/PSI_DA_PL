@@ -16,5 +16,20 @@ namespace Projeto_DA_BooKids.Forms
         {
             InitializeComponent();
         }
+
+        private void produtoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.produtoSetBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
+
+        }
+
+        private void ProdutosVendidosForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'booKids_DataSet.ProdutoSet' table. You can move, or remove it, as needed.
+            this.produtoSetTableAdapter.Fill(this.booKids_DataSet.ProdutoSet);
+
+        }
     }
 }

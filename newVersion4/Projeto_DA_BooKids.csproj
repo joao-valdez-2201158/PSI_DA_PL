@@ -63,14 +63,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BooKids_DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BooKids_DBDataSet.cs">
-      <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BooKids_DBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Cliente.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
@@ -102,11 +94,29 @@
     <Compile Include="Escola.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EscolasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EscolasForm.Designer.cs">
+      <DependentUpon>EscolasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Evento.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EventosForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventosForms.Designer.cs">
+      <DependentUpon>EventosForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Filho.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AnimadoresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnimadoresForm.Designer.cs">
+      <DependentUpon>AnimadoresForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ClientesForm.cs">
       <SubType>Form</SubType>
@@ -114,47 +124,23 @@
     <Compile Include="Forms\ClientesForm.Designer.cs">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FAnimadores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FAnimadores.Designer.cs">
-      <DependentUpon>FAnimadores.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FBooKids.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FBooKids.Designer.cs">
       <DependentUpon>FBooKids.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FEscolas.cs">
+    <Compile Include="Forms\ProdutosVendidosForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FEscolas.Designer.cs">
-      <DependentUpon>FEscolas.cs</DependentUpon>
+    <Compile Include="Forms\ProdutosVendidosForm.Designer.cs">
+      <DependentUpon>ProdutosVendidosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FEventos.cs">
+    <Compile Include="Forms\VendaProdutosForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FEventos.Designer.cs">
-      <DependentUpon>FEventos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FProdutosVendidos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FProdutosVendidos.Designer.cs">
-      <DependentUpon>FProdutosVendidos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FVendas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FVendas.Designer.cs">
-      <DependentUpon>FVendas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FClientes.Designer.cs">
-      <DependentUpon>FClientes.cs</DependentUpon>
+    <Compile Include="Forms\VendaProdutosForm.Designer.cs">
+      <DependentUpon>VendaProdutosForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Inscricao.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
@@ -173,29 +159,26 @@
     <Compile Include="TipoProduto.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\EscolasForm.resx">
+      <DependentUpon>EscolasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventosForms.resx">
+      <DependentUpon>EventosForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AnimadoresForm.resx">
+      <DependentUpon>AnimadoresForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FAnimadores.resx">
-      <DependentUpon>FAnimadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FBooKids.resx">
       <DependentUpon>FBooKids.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FEscolas.resx">
-      <DependentUpon>FEscolas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ProdutosVendidosForm.resx">
+      <DependentUpon>ProdutosVendidosForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FEventos.resx">
-      <DependentUpon>FEventos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FClientes.resx">
-      <DependentUpon>FClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FProdutosVendidos.resx">
-      <DependentUpon>FProdutosVendidos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FVendas.resx">
-      <DependentUpon>FVendas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\VendaProdutosForm.resx">
+      <DependentUpon>VendaProdutosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -221,21 +204,12 @@
     <None Include="BooKids_DataSet.xss">
       <DependentUpon>BooKids_DataSet.xsd</DependentUpon>
     </None>
-    <None Include="BooKids_DBDataSet.xsc">
-      <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BooKids_DBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BooKids_DBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BooKids_DBDataSet.xss">
-      <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
-    </None>
     <None Include="DA_BooKids.edmx.diagram">
       <DependentUpon>DA_BooKids.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Evento.datasource" />
+    <None Include="Properties\DataSources\Filho.datasource" />
     <None Include="Properties\DataSources\Pessoa.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

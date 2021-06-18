@@ -16,5 +16,20 @@ namespace Projeto_DA_BooKids
         {
             InitializeComponent();
         }
+
+        private void eventoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.eventoSetBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
+
+        }
+
+        private void EventosForms_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'booKids_DataSet.EventoSet' table. You can move, or remove it, as needed.
+            this.eventoSetTableAdapter.Fill(this.booKids_DataSet.EventoSet);
+
+        }
     }
 }

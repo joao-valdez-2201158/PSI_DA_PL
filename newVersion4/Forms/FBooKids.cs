@@ -30,32 +30,32 @@ namespace Projeto_DA_BooKids.Forms
 
         private void BTN_GestaoEventos_Click(object sender, EventArgs e)
         {
-            FEventos fEventos = new FEventos();
-            fEventos.Show();
+            EventosForms eventosForms = new EventosForms();
+            eventosForms.Show();
         }
 
         private void BTN_GestaoEscolas_Click(object sender, EventArgs e)
         {
-            FEscolas fEscolas = new FEscolas();
-            fEscolas.Show();
+            EscolasForm escolasForm = new EscolasForm();
+            escolasForm.Show();
         }
 
         private void BTN_GestaoProdutos_Click(object sender, EventArgs e)
         {
-            FVendas fVendas = new FVendas();
-            fVendas.Show();
+            VendaProdutosForm vendaProdutosForm = new VendaProdutosForm();
+            vendaProdutosForm.Show();
         }
 
         private void BTN_ProdutosVendidos_Click(object sender, EventArgs e)
         {
-            FProdutosVendidos fProdutosVendidos = new FProdutosVendidos();
-            fProdutosVendidos.Show();
+            ProdutosVendidosForm produtosVendidosForm = new ProdutosVendidosForm();
+            produtosVendidosForm.Show();
         }
 
         private void BTN_GestaoAnimadores_Click(object sender, EventArgs e)
         {
-            FAnimadores fAnimadores = new FAnimadores();
-            fAnimadores.Show();
+            AnimadoresForm animadoresForm = new AnimadoresForm();
+            animadoresForm.Show();
         }
     }
 }

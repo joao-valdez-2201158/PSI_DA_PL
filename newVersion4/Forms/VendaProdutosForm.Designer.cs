@@ -147,7 +147,7 @@ namespace Projeto_DA_BooKids.Forms
             this.compraSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.compraSetBindingNavigator.Name = "compraSetBindingNavigator";
             this.compraSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.compraSetBindingNavigator.Size = new System.Drawing.Size(1217, 31);
+            this.compraSetBindingNavigator.Size = new System.Drawing.Size(1217, 27);
             this.compraSetBindingNavigator.TabIndex = 0;
             this.compraSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -225,7 +225,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorDeleteItem
@@ -473,10 +473,10 @@ namespace Projeto_DA_BooKids.Forms
             // 
             // lbVendaProdutos
             // 
-            this.lbVendaProdutos.AutoSize = true;
-            this.lbVendaProdutos.Location = new System.Drawing.Point(399, 88);
+            this.lbVendaProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVendaProdutos.Location = new System.Drawing.Point(0, 71);
             this.lbVendaProdutos.Name = "lbVendaProdutos";
-            this.lbVendaProdutos.Size = new System.Drawing.Size(130, 17);
+            this.lbVendaProdutos.Size = new System.Drawing.Size(1217, 71);
             this.lbVendaProdutos.TabIndex = 15;
             this.lbVendaProdutos.Text = "Venda de Produtos";
             this.lbVendaProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

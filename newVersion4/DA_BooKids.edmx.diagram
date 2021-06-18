@@ -24,7 +24,16 @@
         <AssociationConnector Association="DA_BooKids.FilhoInscricao" />
         <AssociationConnector Association="DA_BooKids.FilhoEscola" />
         <AssociationConnector Association="DA_BooKids.ProdutoTipoProduto" />
-        <AssociationConnector Association="DA_BooKids.EventoInscricao" />
+        <AssociationConnector Association="DA_BooKids.EventoInscricao" ManuallyRouted="true" >
+          <ConnectorPoint PointX="17" PointY="3.4586393229166665" />
+          <ConnectorPoint PointX="14.525" PointY="3.4586393229166665" />
+          <ConnectorPoint PointX="14.525" PointY="3.5455295037927774" />
+          <ConnectorPoint PointX="11.975" PointY="3.5455295037927774" />
+          <ConnectorPoint PointX="11.975" PointY="3.4586393229166665" />
+          <ConnectorPoint PointX="10.708333333333334" PointY="3.4586393229166661" />
+          <ConnectorPoint PointX="10.541666666666666" PointY="3.4586393229166665" />
+          <ConnectorPoint PointX="9.5" PointY="3.4586393229166665" />
+        </AssociationConnector>
         <AssociationConnector Association="DA_BooKids.EscolaParticipacao" />
         <AssociationConnector Association="DA_BooKids.ParticipacaoEvento" />
         <AssociationConnector Association="DA_BooKids.DetalheCompraCompra" />

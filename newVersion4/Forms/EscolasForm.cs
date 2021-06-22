@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Projeto_DA_BooKids
+namespace Projeto_DA_BooKids.Forms
 {
     public partial class EscolasForm : Form
     {
@@ -17,10 +17,10 @@ namespace Projeto_DA_BooKids
             InitializeComponent();
         }
 
-        private void participacaoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void escolaSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.participacaoSetBindingSource.EndEdit();
+            this.escolaSetBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
 
         }
@@ -29,14 +29,10 @@ namespace Projeto_DA_BooKids
         {
             // TODO: This line of code loads data into the 'booKids_DataSet.EscolaSet' table. You can move, or remove it, as needed.
             this.escolaSetTableAdapter.Fill(this.booKids_DataSet.EscolaSet);
-            // TODO: This line of code loads data into the 'booKids_DataSet.PessoaSet_Filho' table. You can move, or remove it, as needed.
-            this.pessoaSet_FilhoTableAdapter.Fill(this.booKids_DataSet.PessoaSet_Filho);
-            // TODO: This line of code loads data into the 'booKids_DataSet.ParticipacaoSet' table. You can move, or remove it, as needed.
-            this.participacaoSetTableAdapter.Fill(this.booKids_DataSet.ParticipacaoSet);
 
         }
 
-        private void idEscolaTextBox_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

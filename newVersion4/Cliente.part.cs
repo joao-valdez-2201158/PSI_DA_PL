@@ -19,7 +19,6 @@ namespace Projeto_DA_BooKids
             this.Email = email;
         
         }
-        
        
     }
 }

@@ -17,11 +17,6 @@ namespace Projeto_DA_BooKids.Forms
             InitializeComponent();
         }
 
-        private void FBooKids_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BTN_GestaoClientes_Click(object sender, EventArgs e)
         {
             ClientesForm fClientes = new ClientesForm();
@@ -56,6 +51,23 @@ namespace Projeto_DA_BooKids.Forms
         {
             AnimadoresForm animadoresForm = new AnimadoresForm();
             animadoresForm.Show();
+        }
+
+        private void BTN_GestaoFilhos_Click(object sender, EventArgs e)
+        {
+            FilhosForm filhosForm = new FilhosForm();
+            filhosForm.Show();
+        }
+
+        private void BTN_GestaoPessoas_Click(object sender, EventArgs e)
+        {
+            PessoasFrom pessoasForm = new PessoasFrom();
+            pessoasForm.Show();
+        }
+
+        private void FBooKids_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

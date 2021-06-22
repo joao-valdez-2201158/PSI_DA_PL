@@ -17,10 +17,10 @@ namespace Projeto_DA_BooKids.Forms
             InitializeComponent();
         }
 
-        private void colaboracaoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void pessoaSet_AnimadorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.colaboracaoSetBindingSource.EndEdit();
+            this.pessoaSet_AnimadorBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
 
         }
@@ -29,8 +29,6 @@ namespace Projeto_DA_BooKids.Forms
         {
             // TODO: This line of code loads data into the 'booKids_DataSet.PessoaSet_Animador' table. You can move, or remove it, as needed.
             this.pessoaSet_AnimadorTableAdapter.Fill(this.booKids_DataSet.PessoaSet_Animador);
-            // TODO: This line of code loads data into the 'booKids_DataSet.ColaboracaoSet' table. You can move, or remove it, as needed.
-            this.colaboracaoSetTableAdapter.Fill(this.booKids_DataSet.ColaboracaoSet);
 
         }
 

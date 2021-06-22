@@ -17,26 +17,18 @@ namespace Projeto_DA_BooKids.Forms
             InitializeComponent();
         }
 
-        private void pessoaSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void pessoaSet_ClienteBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.pessoaSetBindingSource.EndEdit();
+            this.pessoaSet_ClienteBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
 
         }
 
         private void ClientesForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'booKids_DataSet.PessoaSet' table. You can move, or remove it, as needed.
-            this.pessoaSetTableAdapter.Fill(this.booKids_DataSet.PessoaSet);
-
-        }
-
-        private void pessoaSetBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.pessoaSetBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
+            // TODO: This line of code loads data into the 'booKids_DataSet.PessoaSet_Cliente' table. You can move, or remove it, as needed.
+            this.pessoaSet_ClienteTableAdapter.Fill(this.booKids_DataSet.PessoaSet_Cliente);
 
         }
     }

@@ -22,6 +22,7 @@ namespace Projeto_DA_BooKids.Forms
             this.Validate();
             this.compraSetBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
+            MessageBox.Show("Save Successfull");
 
         }
 
@@ -33,5 +34,13 @@ namespace Projeto_DA_BooKids.Forms
             this.compraSetTableAdapter.Fill(this.booKids_DataSet.CompraSet);
 
         }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+      
     }
 }

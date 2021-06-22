@@ -94,24 +94,6 @@
     <Compile Include="Escola.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EscolasForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EscolasForm.Designer.cs">
-      <DependentUpon>EscolasForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Evento.cs">
-      <DependentUpon>DA_BooKids.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EventosForms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EventosForms.Designer.cs">
-      <DependentUpon>EventosForms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Filho.cs">
-      <DependentUpon>DA_BooKids.tt</DependentUpon>
-    </Compile>
     <Compile Include="Forms\AnimadoresForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,11 +106,41 @@
     <Compile Include="Forms\ClientesForm.Designer.cs">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Evento.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EscolasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EscolasForm.Designer.cs">
+      <DependentUpon>EscolasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EventosForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EventosForms.Designer.cs">
+      <DependentUpon>EventosForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filho.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FBooKids.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FBooKids.Designer.cs">
       <DependentUpon>FBooKids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FilhosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FilhosForm.Designer.cs">
+      <DependentUpon>FilhosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PessoasFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PessoasFrom.Designer.cs">
+      <DependentUpon>PessoasFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ProdutosVendidosForm.cs">
       <SubType>Form</SubType>
@@ -159,20 +171,26 @@
     <Compile Include="TipoProduto.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\EscolasForm.resx">
-      <DependentUpon>EscolasForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EventosForms.resx">
-      <DependentUpon>EventosForms.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AnimadoresForm.resx">
       <DependentUpon>AnimadoresForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EscolasForm.resx">
+      <DependentUpon>EscolasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EventosForms.resx">
+      <DependentUpon>EventosForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FBooKids.resx">
       <DependentUpon>FBooKids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FilhosForm.resx">
+      <DependentUpon>FilhosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PessoasFrom.resx">
+      <DependentUpon>PessoasFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProdutosVendidosForm.resx">
       <DependentUpon>ProdutosVendidosForm.cs</DependentUpon>

@@ -20,6 +20,12 @@ namespace Projeto_DA_BooKids
         private void eventoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
+            /*
+            if (idadeInferiorTextBox.Text <= (0.ToString()))
+            {
+
+            }
+            */
             this.eventoSetBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.booKids_DataSet);
 

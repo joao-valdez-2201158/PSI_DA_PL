@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="590d7558d5a9483c8a13517ffabe873b" Name="Diagram1" ZoomLevel="62" >
+        <EntityTypeShape EntityType="DA_BooKids.Pessoa" Width="1.5" PointX="6.625" PointY="8.125" />
+        <EntityTypeShape EntityType="DA_BooKids.Filho" Width="1.5" PointX="4.375" PointY="5" />
+        <EntityTypeShape EntityType="DA_BooKids.Cliente" Width="1.5" PointX="4.375" PointY="11.625" />
+        <EntityTypeShape EntityType="DA_BooKids.Compra" Width="1.5" PointX="7.625" PointY="11.625" />
+        <EntityTypeShape EntityType="DA_BooKids.Inscricao" Width="1.5" PointX="8.75" PointY="6.5" />
+        <EntityTypeShape EntityType="DA_BooKids.Animador" Width="1.5" PointX="11.375" PointY="9" />
+        <EntityTypeShape EntityType="DA_BooKids.Escola" Width="1.5" PointX="11.625" PointY="4.5" />
+        <EntityTypeShape EntityType="DA_BooKids.DetalheCompra" Width="1.5" PointX="10.125" PointY="11.625" />
+        <EntityTypeShape EntityType="DA_BooKids.Produto" Width="1.5" PointX="12.625" PointY="11.625" />
+        <EntityTypeShape EntityType="DA_BooKids.TipoProduto" Width="1.5" PointX="15.75" PointY="11.625" />
+        <EntityTypeShape EntityType="DA_BooKids.Evento" Width="1.5" PointX="17.625" PointY="6" />
+        <EntityTypeShape EntityType="DA_BooKids.Participacao" Width="1.5" PointX="14.375" PointY="5.5" />
+        <EntityTypeShape EntityType="DA_BooKids.Colaboracao" Width="1.5" PointX="14.5" PointY="8.375" />
+        <InheritanceConnector EntityType="DA_BooKids.Animador" />
+        <InheritanceConnector EntityType="DA_BooKids.Filho" />
+        <InheritanceConnector EntityType="DA_BooKids.Cliente" />
+        <AssociationConnector Association="DA_BooKids.ClienteFilho" />
+        <AssociationConnector Association="DA_BooKids.EscolaFilho" />
+        <AssociationConnector Association="DA_BooKids.ClienteCompra" />
+        <AssociationConnector Association="DA_BooKids.CompraDetalheCompra" />
+        <AssociationConnector Association="DA_BooKids.ProdutoDetalheCompra" />
+        <AssociationConnector Association="DA_BooKids.TipoProdutoProduto" />
+        <AssociationConnector Association="DA_BooKids.FilhoInscricao" />
+        <AssociationConnector Association="DA_BooKids.EventoInscricao" />
+        <AssociationConnector Association="DA_BooKids.AnimadorColaboracao" />
+        <AssociationConnector Association="DA_BooKids.EventoColaboracao" />
+        <AssociationConnector Association="DA_BooKids.EscolaParticipacao" />
+        <AssociationConnector Association="DA_BooKids.EventoParticipacao" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

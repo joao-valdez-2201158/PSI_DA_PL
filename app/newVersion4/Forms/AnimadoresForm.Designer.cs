@@ -52,10 +52,10 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pessoaSet_AnimadorBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.pessoaSet_AnimadorDataGridView = new System.Windows.Forms.DataGridView();
-            this.especialidadeTextBox = new System.Windows.Forms.TextBox();
-            this.idPessoaTextBox = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.especialidadeTextBox = new System.Windows.Forms.TextBox();
+            this.idPessoaTextBox = new System.Windows.Forms.TextBox();
             especialidadeLabel = new System.Windows.Forms.Label();
             idPessoaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.booKids_DataSet)).BeginInit();
@@ -90,7 +90,7 @@ namespace Projeto_DA_BooKids.Forms
             this.lbAnimadores.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAnimadores.Location = new System.Drawing.Point(0, 82);
             this.lbAnimadores.Name = "lbAnimadores";
-            this.lbAnimadores.Size = new System.Drawing.Size(436, 62);
+            this.lbAnimadores.Size = new System.Drawing.Size(445, 62);
             this.lbAnimadores.TabIndex = 7;
             this.lbAnimadores.Text = "Animadores";
             this.lbAnimadores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -155,7 +155,7 @@ namespace Projeto_DA_BooKids.Forms
             this.pessoaSet_AnimadorBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pessoaSet_AnimadorBindingNavigator.Name = "pessoaSet_AnimadorBindingNavigator";
             this.pessoaSet_AnimadorBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pessoaSet_AnimadorBindingNavigator.Size = new System.Drawing.Size(436, 27);
+            this.pessoaSet_AnimadorBindingNavigator.Size = new System.Drawing.Size(445, 27);
             this.pessoaSet_AnimadorBindingNavigator.TabIndex = 8;
             this.pessoaSet_AnimadorBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -256,6 +256,8 @@ namespace Projeto_DA_BooKids.Forms
             // 
             // pessoaSet_AnimadorDataGridView
             // 
+            this.pessoaSet_AnimadorDataGridView.AllowUserToAddRows = false;
+            this.pessoaSet_AnimadorDataGridView.AllowUserToDeleteRows = false;
             this.pessoaSet_AnimadorDataGridView.AutoGenerateColumns = false;
             this.pessoaSet_AnimadorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pessoaSet_AnimadorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -263,29 +265,12 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn1});
             this.pessoaSet_AnimadorDataGridView.DataSource = this.pessoaSet_AnimadorBindingSource;
             this.pessoaSet_AnimadorDataGridView.Location = new System.Drawing.Point(62, 307);
-            this.pessoaSet_AnimadorDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pessoaSet_AnimadorDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.pessoaSet_AnimadorDataGridView.Name = "pessoaSet_AnimadorDataGridView";
+            this.pessoaSet_AnimadorDataGridView.ReadOnly = true;
             this.pessoaSet_AnimadorDataGridView.RowHeadersWidth = 51;
             this.pessoaSet_AnimadorDataGridView.Size = new System.Drawing.Size(324, 271);
             this.pessoaSet_AnimadorDataGridView.TabIndex = 8;
-            // 
-            // especialidadeTextBox
-            // 
-            this.especialidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_AnimadorBindingSource, "Especialidade", true));
-            this.especialidadeTextBox.Location = new System.Drawing.Point(177, 214);
-            this.especialidadeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.especialidadeTextBox.Name = "especialidadeTextBox";
-            this.especialidadeTextBox.Size = new System.Drawing.Size(132, 22);
-            this.especialidadeTextBox.TabIndex = 9;
-            // 
-            // idPessoaTextBox
-            // 
-            this.idPessoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_AnimadorBindingSource, "IdPessoa", true));
-            this.idPessoaTextBox.Location = new System.Drawing.Point(177, 248);
-            this.idPessoaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.idPessoaTextBox.Name = "idPessoaTextBox";
-            this.idPessoaTextBox.Size = new System.Drawing.Size(78, 22);
-            this.idPessoaTextBox.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -294,6 +279,7 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn2.HeaderText = "IdPessoa";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -302,12 +288,31 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn1.HeaderText = "Especialidade";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // especialidadeTextBox
+            // 
+            this.especialidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_AnimadorBindingSource, "Especialidade", true));
+            this.especialidadeTextBox.Location = new System.Drawing.Point(177, 214);
+            this.especialidadeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.especialidadeTextBox.Name = "especialidadeTextBox";
+            this.especialidadeTextBox.Size = new System.Drawing.Size(132, 22);
+            this.especialidadeTextBox.TabIndex = 9;
+            // 
+            // idPessoaTextBox
+            // 
+            this.idPessoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_AnimadorBindingSource, "IdPessoa", true));
+            this.idPessoaTextBox.Location = new System.Drawing.Point(177, 248);
+            this.idPessoaTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.idPessoaTextBox.Name = "idPessoaTextBox";
+            this.idPessoaTextBox.Size = new System.Drawing.Size(78, 22);
+            this.idPessoaTextBox.TabIndex = 10;
             // 
             // AnimadoresForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 631);
+            this.ClientSize = new System.Drawing.Size(445, 631);
             this.Controls.Add(idPessoaLabel);
             this.Controls.Add(this.idPessoaTextBox);
             this.Controls.Add(especialidadeLabel);
@@ -316,7 +321,7 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(this.pessoaSet_AnimadorBindingNavigator);
             this.Controls.Add(this.lbAnimadores);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AnimadoresForm";
             this.Text = "AnimadoresForm";
             this.Load += new System.EventHandler(this.AnimadoresForm_Load);

@@ -30,8 +30,6 @@ namespace Projeto_DA_BooKids.Forms
             // TODO: This line of code loads data into the 'booKids_DataSet.InscricaoSet' table. You can move, or remove it, as needed.
             this.inscricaoSetTableAdapter.Fill(this.booKids_DataSet.InscricaoSet);
             // TODO: This line of code loads data into the 'booKids_DataSet.PessoaSet_Filho' table. You can move, or remove it, as needed.
-            this.pessoaSet_FilhoTableAdapter.Fill(this.booKids_DataSet.PessoaSet_Filho);
-
         }
     }
 }

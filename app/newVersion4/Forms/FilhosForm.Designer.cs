@@ -62,12 +62,12 @@ namespace Projeto_DA_BooKids.Forms
             this.lbFilhos = new System.Windows.Forms.Label();
             this.fKFilhoInscricaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inscricaoSetTableAdapter = new Projeto_DA_BooKids.BooKids_DataSetTableAdapters.InscricaoSetTableAdapter();
+            this.filhoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idProgenitorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEscolaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.filhoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             sexoLabel = new System.Windows.Forms.Label();
             dataNascimentoLabel = new System.Windows.Forms.Label();
             idEscolaLabel = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@ namespace Projeto_DA_BooKids.Forms
             // sexoLabel
             // 
             sexoLabel.AutoSize = true;
-            sexoLabel.Location = new System.Drawing.Point(39, 193);
+            sexoLabel.Location = new System.Drawing.Point(63, 196);
             sexoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             sexoLabel.Name = "sexoLabel";
             sexoLabel.Size = new System.Drawing.Size(43, 17);
@@ -95,7 +95,7 @@ namespace Projeto_DA_BooKids.Forms
             // dataNascimentoLabel
             // 
             dataNascimentoLabel.AutoSize = true;
-            dataNascimentoLabel.Location = new System.Drawing.Point(39, 225);
+            dataNascimentoLabel.Location = new System.Drawing.Point(63, 228);
             dataNascimentoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             dataNascimentoLabel.Name = "dataNascimentoLabel";
             dataNascimentoLabel.Size = new System.Drawing.Size(120, 17);
@@ -105,7 +105,7 @@ namespace Projeto_DA_BooKids.Forms
             // idEscolaLabel
             // 
             idEscolaLabel.AutoSize = true;
-            idEscolaLabel.Location = new System.Drawing.Point(39, 257);
+            idEscolaLabel.Location = new System.Drawing.Point(63, 260);
             idEscolaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idEscolaLabel.Name = "idEscolaLabel";
             idEscolaLabel.Size = new System.Drawing.Size(69, 17);
@@ -115,7 +115,7 @@ namespace Projeto_DA_BooKids.Forms
             // idProgenitorLabel
             // 
             idProgenitorLabel.AutoSize = true;
-            idProgenitorLabel.Location = new System.Drawing.Point(39, 289);
+            idProgenitorLabel.Location = new System.Drawing.Point(63, 292);
             idProgenitorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idProgenitorLabel.Name = "idProgenitorLabel";
             idProgenitorLabel.Size = new System.Drawing.Size(93, 17);
@@ -125,7 +125,7 @@ namespace Projeto_DA_BooKids.Forms
             // idPessoaLabel
             // 
             idPessoaLabel.AutoSize = true;
-            idPessoaLabel.Location = new System.Drawing.Point(39, 321);
+            idPessoaLabel.Location = new System.Drawing.Point(63, 324);
             idPessoaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idPessoaLabel.Name = "idPessoaLabel";
             idPessoaLabel.Size = new System.Drawing.Size(74, 17);
@@ -191,7 +191,7 @@ namespace Projeto_DA_BooKids.Forms
             this.pessoaSet_FilhoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pessoaSet_FilhoBindingNavigator.Name = "pessoaSet_FilhoBindingNavigator";
             this.pessoaSet_FilhoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pessoaSet_FilhoBindingNavigator.Size = new System.Drawing.Size(755, 27);
+            this.pessoaSet_FilhoBindingNavigator.Size = new System.Drawing.Size(991, 39);
             this.pessoaSet_FilhoBindingNavigator.TabIndex = 0;
             this.pessoaSet_FilhoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -201,13 +201,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 36);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 36);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -217,7 +217,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 36);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -226,7 +226,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 36);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -235,13 +235,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 36);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 39);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -256,7 +256,7 @@ namespace Projeto_DA_BooKids.Forms
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 39);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -264,7 +264,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 36);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -273,37 +273,40 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 36);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 39);
             // 
             // pessoaSet_FilhoBindingNavigatorSaveItem
             // 
             this.pessoaSet_FilhoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.pessoaSet_FilhoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pessoaSet_FilhoBindingNavigatorSaveItem.Image")));
             this.pessoaSet_FilhoBindingNavigatorSaveItem.Name = "pessoaSet_FilhoBindingNavigatorSaveItem";
-            this.pessoaSet_FilhoBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.pessoaSet_FilhoBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 36);
             this.pessoaSet_FilhoBindingNavigatorSaveItem.Text = "Save Data";
             this.pessoaSet_FilhoBindingNavigatorSaveItem.Click += new System.EventHandler(this.pessoaSet_FilhoBindingNavigatorSaveItem_Click);
             // 
             // pessoaSet_FilhoDataGridView
             // 
+            this.pessoaSet_FilhoDataGridView.AllowUserToAddRows = false;
+            this.pessoaSet_FilhoDataGridView.AllowUserToDeleteRows = false;
             this.pessoaSet_FilhoDataGridView.AutoGenerateColumns = false;
             this.pessoaSet_FilhoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pessoaSet_FilhoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPessoaDataGridViewTextBoxColumn,
-            this.dataNascimentoDataGridViewTextBoxColumn,
-            this.sexoDataGridViewTextBoxColumn,
             this.idProgenitorDataGridViewTextBoxColumn,
-            this.idEscolaDataGridViewTextBoxColumn});
+            this.idEscolaDataGridViewTextBoxColumn,
+            this.dataNascimentoDataGridViewTextBoxColumn,
+            this.sexoDataGridViewTextBoxColumn});
             this.pessoaSet_FilhoDataGridView.DataSource = this.filhoBindingSource;
-            this.pessoaSet_FilhoDataGridView.Location = new System.Drawing.Point(30, 386);
-            this.pessoaSet_FilhoDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pessoaSet_FilhoDataGridView.Location = new System.Drawing.Point(54, 389);
+            this.pessoaSet_FilhoDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.pessoaSet_FilhoDataGridView.Name = "pessoaSet_FilhoDataGridView";
+            this.pessoaSet_FilhoDataGridView.ReadOnly = true;
             this.pessoaSet_FilhoDataGridView.RowHeadersWidth = 51;
             this.pessoaSet_FilhoDataGridView.Size = new System.Drawing.Size(670, 287);
             this.pessoaSet_FilhoDataGridView.TabIndex = 1;
@@ -311,8 +314,8 @@ namespace Projeto_DA_BooKids.Forms
             // sexoTextBox
             // 
             this.sexoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_FilhoBindingSource, "Sexo", true));
-            this.sexoTextBox.Location = new System.Drawing.Point(169, 188);
-            this.sexoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sexoTextBox.Location = new System.Drawing.Point(193, 191);
+            this.sexoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.sexoTextBox.Name = "sexoTextBox";
             this.sexoTextBox.Size = new System.Drawing.Size(86, 22);
             this.sexoTextBox.TabIndex = 3;
@@ -320,8 +323,8 @@ namespace Projeto_DA_BooKids.Forms
             // dataNascimentoDateTimePicker
             // 
             this.dataNascimentoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.pessoaSet_FilhoBindingSource, "DataNascimento", true));
-            this.dataNascimentoDateTimePicker.Location = new System.Drawing.Point(169, 220);
-            this.dataNascimentoDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataNascimentoDateTimePicker.Location = new System.Drawing.Point(193, 223);
+            this.dataNascimentoDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dataNascimentoDateTimePicker.Name = "dataNascimentoDateTimePicker";
             this.dataNascimentoDateTimePicker.Size = new System.Drawing.Size(265, 22);
             this.dataNascimentoDateTimePicker.TabIndex = 5;
@@ -329,8 +332,8 @@ namespace Projeto_DA_BooKids.Forms
             // idEscolaTextBox
             // 
             this.idEscolaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_FilhoBindingSource, "IdEscola", true));
-            this.idEscolaTextBox.Location = new System.Drawing.Point(169, 252);
-            this.idEscolaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idEscolaTextBox.Location = new System.Drawing.Point(193, 255);
+            this.idEscolaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idEscolaTextBox.Name = "idEscolaTextBox";
             this.idEscolaTextBox.Size = new System.Drawing.Size(86, 22);
             this.idEscolaTextBox.TabIndex = 7;
@@ -338,8 +341,8 @@ namespace Projeto_DA_BooKids.Forms
             // idProgenitorTextBox
             // 
             this.idProgenitorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_FilhoBindingSource, "IdProgenitor", true));
-            this.idProgenitorTextBox.Location = new System.Drawing.Point(169, 284);
-            this.idProgenitorTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idProgenitorTextBox.Location = new System.Drawing.Point(193, 287);
+            this.idProgenitorTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idProgenitorTextBox.Name = "idProgenitorTextBox";
             this.idProgenitorTextBox.Size = new System.Drawing.Size(86, 22);
             this.idProgenitorTextBox.TabIndex = 9;
@@ -347,8 +350,8 @@ namespace Projeto_DA_BooKids.Forms
             // idPessoaTextBox
             // 
             this.idPessoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_FilhoBindingSource, "IdPessoa", true));
-            this.idPessoaTextBox.Location = new System.Drawing.Point(169, 316);
-            this.idPessoaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idPessoaTextBox.Location = new System.Drawing.Point(193, 319);
+            this.idPessoaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idPessoaTextBox.Name = "idPessoaTextBox";
             this.idPessoaTextBox.Size = new System.Drawing.Size(86, 22);
             this.idPessoaTextBox.TabIndex = 11;
@@ -356,9 +359,9 @@ namespace Projeto_DA_BooKids.Forms
             // lbFilhos
             // 
             this.lbFilhos.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFilhos.Location = new System.Drawing.Point(-8, 73);
+            this.lbFilhos.Location = new System.Drawing.Point(0, 76);
             this.lbFilhos.Name = "lbFilhos";
-            this.lbFilhos.Size = new System.Drawing.Size(780, 66);
+            this.lbFilhos.Size = new System.Drawing.Size(793, 66);
             this.lbFilhos.TabIndex = 17;
             this.lbFilhos.Text = "Filhos";
             this.lbFilhos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -372,6 +375,10 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.inscricaoSetTableAdapter.ClearBeforeFill = true;
             // 
+            // filhoBindingSource
+            // 
+            this.filhoBindingSource.DataSource = typeof(Projeto_DA_BooKids.Filho);
+            // 
             // idPessoaDataGridViewTextBoxColumn
             // 
             this.idPessoaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -379,22 +386,7 @@ namespace Projeto_DA_BooKids.Forms
             this.idPessoaDataGridViewTextBoxColumn.HeaderText = "IdPessoa";
             this.idPessoaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idPessoaDataGridViewTextBoxColumn.Name = "idPessoaDataGridViewTextBoxColumn";
-            // 
-            // dataNascimentoDataGridViewTextBoxColumn
-            // 
-            this.dataNascimentoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataNascimentoDataGridViewTextBoxColumn.DataPropertyName = "DataNascimento";
-            this.dataNascimentoDataGridViewTextBoxColumn.HeaderText = "DataNascimento";
-            this.dataNascimentoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dataNascimentoDataGridViewTextBoxColumn.Name = "dataNascimentoDataGridViewTextBoxColumn";
-            // 
-            // sexoDataGridViewTextBoxColumn
-            // 
-            this.sexoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.sexoDataGridViewTextBoxColumn.DataPropertyName = "Sexo";
-            this.sexoDataGridViewTextBoxColumn.HeaderText = "Sexo";
-            this.sexoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sexoDataGridViewTextBoxColumn.Name = "sexoDataGridViewTextBoxColumn";
+            this.idPessoaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idProgenitorDataGridViewTextBoxColumn
             // 
@@ -403,6 +395,7 @@ namespace Projeto_DA_BooKids.Forms
             this.idProgenitorDataGridViewTextBoxColumn.HeaderText = "IdProgenitor";
             this.idProgenitorDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idProgenitorDataGridViewTextBoxColumn.Name = "idProgenitorDataGridViewTextBoxColumn";
+            this.idProgenitorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idEscolaDataGridViewTextBoxColumn
             // 
@@ -411,16 +404,31 @@ namespace Projeto_DA_BooKids.Forms
             this.idEscolaDataGridViewTextBoxColumn.HeaderText = "IdEscola";
             this.idEscolaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idEscolaDataGridViewTextBoxColumn.Name = "idEscolaDataGridViewTextBoxColumn";
+            this.idEscolaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // filhoBindingSource
+            // dataNascimentoDataGridViewTextBoxColumn
             // 
-            this.filhoBindingSource.DataSource = typeof(Projeto_DA_BooKids.Filho);
+            this.dataNascimentoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataNascimentoDataGridViewTextBoxColumn.DataPropertyName = "DataNascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn.HeaderText = "DataNascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dataNascimentoDataGridViewTextBoxColumn.Name = "dataNascimentoDataGridViewTextBoxColumn";
+            this.dataNascimentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sexoDataGridViewTextBoxColumn
+            // 
+            this.sexoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.sexoDataGridViewTextBoxColumn.DataPropertyName = "Sexo";
+            this.sexoDataGridViewTextBoxColumn.HeaderText = "Sexo";
+            this.sexoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sexoDataGridViewTextBoxColumn.Name = "sexoDataGridViewTextBoxColumn";
+            this.sexoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FilhosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 723);
+            this.ClientSize = new System.Drawing.Size(793, 723);
             this.Controls.Add(this.lbFilhos);
             this.Controls.Add(idPessoaLabel);
             this.Controls.Add(this.idPessoaTextBox);
@@ -435,7 +443,7 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(this.pessoaSet_FilhoDataGridView);
             this.Controls.Add(this.pessoaSet_FilhoBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FilhosForm";
             this.Text = "FilhosForm";
             this.Load += new System.EventHandler(this.FilhosForm_Load);
@@ -482,9 +490,9 @@ namespace Projeto_DA_BooKids.Forms
         private BooKids_DataSetTableAdapters.InscricaoSetTableAdapter inscricaoSetTableAdapter;
         private System.Windows.Forms.BindingSource filhoBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idPessoaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataNascimentoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProgenitorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idEscolaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataNascimentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sexoDataGridViewTextBoxColumn;
     }
 }

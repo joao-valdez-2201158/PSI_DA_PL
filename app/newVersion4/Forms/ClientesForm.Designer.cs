@@ -52,13 +52,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pessoaSet_ClienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.pessoaSet_ClienteDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorOfertaTextBox = new System.Windows.Forms.TextBox();
             this.nrCartaoTextBox = new System.Windows.Forms.TextBox();
             this.idPessoaTextBox = new System.Windows.Forms.TextBox();
             this.lbClientes = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             valorOfertaLabel = new System.Windows.Forms.Label();
             nrCartaoLabel = new System.Windows.Forms.Label();
             idPessoaLabel = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@ namespace Projeto_DA_BooKids.Forms
             // valorOfertaLabel
             // 
             valorOfertaLabel.AutoSize = true;
-            valorOfertaLabel.Location = new System.Drawing.Point(43, 236);
+            valorOfertaLabel.Location = new System.Drawing.Point(55, 240);
             valorOfertaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             valorOfertaLabel.Name = "valorOfertaLabel";
             valorOfertaLabel.Size = new System.Drawing.Size(89, 17);
@@ -82,7 +82,7 @@ namespace Projeto_DA_BooKids.Forms
             // nrCartaoLabel
             // 
             nrCartaoLabel.AutoSize = true;
-            nrCartaoLabel.Location = new System.Drawing.Point(43, 265);
+            nrCartaoLabel.Location = new System.Drawing.Point(55, 269);
             nrCartaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nrCartaoLabel.Name = "nrCartaoLabel";
             nrCartaoLabel.Size = new System.Drawing.Size(73, 17);
@@ -92,7 +92,7 @@ namespace Projeto_DA_BooKids.Forms
             // idPessoaLabel
             // 
             idPessoaLabel.AutoSize = true;
-            idPessoaLabel.Location = new System.Drawing.Point(43, 300);
+            idPessoaLabel.Location = new System.Drawing.Point(55, 304);
             idPessoaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idPessoaLabel.Name = "idPessoaLabel";
             idPessoaLabel.Size = new System.Drawing.Size(74, 17);
@@ -158,7 +158,7 @@ namespace Projeto_DA_BooKids.Forms
             this.pessoaSet_ClienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pessoaSet_ClienteBindingNavigator.Name = "pessoaSet_ClienteBindingNavigator";
             this.pessoaSet_ClienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pessoaSet_ClienteBindingNavigator.Size = new System.Drawing.Size(552, 27);
+            this.pessoaSet_ClienteBindingNavigator.Size = new System.Drawing.Size(560, 27);
             this.pessoaSet_ClienteBindingNavigator.TabIndex = 0;
             this.pessoaSet_ClienteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -259,6 +259,8 @@ namespace Projeto_DA_BooKids.Forms
             // 
             // pessoaSet_ClienteDataGridView
             // 
+            this.pessoaSet_ClienteDataGridView.AllowUserToAddRows = false;
+            this.pessoaSet_ClienteDataGridView.AllowUserToDeleteRows = false;
             this.pessoaSet_ClienteDataGridView.AutoGenerateColumns = false;
             this.pessoaSet_ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pessoaSet_ClienteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -266,18 +268,46 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.pessoaSet_ClienteDataGridView.DataSource = this.pessoaSet_ClienteBindingSource;
-            this.pessoaSet_ClienteDataGridView.Location = new System.Drawing.Point(36, 363);
-            this.pessoaSet_ClienteDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pessoaSet_ClienteDataGridView.Location = new System.Drawing.Point(48, 367);
+            this.pessoaSet_ClienteDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.pessoaSet_ClienteDataGridView.Name = "pessoaSet_ClienteDataGridView";
+            this.pessoaSet_ClienteDataGridView.ReadOnly = true;
             this.pessoaSet_ClienteDataGridView.RowHeadersWidth = 51;
             this.pessoaSet_ClienteDataGridView.Size = new System.Drawing.Size(459, 271);
             this.pessoaSet_ClienteDataGridView.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "IdPessoa";
+            this.dataGridViewTextBoxColumn3.HeaderText = "IdPessoa";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ValorOferta";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ValorOferta";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NrCartao";
+            this.dataGridViewTextBoxColumn2.HeaderText = "NrCartao";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
             // valorOfertaTextBox
             // 
             this.valorOfertaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_ClienteBindingSource, "ValorOferta", true));
-            this.valorOfertaTextBox.Location = new System.Drawing.Point(146, 231);
-            this.valorOfertaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.valorOfertaTextBox.Location = new System.Drawing.Point(158, 235);
+            this.valorOfertaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.valorOfertaTextBox.Name = "valorOfertaTextBox";
             this.valorOfertaTextBox.Size = new System.Drawing.Size(103, 22);
             this.valorOfertaTextBox.TabIndex = 3;
@@ -285,8 +315,8 @@ namespace Projeto_DA_BooKids.Forms
             // nrCartaoTextBox
             // 
             this.nrCartaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_ClienteBindingSource, "NrCartao", true));
-            this.nrCartaoTextBox.Location = new System.Drawing.Point(146, 265);
-            this.nrCartaoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nrCartaoTextBox.Location = new System.Drawing.Point(158, 269);
+            this.nrCartaoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nrCartaoTextBox.Name = "nrCartaoTextBox";
             this.nrCartaoTextBox.Size = new System.Drawing.Size(191, 22);
             this.nrCartaoTextBox.TabIndex = 5;
@@ -294,8 +324,8 @@ namespace Projeto_DA_BooKids.Forms
             // idPessoaTextBox
             // 
             this.idPessoaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_ClienteBindingSource, "IdPessoa", true));
-            this.idPessoaTextBox.Location = new System.Drawing.Point(146, 295);
-            this.idPessoaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idPessoaTextBox.Location = new System.Drawing.Point(158, 299);
+            this.idPessoaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idPessoaTextBox.Name = "idPessoaTextBox";
             this.idPessoaTextBox.Size = new System.Drawing.Size(103, 22);
             this.idPessoaTextBox.TabIndex = 7;
@@ -305,40 +335,16 @@ namespace Projeto_DA_BooKids.Forms
             this.lbClientes.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbClientes.Location = new System.Drawing.Point(1, 86);
             this.lbClientes.Name = "lbClientes";
-            this.lbClientes.Size = new System.Drawing.Size(551, 66);
+            this.lbClientes.Size = new System.Drawing.Size(559, 66);
             this.lbClientes.TabIndex = 18;
             this.lbClientes.Text = "Clientes";
             this.lbClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "IdPessoa";
-            this.dataGridViewTextBoxColumn3.HeaderText = "IdPessoa";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ValorOferta";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ValorOferta";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NrCartao";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NrCartao";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // ClientesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 692);
+            this.ClientSize = new System.Drawing.Size(560, 692);
             this.Controls.Add(this.lbClientes);
             this.Controls.Add(idPessoaLabel);
             this.Controls.Add(this.idPessoaTextBox);
@@ -349,7 +355,7 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(this.pessoaSet_ClienteDataGridView);
             this.Controls.Add(this.pessoaSet_ClienteBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ClientesForm";
             this.Text = "ClientesForm";
             this.Load += new System.EventHandler(this.ClientesForm_Load);

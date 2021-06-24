@@ -55,6 +55,11 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.compraSetBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.compraSetDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.utilizouCartaoCheckBox = new System.Windows.Forms.CheckBox();
             this.produtosCodProdutoTextBox = new System.Windows.Forms.TextBox();
@@ -62,11 +67,7 @@ namespace Projeto_DA_BooKids.Forms
             this.idClienteTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BTN_InserirDetalheCompra = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExpCom = new System.Windows.Forms.Button();
             dataLabel = new System.Windows.Forms.Label();
             utilizouCartaoLabel = new System.Windows.Forms.Label();
             produtosCodProdutoLabel = new System.Windows.Forms.Label();
@@ -312,90 +313,12 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn4});
             this.compraSetDataGridView.DataSource = this.compraSetBindingSource;
             this.compraSetDataGridView.Location = new System.Drawing.Point(24, 395);
-            this.compraSetDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.compraSetDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.compraSetDataGridView.Name = "compraSetDataGridView";
             this.compraSetDataGridView.ReadOnly = true;
             this.compraSetDataGridView.RowHeadersWidth = 51;
             this.compraSetDataGridView.Size = new System.Drawing.Size(724, 271);
             this.compraSetDataGridView.TabIndex = 9;
-            // 
-            // dataDateTimePicker
-            // 
-            this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.compraSetBindingSource, "Data", true));
-            this.dataDateTimePicker.Location = new System.Drawing.Point(178, 49);
-            this.dataDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataDateTimePicker.Name = "dataDateTimePicker";
-            this.dataDateTimePicker.Size = new System.Drawing.Size(265, 22);
-            this.dataDateTimePicker.TabIndex = 10;
-            // 
-            // utilizouCartaoCheckBox
-            // 
-            this.utilizouCartaoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.compraSetBindingSource, "UtilizouCartao", true));
-            this.utilizouCartaoCheckBox.Location = new System.Drawing.Point(180, 74);
-            this.utilizouCartaoCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.utilizouCartaoCheckBox.Name = "utilizouCartaoCheckBox";
-            this.utilizouCartaoCheckBox.Size = new System.Drawing.Size(139, 30);
-            this.utilizouCartaoCheckBox.TabIndex = 11;
-            this.utilizouCartaoCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // produtosCodProdutoTextBox
-            // 
-            this.produtosCodProdutoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "ProdutosCodProduto", true));
-            this.produtosCodProdutoTextBox.Location = new System.Drawing.Point(180, 107);
-            this.produtosCodProdutoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.produtosCodProdutoTextBox.Name = "produtosCodProdutoTextBox";
-            this.produtosCodProdutoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.produtosCodProdutoTextBox.TabIndex = 12;
-            // 
-            // nrCompraTextBox
-            // 
-            this.nrCompraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "NrCompra", true));
-            this.nrCompraTextBox.Location = new System.Drawing.Point(180, 139);
-            this.nrCompraTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.nrCompraTextBox.Name = "nrCompraTextBox";
-            this.nrCompraTextBox.Size = new System.Drawing.Size(132, 22);
-            this.nrCompraTextBox.TabIndex = 13;
-            // 
-            // idClienteTextBox
-            // 
-            this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "IdCliente", true));
-            this.idClienteTextBox.Location = new System.Drawing.Point(180, 171);
-            this.idClienteTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.idClienteTextBox.Name = "idClienteTextBox";
-            this.idClienteTextBox.Size = new System.Drawing.Size(132, 22);
-            this.idClienteTextBox.TabIndex = 14;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(idClienteLabel);
-            this.groupBox1.Controls.Add(this.idClienteTextBox);
-            this.groupBox1.Controls.Add(this.dataDateTimePicker);
-            this.groupBox1.Controls.Add(nrCompraLabel);
-            this.groupBox1.Controls.Add(dataLabel);
-            this.groupBox1.Controls.Add(this.nrCompraTextBox);
-            this.groupBox1.Controls.Add(this.utilizouCartaoCheckBox);
-            this.groupBox1.Controls.Add(produtosCodProdutoLabel);
-            this.groupBox1.Controls.Add(utilizouCartaoLabel);
-            this.groupBox1.Controls.Add(this.produtosCodProdutoTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(24, 182);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(498, 206);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inserir Compra";
-            // 
-            // BTN_InserirDetalheCompra
-            // 
-            this.BTN_InserirDetalheCompra.Location = new System.Drawing.Point(548, 261);
-            this.BTN_InserirDetalheCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BTN_InserirDetalheCompra.Name = "BTN_InserirDetalheCompra";
-            this.BTN_InserirDetalheCompra.Size = new System.Drawing.Size(200, 58);
-            this.BTN_InserirDetalheCompra.TabIndex = 17;
-            this.BTN_InserirDetalheCompra.Text = "Inserir Detalhe de compra";
-            this.BTN_InserirDetalheCompra.UseVisualStyleBackColor = true;
-            this.BTN_InserirDetalheCompra.Click += new System.EventHandler(this.BTN_InserirDetalheCompra_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -442,18 +365,108 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
+            // dataDateTimePicker
+            // 
+            this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.compraSetBindingSource, "Data", true));
+            this.dataDateTimePicker.Location = new System.Drawing.Point(178, 49);
+            this.dataDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.dataDateTimePicker.Name = "dataDateTimePicker";
+            this.dataDateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.dataDateTimePicker.TabIndex = 10;
+            // 
+            // utilizouCartaoCheckBox
+            // 
+            this.utilizouCartaoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.compraSetBindingSource, "UtilizouCartao", true));
+            this.utilizouCartaoCheckBox.Location = new System.Drawing.Point(180, 74);
+            this.utilizouCartaoCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.utilizouCartaoCheckBox.Name = "utilizouCartaoCheckBox";
+            this.utilizouCartaoCheckBox.Size = new System.Drawing.Size(139, 30);
+            this.utilizouCartaoCheckBox.TabIndex = 11;
+            this.utilizouCartaoCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // produtosCodProdutoTextBox
+            // 
+            this.produtosCodProdutoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "ProdutosCodProduto", true));
+            this.produtosCodProdutoTextBox.Location = new System.Drawing.Point(180, 107);
+            this.produtosCodProdutoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.produtosCodProdutoTextBox.Name = "produtosCodProdutoTextBox";
+            this.produtosCodProdutoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.produtosCodProdutoTextBox.TabIndex = 12;
+            // 
+            // nrCompraTextBox
+            // 
+            this.nrCompraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "NrCompra", true));
+            this.nrCompraTextBox.Location = new System.Drawing.Point(180, 139);
+            this.nrCompraTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.nrCompraTextBox.Name = "nrCompraTextBox";
+            this.nrCompraTextBox.Size = new System.Drawing.Size(132, 22);
+            this.nrCompraTextBox.TabIndex = 13;
+            // 
+            // idClienteTextBox
+            // 
+            this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "IdCliente", true));
+            this.idClienteTextBox.Location = new System.Drawing.Point(180, 171);
+            this.idClienteTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.idClienteTextBox.Name = "idClienteTextBox";
+            this.idClienteTextBox.Size = new System.Drawing.Size(132, 22);
+            this.idClienteTextBox.TabIndex = 14;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(idClienteLabel);
+            this.groupBox1.Controls.Add(this.idClienteTextBox);
+            this.groupBox1.Controls.Add(this.dataDateTimePicker);
+            this.groupBox1.Controls.Add(nrCompraLabel);
+            this.groupBox1.Controls.Add(dataLabel);
+            this.groupBox1.Controls.Add(this.nrCompraTextBox);
+            this.groupBox1.Controls.Add(this.utilizouCartaoCheckBox);
+            this.groupBox1.Controls.Add(produtosCodProdutoLabel);
+            this.groupBox1.Controls.Add(utilizouCartaoLabel);
+            this.groupBox1.Controls.Add(this.produtosCodProdutoTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(24, 182);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(498, 206);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Inserir Compra";
+            // 
+            // BTN_InserirDetalheCompra
+            // 
+            this.BTN_InserirDetalheCompra.Location = new System.Drawing.Point(548, 190);
+            this.BTN_InserirDetalheCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.BTN_InserirDetalheCompra.Name = "BTN_InserirDetalheCompra";
+            this.BTN_InserirDetalheCompra.Size = new System.Drawing.Size(200, 58);
+            this.BTN_InserirDetalheCompra.TabIndex = 17;
+            this.BTN_InserirDetalheCompra.Text = "Inserir Detalhe de compra";
+            this.BTN_InserirDetalheCompra.UseVisualStyleBackColor = true;
+            this.BTN_InserirDetalheCompra.Click += new System.EventHandler(this.BTN_InserirDetalheCompra_Click);
+            // 
+            // btnExpCom
+            // 
+            this.btnExpCom.Location = new System.Drawing.Point(548, 303);
+            this.btnExpCom.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExpCom.Name = "btnExpCom";
+            this.btnExpCom.Size = new System.Drawing.Size(200, 58);
+            this.btnExpCom.TabIndex = 18;
+            this.btnExpCom.Text = "Exportar Lista para PDF";
+            this.btnExpCom.UseVisualStyleBackColor = true;
+            this.btnExpCom.Click += new System.EventHandler(this.btnExpCom_Click);
+            // 
             // CompraProdutosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 684);
+            this.Controls.Add(this.btnExpCom);
             this.Controls.Add(this.BTN_InserirDetalheCompra);
             this.Controls.Add(this.compraSetDataGridView);
             this.Controls.Add(this.compraSetBindingNavigator);
             this.Controls.Add(this.lbVendaProdutos);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CompraProdutosForm";
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.VendaProdutos_Load);
@@ -502,5 +515,6 @@ namespace Projeto_DA_BooKids.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Button btnExpCom;
     }
 }

@@ -44,5 +44,10 @@ namespace Projeto_DA_BooKids.Forms
             DetalhesCompraForm detalhecompra = new DetalhesCompraForm();
             detalhecompra.Show();
         }
+
+        private void btnExpCom_Click(object sender, EventArgs e)
+        {
+            ExportToPdf.exportGridtoPDF(compraSetDataGridView, "text");
+        }
     }
 }

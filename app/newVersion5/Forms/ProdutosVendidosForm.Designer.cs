@@ -54,17 +54,17 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.produtoSetBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.produtoSetDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.designacaoTextBox = new System.Windows.Forms.TextBox();
             this.precoTextBox = new System.Windows.Forms.TextBox();
             this.stockExistenteTextBox = new System.Windows.Forms.TextBox();
             this.codTipoProdutoTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BTN_InserirTipoProduto = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             designacaoLabel = new System.Windows.Forms.Label();
             precoLabel = new System.Windows.Forms.Label();
             stockExistenteLabel = new System.Windows.Forms.Label();
@@ -186,7 +186,7 @@ namespace Projeto_DA_BooKids.Forms
             this.produtoSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.produtoSetBindingNavigator.Name = "produtoSetBindingNavigator";
             this.produtoSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.produtoSetBindingNavigator.Size = new System.Drawing.Size(790, 27);
+            this.produtoSetBindingNavigator.Size = new System.Drawing.Size(808, 27);
             this.produtoSetBindingNavigator.TabIndex = 9;
             this.produtoSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -299,78 +299,12 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn5});
             this.produtoSetDataGridView.DataSource = this.produtoSetBindingSource;
             this.produtoSetDataGridView.Location = new System.Drawing.Point(24, 382);
-            this.produtoSetDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.produtoSetDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.produtoSetDataGridView.Name = "produtoSetDataGridView";
             this.produtoSetDataGridView.ReadOnly = true;
             this.produtoSetDataGridView.RowHeadersWidth = 51;
             this.produtoSetDataGridView.Size = new System.Drawing.Size(716, 271);
             this.produtoSetDataGridView.TabIndex = 9;
-            // 
-            // designacaoTextBox
-            // 
-            this.designacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "Designacao", true));
-            this.designacaoTextBox.Location = new System.Drawing.Point(151, 50);
-            this.designacaoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.designacaoTextBox.Name = "designacaoTextBox";
-            this.designacaoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.designacaoTextBox.TabIndex = 11;
-            // 
-            // precoTextBox
-            // 
-            this.precoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "Preco", true));
-            this.precoTextBox.Location = new System.Drawing.Point(151, 82);
-            this.precoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.precoTextBox.Name = "precoTextBox";
-            this.precoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.precoTextBox.TabIndex = 12;
-            // 
-            // stockExistenteTextBox
-            // 
-            this.stockExistenteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "StockExistente", true));
-            this.stockExistenteTextBox.Location = new System.Drawing.Point(151, 114);
-            this.stockExistenteTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.stockExistenteTextBox.Name = "stockExistenteTextBox";
-            this.stockExistenteTextBox.Size = new System.Drawing.Size(132, 22);
-            this.stockExistenteTextBox.TabIndex = 13;
-            // 
-            // codTipoProdutoTextBox
-            // 
-            this.codTipoProdutoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "CodTipoProduto", true));
-            this.codTipoProdutoTextBox.Location = new System.Drawing.Point(151, 146);
-            this.codTipoProdutoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.codTipoProdutoTextBox.Name = "codTipoProdutoTextBox";
-            this.codTipoProdutoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.codTipoProdutoTextBox.TabIndex = 14;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(codTipoProdutoLabel);
-            this.groupBox1.Controls.Add(this.designacaoTextBox);
-            this.groupBox1.Controls.Add(this.codTipoProdutoTextBox);
-            this.groupBox1.Controls.Add(designacaoLabel);
-            this.groupBox1.Controls.Add(stockExistenteLabel);
-            this.groupBox1.Controls.Add(this.precoTextBox);
-            this.groupBox1.Controls.Add(this.stockExistenteTextBox);
-            this.groupBox1.Controls.Add(precoLabel);
-            this.groupBox1.Location = new System.Drawing.Point(24, 148);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(327, 208);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inserir Produto Vendido";
-            // 
-            // BTN_InserirTipoProduto
-            // 
-            this.BTN_InserirTipoProduto.Location = new System.Drawing.Point(432, 225);
-            this.BTN_InserirTipoProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BTN_InserirTipoProduto.Name = "BTN_InserirTipoProduto";
-            this.BTN_InserirTipoProduto.Size = new System.Drawing.Size(308, 58);
-            this.BTN_InserirTipoProduto.TabIndex = 16;
-            this.BTN_InserirTipoProduto.Text = "Inserir novo tipo de produto";
-            this.BTN_InserirTipoProduto.UseVisualStyleBackColor = true;
-            this.BTN_InserirTipoProduto.Click += new System.EventHandler(this.BTN_InserirTipoProduto_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -417,18 +351,84 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
+            // designacaoTextBox
+            // 
+            this.designacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "Designacao", true));
+            this.designacaoTextBox.Location = new System.Drawing.Point(151, 50);
+            this.designacaoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.designacaoTextBox.Name = "designacaoTextBox";
+            this.designacaoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.designacaoTextBox.TabIndex = 11;
+            // 
+            // precoTextBox
+            // 
+            this.precoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "Preco", true));
+            this.precoTextBox.Location = new System.Drawing.Point(151, 82);
+            this.precoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.precoTextBox.Name = "precoTextBox";
+            this.precoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.precoTextBox.TabIndex = 12;
+            // 
+            // stockExistenteTextBox
+            // 
+            this.stockExistenteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "StockExistente", true));
+            this.stockExistenteTextBox.Location = new System.Drawing.Point(151, 114);
+            this.stockExistenteTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.stockExistenteTextBox.Name = "stockExistenteTextBox";
+            this.stockExistenteTextBox.Size = new System.Drawing.Size(132, 22);
+            this.stockExistenteTextBox.TabIndex = 13;
+            // 
+            // codTipoProdutoTextBox
+            // 
+            this.codTipoProdutoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoSetBindingSource, "CodTipoProduto", true));
+            this.codTipoProdutoTextBox.Location = new System.Drawing.Point(151, 146);
+            this.codTipoProdutoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.codTipoProdutoTextBox.Name = "codTipoProdutoTextBox";
+            this.codTipoProdutoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.codTipoProdutoTextBox.TabIndex = 14;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(codTipoProdutoLabel);
+            this.groupBox1.Controls.Add(this.designacaoTextBox);
+            this.groupBox1.Controls.Add(this.codTipoProdutoTextBox);
+            this.groupBox1.Controls.Add(designacaoLabel);
+            this.groupBox1.Controls.Add(stockExistenteLabel);
+            this.groupBox1.Controls.Add(this.precoTextBox);
+            this.groupBox1.Controls.Add(this.stockExistenteTextBox);
+            this.groupBox1.Controls.Add(precoLabel);
+            this.groupBox1.Location = new System.Drawing.Point(24, 148);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(327, 208);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Inserir Produto Vendido";
+            // 
+            // BTN_InserirTipoProduto
+            // 
+            this.BTN_InserirTipoProduto.Location = new System.Drawing.Point(432, 225);
+            this.BTN_InserirTipoProduto.Margin = new System.Windows.Forms.Padding(4);
+            this.BTN_InserirTipoProduto.Name = "BTN_InserirTipoProduto";
+            this.BTN_InserirTipoProduto.Size = new System.Drawing.Size(308, 58);
+            this.BTN_InserirTipoProduto.TabIndex = 16;
+            this.BTN_InserirTipoProduto.Text = "Inserir novo tipo de produto";
+            this.BTN_InserirTipoProduto.UseVisualStyleBackColor = true;
+            this.BTN_InserirTipoProduto.Click += new System.EventHandler(this.BTN_InserirTipoProduto_Click);
+            // 
             // ProdutosVendidosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 677);
+            this.ClientSize = new System.Drawing.Size(808, 709);
             this.Controls.Add(this.BTN_InserirTipoProduto);
             this.Controls.Add(this.produtoSetDataGridView);
             this.Controls.Add(this.produtoSetBindingNavigator);
             this.Controls.Add(this.lbProdutosVendidos);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProdutosVendidosForm";
             this.Text = "ProdutosVendidos";
             this.Load += new System.EventHandler(this.ProdutosVendidosForm_Load);

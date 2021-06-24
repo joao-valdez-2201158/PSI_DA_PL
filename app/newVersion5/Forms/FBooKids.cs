@@ -65,9 +65,10 @@ namespace Projeto_DA_BooKids.Forms
             pessoasForm.Show();
         }
 
-        private void FBooKids_Load(object sender, EventArgs e)
+        private void BTN_GestaoCompras_Click(object sender, EventArgs e)
         {
-
+            CompraProdutosForm compraprodutos = new CompraProdutosForm();
+            compraprodutos.Show();
         }
     }
 }

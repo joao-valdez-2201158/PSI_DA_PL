@@ -115,6 +115,12 @@
     <Compile Include="Forms\ClientesForm.Designer.cs">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ColaboracaoEventoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ColaboracaoEventoForm.Designer.cs">
+      <DependentUpon>ColaboracaoEventoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DetalhesCompraForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,18 @@
     </Compile>
     <Compile Include="Forms\FilhosForm.Designer.cs">
       <DependentUpon>FilhosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InscricaoEventoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InscricaoEventoForm.Designer.cs">
+      <DependentUpon>InscricaoEventoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ParticipacaoEventoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParticipacaoEventoForm.Designer.cs">
+      <DependentUpon>ParticipacaoEventoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PessoasForm.cs">
       <SubType>Form</SubType>
@@ -192,6 +210,9 @@
     <EmbeddedResource Include="Forms\ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColaboracaoEventoForm.resx">
+      <DependentUpon>ColaboracaoEventoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DetalhesCompraForm.resx">
       <DependentUpon>DetalhesCompraForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +227,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FilhosForm.resx">
       <DependentUpon>FilhosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InscricaoEventoForm.resx">
+      <DependentUpon>InscricaoEventoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParticipacaoEventoForm.resx">
+      <DependentUpon>ParticipacaoEventoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PessoasForm.resx">
       <DependentUpon>PessoasForm.cs</DependentUpon>

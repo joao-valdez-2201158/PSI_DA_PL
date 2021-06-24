@@ -31,5 +31,11 @@ namespace Projeto_DA_BooKids.Forms
             this.pessoaSet_ClienteTableAdapter.Fill(this.booKids_DBDataSet.PessoaSet_Cliente);
 
         }
+
+        private void BTN_InserirFilho_Click(object sender, EventArgs e)
+        {
+            FilhosForm filhos = new FilhosForm();
+            filhos.Show();
+        }
     }
 }

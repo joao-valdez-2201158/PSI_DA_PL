@@ -57,14 +57,6 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.eventoSetBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.eventoSetDataGridView = new System.Windows.Forms.DataGridView();
-            this.descricaoTextBox = new System.Windows.Forms.TextBox();
-            this.localTextBox = new System.Windows.Forms.TextBox();
-            this.dataHoraDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.limiteParticipacaoTextBox = new System.Windows.Forms.TextBox();
-            this.idadeInferiorTextBox = new System.Windows.Forms.TextBox();
-            this.idadeSuperiorTextBox = new System.Windows.Forms.TextBox();
-            this.tipoEventoTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +65,21 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoTextBox = new System.Windows.Forms.TextBox();
+            this.localTextBox = new System.Windows.Forms.TextBox();
+            this.dataHoraDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.limiteParticipacaoTextBox = new System.Windows.Forms.TextBox();
+            this.idadeInferiorTextBox = new System.Windows.Forms.TextBox();
+            this.idadeSuperiorTextBox = new System.Windows.Forms.TextBox();
+            this.tipoEventoTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.BTN_Exportar = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BTN_Colaboracao = new System.Windows.Forms.Button();
+            this.BTN_Inscricao = new System.Windows.Forms.Button();
+            this.BTN_Participacao = new System.Windows.Forms.Button();
             descricaoLabel = new System.Windows.Forms.Label();
             localLabel = new System.Windows.Forms.Label();
             dataHoraLabel = new System.Windows.Forms.Label();
@@ -86,84 +93,80 @@ namespace Projeto_DA_BooKids.Forms
             this.eventoSetBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventoSetDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // descricaoLabel
             // 
             descricaoLabel.AutoSize = true;
-            descricaoLabel.Location = new System.Drawing.Point(69, 32);
-            descricaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            descricaoLabel.Location = new System.Drawing.Point(52, 26);
             descricaoLabel.Name = "descricaoLabel";
-            descricaoLabel.Size = new System.Drawing.Size(75, 17);
+            descricaoLabel.Size = new System.Drawing.Size(58, 13);
             descricaoLabel.TabIndex = 9;
             descricaoLabel.Text = "Descricao:";
             // 
             // localLabel
             // 
             localLabel.AutoSize = true;
-            localLabel.Location = new System.Drawing.Point(99, 137);
-            localLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            localLabel.Location = new System.Drawing.Point(74, 111);
             localLabel.Name = "localLabel";
-            localLabel.Size = new System.Drawing.Size(46, 17);
+            localLabel.Size = new System.Drawing.Size(36, 13);
             localLabel.TabIndex = 10;
             localLabel.Text = "Local:";
             // 
             // dataHoraLabel
             // 
             dataHoraLabel.AutoSize = true;
-            dataHoraLabel.Location = new System.Drawing.Point(68, 172);
-            dataHoraLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            dataHoraLabel.Location = new System.Drawing.Point(51, 140);
             dataHoraLabel.Name = "dataHoraLabel";
-            dataHoraLabel.Size = new System.Drawing.Size(77, 17);
+            dataHoraLabel.Size = new System.Drawing.Size(59, 13);
             dataHoraLabel.TabIndex = 11;
             dataHoraLabel.Text = "Data Hora:";
             // 
             // limiteParticipacaoLabel
             // 
             limiteParticipacaoLabel.AutoSize = true;
-            limiteParticipacaoLabel.Location = new System.Drawing.Point(20, 201);
-            limiteParticipacaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            limiteParticipacaoLabel.Location = new System.Drawing.Point(15, 163);
             limiteParticipacaoLabel.Name = "limiteParticipacaoLabel";
-            limiteParticipacaoLabel.Size = new System.Drawing.Size(131, 17);
+            limiteParticipacaoLabel.Size = new System.Drawing.Size(99, 13);
             limiteParticipacaoLabel.TabIndex = 12;
             limiteParticipacaoLabel.Text = "Limite Participacao:";
             // 
             // idadeInferiorLabel
             // 
             idadeInferiorLabel.AutoSize = true;
-            idadeInferiorLabel.Location = new System.Drawing.Point(56, 233);
-            idadeInferiorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            idadeInferiorLabel.Location = new System.Drawing.Point(42, 189);
             idadeInferiorLabel.Name = "idadeInferiorLabel";
-            idadeInferiorLabel.Size = new System.Drawing.Size(95, 17);
+            idadeInferiorLabel.Size = new System.Drawing.Size(72, 13);
             idadeInferiorLabel.TabIndex = 13;
             idadeInferiorLabel.Text = "Idade Inferior:";
             // 
             // idadeSuperiorLabel
             // 
             idadeSuperiorLabel.AutoSize = true;
-            idadeSuperiorLabel.Location = new System.Drawing.Point(307, 233);
-            idadeSuperiorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            idadeSuperiorLabel.Location = new System.Drawing.Point(230, 189);
             idadeSuperiorLabel.Name = "idadeSuperiorLabel";
-            idadeSuperiorLabel.Size = new System.Drawing.Size(105, 17);
+            idadeSuperiorLabel.Size = new System.Drawing.Size(79, 13);
             idadeSuperiorLabel.TabIndex = 14;
             idadeSuperiorLabel.Text = "Idade Superior:";
             // 
             // tipoEventoLabel
             // 
             tipoEventoLabel.AutoSize = true;
-            tipoEventoLabel.Location = new System.Drawing.Point(56, 265);
-            tipoEventoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            tipoEventoLabel.Location = new System.Drawing.Point(42, 215);
             tipoEventoLabel.Name = "tipoEventoLabel";
-            tipoEventoLabel.Size = new System.Drawing.Size(88, 17);
+            tipoEventoLabel.Size = new System.Drawing.Size(68, 13);
             tipoEventoLabel.TabIndex = 15;
             tipoEventoLabel.Text = "Tipo Evento:";
             // 
             // lbEventos
             // 
             this.lbEventos.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEventos.Location = new System.Drawing.Point(0, 48);
+            this.lbEventos.Location = new System.Drawing.Point(11, 39);
+            this.lbEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEventos.Name = "lbEventos";
-            this.lbEventos.Size = new System.Drawing.Size(952, 62);
+            this.lbEventos.Size = new System.Drawing.Size(667, 50);
             this.lbEventos.TabIndex = 8;
             this.lbEventos.Text = "Eventos";
             this.lbEventos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -227,7 +230,7 @@ namespace Projeto_DA_BooKids.Forms
             this.eventoSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.eventoSetBindingNavigator.Name = "eventoSetBindingNavigator";
             this.eventoSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.eventoSetBindingNavigator.Size = new System.Drawing.Size(952, 27);
+            this.eventoSetBindingNavigator.Size = new System.Drawing.Size(689, 27);
             this.eventoSetBindingNavigator.TabIndex = 9;
             this.eventoSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -237,13 +240,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -253,7 +256,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -262,7 +265,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -271,7 +274,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -285,7 +288,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -300,7 +303,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -309,7 +312,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -322,7 +325,7 @@ namespace Projeto_DA_BooKids.Forms
             this.eventoSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.eventoSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("eventoSetBindingNavigatorSaveItem.Image")));
             this.eventoSetBindingNavigatorSaveItem.Name = "eventoSetBindingNavigatorSaveItem";
-            this.eventoSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.eventoSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.eventoSetBindingNavigatorSaveItem.Text = "Save Data";
             this.eventoSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.eventoSetBindingNavigatorSaveItem_Click);
             // 
@@ -342,102 +345,12 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.eventoSetDataGridView.DataSource = this.eventoSetBindingSource;
-            this.eventoSetDataGridView.Location = new System.Drawing.Point(40, 433);
-            this.eventoSetDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eventoSetDataGridView.Location = new System.Drawing.Point(30, 352);
             this.eventoSetDataGridView.Name = "eventoSetDataGridView";
             this.eventoSetDataGridView.ReadOnly = true;
             this.eventoSetDataGridView.RowHeadersWidth = 51;
-            this.eventoSetDataGridView.Size = new System.Drawing.Size(840, 240);
+            this.eventoSetDataGridView.Size = new System.Drawing.Size(630, 195);
             this.eventoSetDataGridView.TabIndex = 9;
-            // 
-            // descricaoTextBox
-            // 
-            this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "Descricao", true));
-            this.descricaoTextBox.Location = new System.Drawing.Point(160, 28);
-            this.descricaoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.descricaoTextBox.Multiline = true;
-            this.descricaoTextBox.Name = "descricaoTextBox";
-            this.descricaoTextBox.Size = new System.Drawing.Size(392, 96);
-            this.descricaoTextBox.TabIndex = 10;
-            // 
-            // localTextBox
-            // 
-            this.localTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "Local", true));
-            this.localTextBox.Location = new System.Drawing.Point(160, 133);
-            this.localTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.localTextBox.Name = "localTextBox";
-            this.localTextBox.Size = new System.Drawing.Size(392, 22);
-            this.localTextBox.TabIndex = 11;
-            // 
-            // dataHoraDateTimePicker
-            // 
-            this.dataHoraDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.eventoSetBindingSource, "DataHora", true));
-            this.dataHoraDateTimePicker.Location = new System.Drawing.Point(160, 165);
-            this.dataHoraDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataHoraDateTimePicker.Name = "dataHoraDateTimePicker";
-            this.dataHoraDateTimePicker.Size = new System.Drawing.Size(392, 22);
-            this.dataHoraDateTimePicker.TabIndex = 12;
-            // 
-            // limiteParticipacaoTextBox
-            // 
-            this.limiteParticipacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "LimiteParticipacao", true));
-            this.limiteParticipacaoTextBox.Location = new System.Drawing.Point(160, 197);
-            this.limiteParticipacaoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.limiteParticipacaoTextBox.Name = "limiteParticipacaoTextBox";
-            this.limiteParticipacaoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.limiteParticipacaoTextBox.TabIndex = 13;
-            // 
-            // idadeInferiorTextBox
-            // 
-            this.idadeInferiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeInferior", true));
-            this.idadeInferiorTextBox.Location = new System.Drawing.Point(160, 229);
-            this.idadeInferiorTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.idadeInferiorTextBox.Name = "idadeInferiorTextBox";
-            this.idadeInferiorTextBox.Size = new System.Drawing.Size(132, 22);
-            this.idadeInferiorTextBox.TabIndex = 14;
-            // 
-            // idadeSuperiorTextBox
-            // 
-            this.idadeSuperiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeSuperior", true));
-            this.idadeSuperiorTextBox.Location = new System.Drawing.Point(420, 229);
-            this.idadeSuperiorTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.idadeSuperiorTextBox.Name = "idadeSuperiorTextBox";
-            this.idadeSuperiorTextBox.Size = new System.Drawing.Size(132, 22);
-            this.idadeSuperiorTextBox.TabIndex = 15;
-            // 
-            // tipoEventoTextBox
-            // 
-            this.tipoEventoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "TipoEvento", true));
-            this.tipoEventoTextBox.Location = new System.Drawing.Point(160, 261);
-            this.tipoEventoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tipoEventoTextBox.Name = "tipoEventoTextBox";
-            this.tipoEventoTextBox.Size = new System.Drawing.Size(132, 22);
-            this.tipoEventoTextBox.TabIndex = 16;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(tipoEventoLabel);
-            this.groupBox1.Controls.Add(this.idadeSuperiorTextBox);
-            this.groupBox1.Controls.Add(this.tipoEventoTextBox);
-            this.groupBox1.Controls.Add(this.descricaoTextBox);
-            this.groupBox1.Controls.Add(idadeSuperiorLabel);
-            this.groupBox1.Controls.Add(descricaoLabel);
-            this.groupBox1.Controls.Add(this.localTextBox);
-            this.groupBox1.Controls.Add(idadeInferiorLabel);
-            this.groupBox1.Controls.Add(localLabel);
-            this.groupBox1.Controls.Add(this.idadeInferiorTextBox);
-            this.groupBox1.Controls.Add(this.dataHoraDateTimePicker);
-            this.groupBox1.Controls.Add(limiteParticipacaoLabel);
-            this.groupBox1.Controls.Add(dataHoraLabel);
-            this.groupBox1.Controls.Add(this.limiteParticipacaoTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(40, 121);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(589, 304);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inserir Evento";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -511,17 +424,160 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
+            // descricaoTextBox
+            // 
+            this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "Descricao", true));
+            this.descricaoTextBox.Location = new System.Drawing.Point(120, 23);
+            this.descricaoTextBox.Multiline = true;
+            this.descricaoTextBox.Name = "descricaoTextBox";
+            this.descricaoTextBox.Size = new System.Drawing.Size(295, 79);
+            this.descricaoTextBox.TabIndex = 10;
+            // 
+            // localTextBox
+            // 
+            this.localTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "Local", true));
+            this.localTextBox.Location = new System.Drawing.Point(120, 108);
+            this.localTextBox.Name = "localTextBox";
+            this.localTextBox.Size = new System.Drawing.Size(295, 20);
+            this.localTextBox.TabIndex = 11;
+            // 
+            // dataHoraDateTimePicker
+            // 
+            this.dataHoraDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.eventoSetBindingSource, "DataHora", true));
+            this.dataHoraDateTimePicker.Location = new System.Drawing.Point(120, 134);
+            this.dataHoraDateTimePicker.Name = "dataHoraDateTimePicker";
+            this.dataHoraDateTimePicker.Size = new System.Drawing.Size(295, 20);
+            this.dataHoraDateTimePicker.TabIndex = 12;
+            // 
+            // limiteParticipacaoTextBox
+            // 
+            this.limiteParticipacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "LimiteParticipacao", true));
+            this.limiteParticipacaoTextBox.Location = new System.Drawing.Point(120, 160);
+            this.limiteParticipacaoTextBox.Name = "limiteParticipacaoTextBox";
+            this.limiteParticipacaoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.limiteParticipacaoTextBox.TabIndex = 13;
+            // 
+            // idadeInferiorTextBox
+            // 
+            this.idadeInferiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeInferior", true));
+            this.idadeInferiorTextBox.Location = new System.Drawing.Point(120, 186);
+            this.idadeInferiorTextBox.Name = "idadeInferiorTextBox";
+            this.idadeInferiorTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idadeInferiorTextBox.TabIndex = 14;
+            // 
+            // idadeSuperiorTextBox
+            // 
+            this.idadeSuperiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeSuperior", true));
+            this.idadeSuperiorTextBox.Location = new System.Drawing.Point(315, 186);
+            this.idadeSuperiorTextBox.Name = "idadeSuperiorTextBox";
+            this.idadeSuperiorTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idadeSuperiorTextBox.TabIndex = 15;
+            // 
+            // tipoEventoTextBox
+            // 
+            this.tipoEventoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "TipoEvento", true));
+            this.tipoEventoTextBox.Location = new System.Drawing.Point(120, 212);
+            this.tipoEventoTextBox.Name = "tipoEventoTextBox";
+            this.tipoEventoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.tipoEventoTextBox.TabIndex = 16;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(tipoEventoLabel);
+            this.groupBox1.Controls.Add(this.idadeSuperiorTextBox);
+            this.groupBox1.Controls.Add(this.tipoEventoTextBox);
+            this.groupBox1.Controls.Add(this.descricaoTextBox);
+            this.groupBox1.Controls.Add(idadeSuperiorLabel);
+            this.groupBox1.Controls.Add(descricaoLabel);
+            this.groupBox1.Controls.Add(this.localTextBox);
+            this.groupBox1.Controls.Add(idadeInferiorLabel);
+            this.groupBox1.Controls.Add(localLabel);
+            this.groupBox1.Controls.Add(this.idadeInferiorTextBox);
+            this.groupBox1.Controls.Add(this.dataHoraDateTimePicker);
+            this.groupBox1.Controls.Add(limiteParticipacaoLabel);
+            this.groupBox1.Controls.Add(dataHoraLabel);
+            this.groupBox1.Controls.Add(this.limiteParticipacaoTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(30, 98);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(442, 247);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Inserir Evento";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BTN_Participacao);
+            this.groupBox2.Controls.Add(this.BTN_Inscricao);
+            this.groupBox2.Controls.Add(this.BTN_Colaboracao);
+            this.groupBox2.Location = new System.Drawing.Point(478, 100);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(182, 152);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Detalhar Evento";
+            // 
+            // BTN_Exportar
+            // 
+            this.BTN_Exportar.Location = new System.Drawing.Point(6, 29);
+            this.BTN_Exportar.Name = "BTN_Exportar";
+            this.BTN_Exportar.Size = new System.Drawing.Size(170, 29);
+            this.BTN_Exportar.TabIndex = 14;
+            this.BTN_Exportar.Text = "Exportar";
+            this.BTN_Exportar.UseVisualStyleBackColor = true;
+            this.BTN_Exportar.Click += new System.EventHandler(this.BTN_Exportar_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.BTN_Exportar);
+            this.groupBox3.Location = new System.Drawing.Point(478, 258);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(182, 87);
+            this.groupBox3.TabIndex = 19;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Exportar para PDF";
+            // 
+            // BTN_Colaboracao
+            // 
+            this.BTN_Colaboracao.Location = new System.Drawing.Point(6, 24);
+            this.BTN_Colaboracao.Name = "BTN_Colaboracao";
+            this.BTN_Colaboracao.Size = new System.Drawing.Size(170, 29);
+            this.BTN_Colaboracao.TabIndex = 15;
+            this.BTN_Colaboracao.Text = "Inserir Colaboração";
+            this.BTN_Colaboracao.UseVisualStyleBackColor = true;
+            this.BTN_Colaboracao.Click += new System.EventHandler(this.BTN_Colaboracao_Click);
+            // 
+            // BTN_Inscricao
+            // 
+            this.BTN_Inscricao.Location = new System.Drawing.Point(6, 71);
+            this.BTN_Inscricao.Name = "BTN_Inscricao";
+            this.BTN_Inscricao.Size = new System.Drawing.Size(170, 29);
+            this.BTN_Inscricao.TabIndex = 16;
+            this.BTN_Inscricao.Text = "Inserir Inscrição";
+            this.BTN_Inscricao.UseVisualStyleBackColor = true;
+            this.BTN_Inscricao.Click += new System.EventHandler(this.BTN_Inscricao_Click);
+            // 
+            // BTN_Participacao
+            // 
+            this.BTN_Participacao.Location = new System.Drawing.Point(6, 117);
+            this.BTN_Participacao.Name = "BTN_Participacao";
+            this.BTN_Participacao.Size = new System.Drawing.Size(170, 29);
+            this.BTN_Participacao.TabIndex = 17;
+            this.BTN_Participacao.Text = "Inserir Participação";
+            this.BTN_Participacao.UseVisualStyleBackColor = true;
+            this.BTN_Participacao.Click += new System.EventHandler(this.BTN_Participacao_Click);
+            // 
             // EventosForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 709);
+            this.ClientSize = new System.Drawing.Size(689, 576);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.eventoSetDataGridView);
             this.Controls.Add(this.eventoSetBindingNavigator);
             this.Controls.Add(this.lbEventos);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EventosForm";
             this.Text = "Eventos";
             this.Load += new System.EventHandler(this.EventosForm_Load);
@@ -533,6 +589,8 @@ namespace Projeto_DA_BooKids.Forms
             ((System.ComponentModel.ISupportInitialize)(this.eventoSetDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -575,5 +633,12 @@ namespace Projeto_DA_BooKids.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button BTN_Participacao;
+        private System.Windows.Forms.Button BTN_Inscricao;
+        private System.Windows.Forms.Button BTN_Colaboracao;
+        private System.Windows.Forms.Button BTN_Exportar;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

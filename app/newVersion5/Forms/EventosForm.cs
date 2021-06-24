@@ -31,5 +31,28 @@ namespace Projeto_DA_BooKids.Forms
             this.eventoSetTableAdapter.Fill(this.booKids_DBDataSet.EventoSet);
 
         }
+
+        private void BTN_Colaboracao_Click(object sender, EventArgs e)
+        {
+            ColaboracaoEventoForm colab = new ColaboracaoEventoForm();
+            colab.Show();
+        }
+
+        private void BTN_Inscricao_Click(object sender, EventArgs e)
+        {
+            InscricaoEventoForm inscricao = new InscricaoEventoForm();
+            inscricao.Show();
+        }
+
+        private void BTN_Participacao_Click(object sender, EventArgs e)
+        {
+            ParticipacaoEventoForm participacao = new ParticipacaoEventoForm();
+            participacao.Show();
+        }
+
+        private void BTN_Exportar_Click(object sender, EventArgs e)
+        {
+            ExportToPdf.exportGridtoPDF(eventoSetDataGridView, "eventos.pdf");
+        }
     }
 }

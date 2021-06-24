@@ -55,11 +55,6 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.compraSetBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.compraSetDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.utilizouCartaoCheckBox = new System.Windows.Forms.CheckBox();
             this.produtosCodProdutoTextBox = new System.Windows.Forms.TextBox();
@@ -67,6 +62,11 @@ namespace Projeto_DA_BooKids.Forms
             this.idClienteTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BTN_InserirDetalheCompra = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             dataLabel = new System.Windows.Forms.Label();
             utilizouCartaoLabel = new System.Windows.Forms.Label();
             produtosCodProdutoLabel = new System.Windows.Forms.Label();
@@ -83,55 +83,59 @@ namespace Projeto_DA_BooKids.Forms
             // dataLabel
             // 
             dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(96, 40);
+            dataLabel.Location = new System.Drawing.Point(128, 49);
+            dataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(33, 13);
+            dataLabel.Size = new System.Drawing.Size(42, 17);
             dataLabel.TabIndex = 9;
             dataLabel.Text = "Data:";
             // 
             // utilizouCartaoLabel
             // 
             utilizouCartaoLabel.AutoSize = true;
-            utilizouCartaoLabel.Location = new System.Drawing.Point(51, 65);
+            utilizouCartaoLabel.Location = new System.Drawing.Point(68, 80);
+            utilizouCartaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             utilizouCartaoLabel.Name = "utilizouCartaoLabel";
-            utilizouCartaoLabel.Size = new System.Drawing.Size(78, 13);
+            utilizouCartaoLabel.Size = new System.Drawing.Size(104, 17);
             utilizouCartaoLabel.TabIndex = 10;
             utilizouCartaoLabel.Text = "Utilizou Cartao:";
             // 
             // produtosCodProdutoLabel
             // 
             produtosCodProdutoLabel.AutoSize = true;
-            produtosCodProdutoLabel.Location = new System.Drawing.Point(17, 87);
+            produtosCodProdutoLabel.Location = new System.Drawing.Point(20, 112);
+            produtosCodProdutoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             produtosCodProdutoLabel.Name = "produtosCodProdutoLabel";
-            produtosCodProdutoLabel.Size = new System.Drawing.Size(114, 13);
+            produtosCodProdutoLabel.Size = new System.Drawing.Size(152, 17);
             produtosCodProdutoLabel.TabIndex = 11;
             produtosCodProdutoLabel.Text = "Produtos Cod Produto:";
             // 
             // nrCompraLabel
             // 
             nrCompraLabel.AutoSize = true;
-            nrCompraLabel.Location = new System.Drawing.Point(69, 113);
+            nrCompraLabel.Location = new System.Drawing.Point(92, 144);
+            nrCompraLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nrCompraLabel.Name = "nrCompraLabel";
-            nrCompraLabel.Size = new System.Drawing.Size(60, 13);
+            nrCompraLabel.Size = new System.Drawing.Size(80, 17);
             nrCompraLabel.TabIndex = 12;
             nrCompraLabel.Text = "Nr Compra:";
             // 
             // idClienteLabel
             // 
             idClienteLabel.AutoSize = true;
-            idClienteLabel.Location = new System.Drawing.Point(75, 139);
+            idClienteLabel.Location = new System.Drawing.Point(100, 176);
+            idClienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idClienteLabel.Name = "idClienteLabel";
-            idClienteLabel.Size = new System.Drawing.Size(54, 13);
+            idClienteLabel.Size = new System.Drawing.Size(70, 17);
             idClienteLabel.TabIndex = 13;
             idClienteLabel.Text = "Id Cliente:";
             // 
             // lbVendaProdutos
             // 
             this.lbVendaProdutos.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVendaProdutos.Location = new System.Drawing.Point(11, 48);
-            this.lbVendaProdutos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbVendaProdutos.Location = new System.Drawing.Point(15, 59);
             this.lbVendaProdutos.Name = "lbVendaProdutos";
-            this.lbVendaProdutos.Size = new System.Drawing.Size(550, 50);
+            this.lbVendaProdutos.Size = new System.Drawing.Size(733, 62);
             this.lbVendaProdutos.TabIndex = 8;
             this.lbVendaProdutos.Text = "Compra";
             this.lbVendaProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,6 +178,7 @@ namespace Projeto_DA_BooKids.Forms
             this.compraSetBindingNavigator.BindingSource = this.compraSetBindingSource;
             this.compraSetBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.compraSetBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.compraSetBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.compraSetBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -194,7 +199,7 @@ namespace Projeto_DA_BooKids.Forms
             this.compraSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.compraSetBindingNavigator.Name = "compraSetBindingNavigator";
             this.compraSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.compraSetBindingNavigator.Size = new System.Drawing.Size(587, 25);
+            this.compraSetBindingNavigator.Size = new System.Drawing.Size(789, 27);
             this.compraSetBindingNavigator.TabIndex = 9;
             this.compraSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -204,13 +209,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -220,7 +225,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -229,7 +234,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -238,13 +243,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -252,14 +257,14 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -267,7 +272,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -276,25 +281,27 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // compraSetBindingNavigatorSaveItem
             // 
             this.compraSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.compraSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("compraSetBindingNavigatorSaveItem.Image")));
             this.compraSetBindingNavigatorSaveItem.Name = "compraSetBindingNavigatorSaveItem";
-            this.compraSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.compraSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.compraSetBindingNavigatorSaveItem.Text = "Save Data";
             this.compraSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.compraSetBindingNavigatorSaveItem_Click);
             // 
             // compraSetDataGridView
             // 
+            this.compraSetDataGridView.AllowUserToAddRows = false;
+            this.compraSetDataGridView.AllowUserToDeleteRows = false;
             this.compraSetDataGridView.AutoGenerateColumns = false;
             this.compraSetDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.compraSetDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -304,80 +311,58 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.compraSetDataGridView.DataSource = this.compraSetBindingSource;
-            this.compraSetDataGridView.Location = new System.Drawing.Point(18, 321);
+            this.compraSetDataGridView.Location = new System.Drawing.Point(24, 395);
+            this.compraSetDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.compraSetDataGridView.Name = "compraSetDataGridView";
-            this.compraSetDataGridView.Size = new System.Drawing.Size(543, 220);
+            this.compraSetDataGridView.ReadOnly = true;
+            this.compraSetDataGridView.RowHeadersWidth = 51;
+            this.compraSetDataGridView.Size = new System.Drawing.Size(724, 271);
             this.compraSetDataGridView.TabIndex = 9;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Data";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Data";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "UtilizouCartao";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "UtilizouCartao";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProdutosCodProduto";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ProdutosCodProduto";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "NrCompra";
-            this.dataGridViewTextBoxColumn3.HeaderText = "NrCompra";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "IdCliente";
-            this.dataGridViewTextBoxColumn4.HeaderText = "IdCliente";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataDateTimePicker
             // 
             this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.compraSetBindingSource, "Data", true));
-            this.dataDateTimePicker.Location = new System.Drawing.Point(135, 34);
+            this.dataDateTimePicker.Location = new System.Drawing.Point(178, 49);
+            this.dataDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataDateTimePicker.Name = "dataDateTimePicker";
-            this.dataDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dataDateTimePicker.Size = new System.Drawing.Size(265, 22);
             this.dataDateTimePicker.TabIndex = 10;
             // 
             // utilizouCartaoCheckBox
             // 
             this.utilizouCartaoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.compraSetBindingSource, "UtilizouCartao", true));
-            this.utilizouCartaoCheckBox.Location = new System.Drawing.Point(135, 60);
+            this.utilizouCartaoCheckBox.Location = new System.Drawing.Point(180, 74);
+            this.utilizouCartaoCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.utilizouCartaoCheckBox.Name = "utilizouCartaoCheckBox";
-            this.utilizouCartaoCheckBox.Size = new System.Drawing.Size(104, 24);
+            this.utilizouCartaoCheckBox.Size = new System.Drawing.Size(139, 30);
             this.utilizouCartaoCheckBox.TabIndex = 11;
             this.utilizouCartaoCheckBox.UseVisualStyleBackColor = true;
             // 
             // produtosCodProdutoTextBox
             // 
             this.produtosCodProdutoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "ProdutosCodProduto", true));
-            this.produtosCodProdutoTextBox.Location = new System.Drawing.Point(135, 84);
+            this.produtosCodProdutoTextBox.Location = new System.Drawing.Point(180, 107);
+            this.produtosCodProdutoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.produtosCodProdutoTextBox.Name = "produtosCodProdutoTextBox";
-            this.produtosCodProdutoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.produtosCodProdutoTextBox.Size = new System.Drawing.Size(132, 22);
             this.produtosCodProdutoTextBox.TabIndex = 12;
             // 
             // nrCompraTextBox
             // 
             this.nrCompraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "NrCompra", true));
-            this.nrCompraTextBox.Location = new System.Drawing.Point(135, 110);
+            this.nrCompraTextBox.Location = new System.Drawing.Point(180, 139);
+            this.nrCompraTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nrCompraTextBox.Name = "nrCompraTextBox";
-            this.nrCompraTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nrCompraTextBox.Size = new System.Drawing.Size(132, 22);
             this.nrCompraTextBox.TabIndex = 13;
             // 
             // idClienteTextBox
             // 
             this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "IdCliente", true));
-            this.idClienteTextBox.Location = new System.Drawing.Point(135, 136);
+            this.idClienteTextBox.Location = new System.Drawing.Point(180, 171);
+            this.idClienteTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idClienteTextBox.Name = "idClienteTextBox";
-            this.idClienteTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idClienteTextBox.Size = new System.Drawing.Size(132, 22);
             this.idClienteTextBox.TabIndex = 14;
             // 
             // groupBox1
@@ -392,33 +377,83 @@ namespace Projeto_DA_BooKids.Forms
             this.groupBox1.Controls.Add(produtosCodProdutoLabel);
             this.groupBox1.Controls.Add(utilizouCartaoLabel);
             this.groupBox1.Controls.Add(this.produtosCodProdutoTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(18, 142);
+            this.groupBox1.Location = new System.Drawing.Point(24, 182);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(372, 173);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(498, 206);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inserir Compra";
             // 
             // BTN_InserirDetalheCompra
             // 
-            this.BTN_InserirDetalheCompra.Location = new System.Drawing.Point(411, 212);
+            this.BTN_InserirDetalheCompra.Location = new System.Drawing.Point(548, 261);
+            this.BTN_InserirDetalheCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_InserirDetalheCompra.Name = "BTN_InserirDetalheCompra";
-            this.BTN_InserirDetalheCompra.Size = new System.Drawing.Size(150, 47);
+            this.BTN_InserirDetalheCompra.Size = new System.Drawing.Size(200, 58);
             this.BTN_InserirDetalheCompra.TabIndex = 17;
             this.BTN_InserirDetalheCompra.Text = "Inserir Detalhe de compra";
             this.BTN_InserirDetalheCompra.UseVisualStyleBackColor = true;
             this.BTN_InserirDetalheCompra.Click += new System.EventHandler(this.BTN_InserirDetalheCompra_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Data";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Data";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "UtilizouCartao";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Utilizou Cartao";
+            this.dataGridViewCheckBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProdutosCodProduto";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Produtos Cod. Produto";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "NrCompra";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nr Compra";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "IdCliente";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Id Cliente";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
             // CompraProdutosForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 556);
+            this.ClientSize = new System.Drawing.Size(789, 684);
             this.Controls.Add(this.BTN_InserirDetalheCompra);
             this.Controls.Add(this.compraSetDataGridView);
             this.Controls.Add(this.compraSetBindingNavigator);
             this.Controls.Add(this.lbVendaProdutos);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CompraProdutosForm";
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.VendaProdutos_Load);
@@ -455,11 +490,6 @@ namespace Projeto_DA_BooKids.Forms
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton compraSetBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView compraSetDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DateTimePicker dataDateTimePicker;
         private System.Windows.Forms.CheckBox utilizouCartaoCheckBox;
         private System.Windows.Forms.TextBox produtosCodProdutoTextBox;
@@ -467,5 +497,10 @@ namespace Projeto_DA_BooKids.Forms
         private System.Windows.Forms.TextBox idClienteTextBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BTN_InserirDetalheCompra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

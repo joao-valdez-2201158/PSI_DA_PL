@@ -31,5 +31,10 @@ namespace Projeto_DA_BooKids.Forms
             this.tipoProdutoSetTableAdapter.Fill(this.booKids_DBDataSet.TipoProdutoSet);
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

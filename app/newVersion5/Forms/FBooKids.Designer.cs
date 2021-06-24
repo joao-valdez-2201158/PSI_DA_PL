@@ -176,10 +176,10 @@ namespace Projeto_DA_BooKids.Forms
             this.LBBooKids.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LBBooKids.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBBooKids.Location = new System.Drawing.Point(-3, 105);
+            this.LBBooKids.Location = new System.Drawing.Point(2, 105);
             this.LBBooKids.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBBooKids.Name = "LBBooKids";
-            this.LBBooKids.Size = new System.Drawing.Size(782, 106);
+            this.LBBooKids.Size = new System.Drawing.Size(774, 106);
             this.LBBooKids.TabIndex = 22;
             this.LBBooKids.Text = "BOOKIDS";
             this.LBBooKids.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -257,7 +257,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 696);
+            this.ClientSize = new System.Drawing.Size(776, 696);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -267,7 +267,7 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(this.LBBooKids);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox7);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FBooKids";
             this.Text = "FBooKids";

@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 06/23/2021 22:42:47
--- Generated from EDMX file: C:\Users\Eduardo-PC\Desktop\IPL\PSI\1º ano\2ºsemestre_1ºano\DA\Projeto\PSI_DA_PL-newVersion4\app\newVersion4\DA_BooKids.edmx
+-- Date Created: 06/24/2021 01:32:08
+-- Generated from EDMX file: C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_DA_PL\app\newVersion5\DA_BooKids.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -17,11 +17,95 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_ClienteFilho]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[PessoaSet_Filho] DROP CONSTRAINT [FK_ClienteFilho];
+GO
+IF OBJECT_ID(N'[dbo].[FK_EscolaFilho]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[PessoaSet_Filho] DROP CONSTRAINT [FK_EscolaFilho];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ClienteCompra]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CompraSet] DROP CONSTRAINT [FK_ClienteCompra];
+GO
+IF OBJECT_ID(N'[dbo].[FK_CompraDetalheCompra]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[DetalheCompraSet] DROP CONSTRAINT [FK_CompraDetalheCompra];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProdutoDetalheCompra]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[DetalheCompraSet] DROP CONSTRAINT [FK_ProdutoDetalheCompra];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TipoProdutoProduto]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ProdutoSet] DROP CONSTRAINT [FK_TipoProdutoProduto];
+GO
+IF OBJECT_ID(N'[dbo].[FK_FilhoInscricao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoSet] DROP CONSTRAINT [FK_FilhoInscricao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_EventoInscricao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[InscricaoSet] DROP CONSTRAINT [FK_EventoInscricao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_AnimadorColaboracao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ColaboracaoSet] DROP CONSTRAINT [FK_AnimadorColaboracao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_EventoColaboracao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ColaboracaoSet] DROP CONSTRAINT [FK_EventoColaboracao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_EscolaParticipacao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ParticipacaoSet] DROP CONSTRAINT [FK_EscolaParticipacao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_EventoParticipacao]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ParticipacaoSet] DROP CONSTRAINT [FK_EventoParticipacao];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Cliente_inherits_Pessoa]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[PessoaSet_Cliente] DROP CONSTRAINT [FK_Cliente_inherits_Pessoa];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Filho_inherits_Pessoa]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[PessoaSet_Filho] DROP CONSTRAINT [FK_Filho_inherits_Pessoa];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Animador_inherits_Pessoa]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[PessoaSet_Animador] DROP CONSTRAINT [FK_Animador_inherits_Pessoa];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[PessoaSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[PessoaSet];
+GO
+IF OBJECT_ID(N'[dbo].[CompraSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CompraSet];
+GO
+IF OBJECT_ID(N'[dbo].[InscricaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[InscricaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[EscolaSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[EscolaSet];
+GO
+IF OBJECT_ID(N'[dbo].[DetalheCompraSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[DetalheCompraSet];
+GO
+IF OBJECT_ID(N'[dbo].[ProdutoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ProdutoSet];
+GO
+IF OBJECT_ID(N'[dbo].[TipoProdutoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TipoProdutoSet];
+GO
+IF OBJECT_ID(N'[dbo].[EventoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[EventoSet];
+GO
+IF OBJECT_ID(N'[dbo].[ParticipacaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ParticipacaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[ColaboracaoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ColaboracaoSet];
+GO
+IF OBJECT_ID(N'[dbo].[PessoaSet_Cliente]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[PessoaSet_Cliente];
+GO
+IF OBJECT_ID(N'[dbo].[PessoaSet_Filho]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[PessoaSet_Filho];
+GO
+IF OBJECT_ID(N'[dbo].[PessoaSet_Animador]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[PessoaSet_Animador];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables

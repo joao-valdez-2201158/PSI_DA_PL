@@ -55,10 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animador.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
     <Compile Include="BooKids_DBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BooKids_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Colaboracao.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Compra.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
     <Compile Include="DA_BooKids.Context.cs">
       <AutoGen>True</AutoGen>
@@ -74,6 +86,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DA_BooKids.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalheCompra.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Escola.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Evento.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Filho.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
     <Compile Include="Forms\AnimadoresForm.cs">
       <SubType>Form</SubType>
@@ -141,6 +165,9 @@
     <Compile Include="Forms\CompraProdutosForm.Designer.cs">
       <DependentUpon>CompraProdutosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inscricao.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -156,8 +183,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Participacao.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pessoa.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Produto.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoProduto.cs">
+      <DependentUpon>DA_BooKids.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\AnimadoresForm.resx">
       <DependentUpon>AnimadoresForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -17,7 +17,7 @@ namespace Projeto_DA_BooKids
         {
              Application.EnableVisualStyles();
              Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new FBooKids());
+             Application.Run(new BooKids());
         }
     }
 }

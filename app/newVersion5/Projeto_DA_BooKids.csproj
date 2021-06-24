@@ -127,6 +127,12 @@
     <Compile Include="Forms\DetalhesCompraForm.Designer.cs">
       <DependentUpon>DetalhesCompraForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DevelForm.Designer.cs">
+      <DependentUpon>DevelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EscolasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,12 @@
     <Compile Include="Forms\CompraProdutosForm.Designer.cs">
       <DependentUpon>CompraProdutosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\VersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VersForm.Designer.cs">
+      <DependentUpon>VersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inscricao.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
     </Compile>
@@ -215,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DetalhesCompraForm.resx">
       <DependentUpon>DetalhesCompraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DevelForm.resx">
+      <DependentUpon>DevelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EscolasForm.resx">
       <DependentUpon>EscolasForm.cs</DependentUpon>
@@ -245,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CompraProdutosForm.resx">
       <DependentUpon>CompraProdutosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VersForm.resx">
+      <DependentUpon>VersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

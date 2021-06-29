@@ -19,10 +19,23 @@ namespace Projeto_DA_BooKids.Forms
 
         private void tipoProdutoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.tipoProdutoSetBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
-
+            try
+            {
+                if (this.codTipoProdutoTextBox.TextLength == 0 || this.tipoTextBox.TextLength == 0 )
+                {
+                    MessageBox.Show("Campos por Preencher !!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    this.Validate();
+                    this.tipoProdutoSetBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao salvar", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void TipoProdutosForm_Load(object sender, EventArgs e)

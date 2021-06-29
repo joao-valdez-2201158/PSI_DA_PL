@@ -19,9 +19,24 @@ namespace Projeto_DA_BooKids.Forms
 
         private void eventoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.eventoSetBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+            try
+            {
+                if (this.descricaoTextBox.TextLength == 0 || this.localTextBox.TextLength == 0 || this.limiteParticipacaoTextBox.TextLength == 0 || this.idadeInferiorTextBox.TextLength == 0 || this.idadeSuperiorTextBox.TextLength == 0 || this.tipoEventoTextBox.TextLength == 0)
+                {
+                    MessageBox.Show("Campos por Preencher !!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+                    this.Validate();
+                    this.eventoSetBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao salvar", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 

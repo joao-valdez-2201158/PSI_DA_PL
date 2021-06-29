@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_DA_BooKids.Forms
 {
-    public partial class BooKids : Form
+    public partial class FBooKids : Form
     {
-        public BooKids()
+        public FBooKids()
         {
             InitializeComponent();
         }
@@ -87,24 +87,19 @@ namespace Projeto_DA_BooKids.Forms
 
         private void desenvolvedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DevelForm devel = new DevelForm();
+            Desenvolvedores devel = new Desenvolvedores();
             devel.Show();
         }
 
         private void versaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VersForm vers = new VersForm();
+            VersaoForm vers = new VersaoForm();
             vers.Show();
         }
 
         private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
     }
 }

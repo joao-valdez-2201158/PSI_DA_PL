@@ -19,10 +19,30 @@ namespace Projeto_DA_BooKids.Forms
 
         private void participacaoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.participacaoSetBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+            try
+            {
+                if (this.idEscolaTextBox.TextLength == 0 || this.nrEventoTextBox.TextLength == 0)
+                {
+                    MessageBox.Show("Campos por Preencher !!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                }
+                /*
+                else if (this.idPessoaTextBox.Text)
+                {
+                    // PessoaSet_IdPessoa
+                }
+                */
+                else
+                {
+                    this.Validate();
+                    this.participacaoSetBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao salvar", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ParticipacaoEventoForm_Load(object sender, EventArgs e)

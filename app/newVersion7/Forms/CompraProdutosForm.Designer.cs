@@ -84,59 +84,55 @@ namespace Projeto_DA_BooKids.Forms
             // dataLabel
             // 
             dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(128, 49);
-            dataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            dataLabel.Location = new System.Drawing.Point(96, 40);
             dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(42, 17);
+            dataLabel.Size = new System.Drawing.Size(33, 13);
             dataLabel.TabIndex = 9;
             dataLabel.Text = "Data:";
             // 
             // utilizouCartaoLabel
             // 
             utilizouCartaoLabel.AutoSize = true;
-            utilizouCartaoLabel.Location = new System.Drawing.Point(68, 80);
-            utilizouCartaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            utilizouCartaoLabel.Location = new System.Drawing.Point(51, 65);
             utilizouCartaoLabel.Name = "utilizouCartaoLabel";
-            utilizouCartaoLabel.Size = new System.Drawing.Size(104, 17);
+            utilizouCartaoLabel.Size = new System.Drawing.Size(78, 13);
             utilizouCartaoLabel.TabIndex = 10;
             utilizouCartaoLabel.Text = "Utilizou Cartao:";
             // 
             // produtosCodProdutoLabel
             // 
             produtosCodProdutoLabel.AutoSize = true;
-            produtosCodProdutoLabel.Location = new System.Drawing.Point(20, 112);
-            produtosCodProdutoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            produtosCodProdutoLabel.Location = new System.Drawing.Point(15, 91);
             produtosCodProdutoLabel.Name = "produtosCodProdutoLabel";
-            produtosCodProdutoLabel.Size = new System.Drawing.Size(152, 17);
+            produtosCodProdutoLabel.Size = new System.Drawing.Size(114, 13);
             produtosCodProdutoLabel.TabIndex = 11;
             produtosCodProdutoLabel.Text = "Produtos Cod Produto:";
             // 
             // nrCompraLabel
             // 
             nrCompraLabel.AutoSize = true;
-            nrCompraLabel.Location = new System.Drawing.Point(92, 144);
-            nrCompraLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            nrCompraLabel.Location = new System.Drawing.Point(69, 117);
             nrCompraLabel.Name = "nrCompraLabel";
-            nrCompraLabel.Size = new System.Drawing.Size(80, 17);
+            nrCompraLabel.Size = new System.Drawing.Size(60, 13);
             nrCompraLabel.TabIndex = 12;
             nrCompraLabel.Text = "Nr Compra:";
             // 
             // idClienteLabel
             // 
             idClienteLabel.AutoSize = true;
-            idClienteLabel.Location = new System.Drawing.Point(100, 176);
-            idClienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            idClienteLabel.Location = new System.Drawing.Point(75, 143);
             idClienteLabel.Name = "idClienteLabel";
-            idClienteLabel.Size = new System.Drawing.Size(70, 17);
+            idClienteLabel.Size = new System.Drawing.Size(54, 13);
             idClienteLabel.TabIndex = 13;
             idClienteLabel.Text = "Id Cliente:";
             // 
             // lbVendaProdutos
             // 
             this.lbVendaProdutos.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVendaProdutos.Location = new System.Drawing.Point(15, 59);
+            this.lbVendaProdutos.Location = new System.Drawing.Point(11, 48);
+            this.lbVendaProdutos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbVendaProdutos.Name = "lbVendaProdutos";
-            this.lbVendaProdutos.Size = new System.Drawing.Size(733, 62);
+            this.lbVendaProdutos.Size = new System.Drawing.Size(550, 50);
             this.lbVendaProdutos.TabIndex = 8;
             this.lbVendaProdutos.Text = "Compra";
             this.lbVendaProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -200,7 +196,7 @@ namespace Projeto_DA_BooKids.Forms
             this.compraSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.compraSetBindingNavigator.Name = "compraSetBindingNavigator";
             this.compraSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.compraSetBindingNavigator.Size = new System.Drawing.Size(789, 27);
+            this.compraSetBindingNavigator.Size = new System.Drawing.Size(592, 27);
             this.compraSetBindingNavigator.TabIndex = 9;
             this.compraSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -210,13 +206,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -226,7 +222,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -235,7 +231,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -244,7 +240,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -258,7 +254,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -273,7 +269,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -282,7 +278,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -295,7 +291,7 @@ namespace Projeto_DA_BooKids.Forms
             this.compraSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.compraSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("compraSetBindingNavigatorSaveItem.Image")));
             this.compraSetBindingNavigatorSaveItem.Name = "compraSetBindingNavigatorSaveItem";
-            this.compraSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.compraSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.compraSetBindingNavigatorSaveItem.Text = "Save Data";
             this.compraSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.compraSetBindingNavigatorSaveItem_Click);
             // 
@@ -312,12 +308,11 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.compraSetDataGridView.DataSource = this.compraSetBindingSource;
-            this.compraSetDataGridView.Location = new System.Drawing.Point(24, 395);
-            this.compraSetDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.compraSetDataGridView.Location = new System.Drawing.Point(18, 321);
             this.compraSetDataGridView.Name = "compraSetDataGridView";
             this.compraSetDataGridView.ReadOnly = true;
             this.compraSetDataGridView.RowHeadersWidth = 51;
-            this.compraSetDataGridView.Size = new System.Drawing.Size(724, 271);
+            this.compraSetDataGridView.Size = new System.Drawing.Size(543, 220);
             this.compraSetDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -368,47 +363,43 @@ namespace Projeto_DA_BooKids.Forms
             // dataDateTimePicker
             // 
             this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.compraSetBindingSource, "Data", true));
-            this.dataDateTimePicker.Location = new System.Drawing.Point(178, 49);
-            this.dataDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.dataDateTimePicker.Location = new System.Drawing.Point(134, 40);
             this.dataDateTimePicker.Name = "dataDateTimePicker";
-            this.dataDateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.dataDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dataDateTimePicker.TabIndex = 10;
             // 
             // utilizouCartaoCheckBox
             // 
             this.utilizouCartaoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.compraSetBindingSource, "UtilizouCartao", true));
-            this.utilizouCartaoCheckBox.Location = new System.Drawing.Point(180, 74);
-            this.utilizouCartaoCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.utilizouCartaoCheckBox.Location = new System.Drawing.Point(135, 60);
             this.utilizouCartaoCheckBox.Name = "utilizouCartaoCheckBox";
-            this.utilizouCartaoCheckBox.Size = new System.Drawing.Size(139, 30);
+            this.utilizouCartaoCheckBox.Size = new System.Drawing.Size(104, 24);
             this.utilizouCartaoCheckBox.TabIndex = 11;
             this.utilizouCartaoCheckBox.UseVisualStyleBackColor = true;
             // 
             // produtosCodProdutoTextBox
             // 
             this.produtosCodProdutoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "ProdutosCodProduto", true));
-            this.produtosCodProdutoTextBox.Location = new System.Drawing.Point(180, 107);
-            this.produtosCodProdutoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.produtosCodProdutoTextBox.Location = new System.Drawing.Point(135, 87);
             this.produtosCodProdutoTextBox.Name = "produtosCodProdutoTextBox";
-            this.produtosCodProdutoTextBox.Size = new System.Drawing.Size(132, 22);
+            this.produtosCodProdutoTextBox.Size = new System.Drawing.Size(100, 20);
             this.produtosCodProdutoTextBox.TabIndex = 12;
             // 
             // nrCompraTextBox
             // 
             this.nrCompraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "NrCompra", true));
-            this.nrCompraTextBox.Location = new System.Drawing.Point(180, 139);
-            this.nrCompraTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.nrCompraTextBox.Location = new System.Drawing.Point(135, 113);
+            this.nrCompraTextBox.MaxLength = 4;
             this.nrCompraTextBox.Name = "nrCompraTextBox";
-            this.nrCompraTextBox.Size = new System.Drawing.Size(132, 22);
+            this.nrCompraTextBox.Size = new System.Drawing.Size(100, 20);
             this.nrCompraTextBox.TabIndex = 13;
             // 
             // idClienteTextBox
             // 
             this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compraSetBindingSource, "IdCliente", true));
-            this.idClienteTextBox.Location = new System.Drawing.Point(180, 171);
-            this.idClienteTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.idClienteTextBox.Location = new System.Drawing.Point(135, 139);
             this.idClienteTextBox.Name = "idClienteTextBox";
-            this.idClienteTextBox.Size = new System.Drawing.Size(132, 22);
+            this.idClienteTextBox.Size = new System.Drawing.Size(100, 20);
             this.idClienteTextBox.TabIndex = 14;
             // 
             // groupBox1
@@ -423,21 +414,18 @@ namespace Projeto_DA_BooKids.Forms
             this.groupBox1.Controls.Add(produtosCodProdutoLabel);
             this.groupBox1.Controls.Add(utilizouCartaoLabel);
             this.groupBox1.Controls.Add(this.produtosCodProdutoTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(24, 182);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(18, 148);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(498, 206);
+            this.groupBox1.Size = new System.Drawing.Size(374, 167);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inserir Compra";
             // 
             // BTN_InserirDetalheCompra
             // 
-            this.BTN_InserirDetalheCompra.Location = new System.Drawing.Point(548, 190);
-            this.BTN_InserirDetalheCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.BTN_InserirDetalheCompra.Location = new System.Drawing.Point(411, 154);
             this.BTN_InserirDetalheCompra.Name = "BTN_InserirDetalheCompra";
-            this.BTN_InserirDetalheCompra.Size = new System.Drawing.Size(200, 58);
+            this.BTN_InserirDetalheCompra.Size = new System.Drawing.Size(150, 47);
             this.BTN_InserirDetalheCompra.TabIndex = 17;
             this.BTN_InserirDetalheCompra.Text = "Inserir Detalhe de compra";
             this.BTN_InserirDetalheCompra.UseVisualStyleBackColor = true;
@@ -445,20 +433,19 @@ namespace Projeto_DA_BooKids.Forms
             // 
             // btnExpCom
             // 
-            this.btnExpCom.Location = new System.Drawing.Point(548, 303);
-            this.btnExpCom.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExpCom.Location = new System.Drawing.Point(411, 246);
             this.btnExpCom.Name = "btnExpCom";
-            this.btnExpCom.Size = new System.Drawing.Size(200, 58);
+            this.btnExpCom.Size = new System.Drawing.Size(150, 47);
             this.btnExpCom.TabIndex = 18;
-            this.btnExpCom.Text = "Exportar Lista para PDF";
+            this.btnExpCom.Text = "Exportar para PDF";
             this.btnExpCom.UseVisualStyleBackColor = true;
             this.btnExpCom.Click += new System.EventHandler(this.btnExpCom_Click);
             // 
             // CompraProdutosForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 684);
+            this.ClientSize = new System.Drawing.Size(592, 556);
             this.Controls.Add(this.btnExpCom);
             this.Controls.Add(this.BTN_InserirDetalheCompra);
             this.Controls.Add(this.compraSetDataGridView);
@@ -466,7 +453,6 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(this.lbVendaProdutos);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CompraProdutosForm";
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.VendaProdutos_Load);

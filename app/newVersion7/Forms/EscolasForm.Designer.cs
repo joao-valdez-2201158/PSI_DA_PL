@@ -56,13 +56,6 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.escolaSetBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.escolaSetDataGridView = new System.Windows.Forms.DataGridView();
-            this.nomeTextBox = new System.Windows.Forms.TextBox();
-            this.moradaTextBox = new System.Windows.Forms.TextBox();
-            this.codPostalTextBox = new System.Windows.Forms.TextBox();
-            this.telefoneTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.localidadeTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +63,13 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeTextBox = new System.Windows.Forms.TextBox();
+            this.moradaTextBox = new System.Windows.Forms.TextBox();
+            this.codPostalTextBox = new System.Windows.Forms.TextBox();
+            this.telefoneTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.localidadeTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             nomeLabel = new System.Windows.Forms.Label();
             moradaLabel = new System.Windows.Forms.Label();
             codPostalLabel = new System.Windows.Forms.Label();
@@ -87,69 +87,64 @@ namespace Projeto_DA_BooKids.Forms
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(56, 43);
-            nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            nomeLabel.Location = new System.Drawing.Point(42, 35);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(49, 17);
+            nomeLabel.Size = new System.Drawing.Size(38, 13);
             nomeLabel.TabIndex = 9;
             nomeLabel.Text = "Nome:";
             // 
             // moradaLabel
             // 
             moradaLabel.AutoSize = true;
-            moradaLabel.Location = new System.Drawing.Point(45, 75);
-            moradaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            moradaLabel.Location = new System.Drawing.Point(34, 61);
             moradaLabel.Name = "moradaLabel";
-            moradaLabel.Size = new System.Drawing.Size(60, 17);
+            moradaLabel.Size = new System.Drawing.Size(46, 13);
             moradaLabel.TabIndex = 10;
             moradaLabel.Text = "Morada:";
             // 
             // codPostalLabel
             // 
             codPostalLabel.AutoSize = true;
-            codPostalLabel.Location = new System.Drawing.Point(451, 75);
-            codPostalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            codPostalLabel.Location = new System.Drawing.Point(338, 61);
             codPostalLabel.Name = "codPostalLabel";
-            codPostalLabel.Size = new System.Drawing.Size(80, 17);
+            codPostalLabel.Size = new System.Drawing.Size(61, 13);
             codPostalLabel.TabIndex = 11;
             codPostalLabel.Text = "Cod Postal:";
             // 
             // telefoneLabel
             // 
             telefoneLabel.AutoSize = true;
-            telefoneLabel.Location = new System.Drawing.Point(40, 107);
-            telefoneLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            telefoneLabel.Location = new System.Drawing.Point(30, 87);
             telefoneLabel.Name = "telefoneLabel";
-            telefoneLabel.Size = new System.Drawing.Size(68, 17);
+            telefoneLabel.Size = new System.Drawing.Size(52, 13);
             telefoneLabel.TabIndex = 12;
             telefoneLabel.Text = "Telefone:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(63, 139);
-            emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            emailLabel.Location = new System.Drawing.Point(47, 113);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(46, 17);
+            emailLabel.Size = new System.Drawing.Size(35, 13);
             emailLabel.TabIndex = 13;
             emailLabel.Text = "Email:";
             // 
             // localidadeLabel
             // 
             localidadeLabel.AutoSize = true;
-            localidadeLabel.Location = new System.Drawing.Point(27, 171);
-            localidadeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            localidadeLabel.Location = new System.Drawing.Point(20, 139);
             localidadeLabel.Name = "localidadeLabel";
-            localidadeLabel.Size = new System.Drawing.Size(81, 17);
+            localidadeLabel.Size = new System.Drawing.Size(62, 13);
             localidadeLabel.TabIndex = 14;
             localidadeLabel.Text = "Localidade:";
             // 
             // lbEscolas
             // 
             this.lbEscolas.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEscolas.Location = new System.Drawing.Point(0, 47);
+            this.lbEscolas.Location = new System.Drawing.Point(0, 38);
+            this.lbEscolas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEscolas.Name = "lbEscolas";
-            this.lbEscolas.Size = new System.Drawing.Size(948, 62);
+            this.lbEscolas.Size = new System.Drawing.Size(711, 50);
             this.lbEscolas.TabIndex = 8;
             this.lbEscolas.Text = "Escolas";
             this.lbEscolas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,7 +208,7 @@ namespace Projeto_DA_BooKids.Forms
             this.escolaSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.escolaSetBindingNavigator.Name = "escolaSetBindingNavigator";
             this.escolaSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.escolaSetBindingNavigator.Size = new System.Drawing.Size(948, 27);
+            this.escolaSetBindingNavigator.Size = new System.Drawing.Size(711, 27);
             this.escolaSetBindingNavigator.TabIndex = 9;
             this.escolaSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -223,13 +218,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -239,7 +234,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -248,7 +243,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -257,7 +252,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -271,7 +266,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -286,7 +281,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -295,7 +290,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -308,7 +303,7 @@ namespace Projeto_DA_BooKids.Forms
             this.escolaSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.escolaSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("escolaSetBindingNavigatorSaveItem.Image")));
             this.escolaSetBindingNavigatorSaveItem.Name = "escolaSetBindingNavigatorSaveItem";
-            this.escolaSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.escolaSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.escolaSetBindingNavigatorSaveItem.Text = "Save Data";
             this.escolaSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.escolaSetBindingNavigatorSaveItem_Click);
             // 
@@ -327,90 +322,12 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.escolaSetDataGridView.DataSource = this.escolaSetBindingSource;
-            this.escolaSetDataGridView.Location = new System.Drawing.Point(48, 401);
-            this.escolaSetDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.escolaSetDataGridView.Location = new System.Drawing.Point(36, 326);
             this.escolaSetDataGridView.Name = "escolaSetDataGridView";
             this.escolaSetDataGridView.ReadOnly = true;
             this.escolaSetDataGridView.RowHeadersWidth = 51;
-            this.escolaSetDataGridView.Size = new System.Drawing.Size(839, 271);
+            this.escolaSetDataGridView.Size = new System.Drawing.Size(629, 220);
             this.escolaSetDataGridView.TabIndex = 9;
-            // 
-            // nomeTextBox
-            // 
-            this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(123, 39);
-            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(132, 22);
-            this.nomeTextBox.TabIndex = 10;
-            // 
-            // moradaTextBox
-            // 
-            this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Morada", true));
-            this.moradaTextBox.Location = new System.Drawing.Point(123, 71);
-            this.moradaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.moradaTextBox.Name = "moradaTextBox";
-            this.moradaTextBox.Size = new System.Drawing.Size(309, 22);
-            this.moradaTextBox.TabIndex = 11;
-            // 
-            // codPostalTextBox
-            // 
-            this.codPostalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "CodPostal", true));
-            this.codPostalTextBox.Location = new System.Drawing.Point(540, 71);
-            this.codPostalTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.codPostalTextBox.Name = "codPostalTextBox";
-            this.codPostalTextBox.Size = new System.Drawing.Size(132, 22);
-            this.codPostalTextBox.TabIndex = 12;
-            // 
-            // telefoneTextBox
-            // 
-            this.telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Telefone", true));
-            this.telefoneTextBox.Location = new System.Drawing.Point(123, 103);
-            this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.telefoneTextBox.Name = "telefoneTextBox";
-            this.telefoneTextBox.Size = new System.Drawing.Size(132, 22);
-            this.telefoneTextBox.TabIndex = 13;
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(123, 135);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(549, 22);
-            this.emailTextBox.TabIndex = 14;
-            // 
-            // localidadeTextBox
-            // 
-            this.localidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Localidade", true));
-            this.localidadeTextBox.Location = new System.Drawing.Point(123, 167);
-            this.localidadeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.localidadeTextBox.Name = "localidadeTextBox";
-            this.localidadeTextBox.Size = new System.Drawing.Size(132, 22);
-            this.localidadeTextBox.TabIndex = 15;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(localidadeLabel);
-            this.groupBox1.Controls.Add(this.localidadeTextBox);
-            this.groupBox1.Controls.Add(this.nomeTextBox);
-            this.groupBox1.Controls.Add(emailLabel);
-            this.groupBox1.Controls.Add(nomeLabel);
-            this.groupBox1.Controls.Add(this.emailTextBox);
-            this.groupBox1.Controls.Add(this.moradaTextBox);
-            this.groupBox1.Controls.Add(telefoneLabel);
-            this.groupBox1.Controls.Add(moradaLabel);
-            this.groupBox1.Controls.Add(this.telefoneTextBox);
-            this.groupBox1.Controls.Add(this.codPostalTextBox);
-            this.groupBox1.Controls.Add(codPostalLabel);
-            this.groupBox1.Location = new System.Drawing.Point(48, 140);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(712, 235);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inserir Escola";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -475,17 +392,87 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
+            // nomeTextBox
+            // 
+            this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Nome", true));
+            this.nomeTextBox.Location = new System.Drawing.Point(92, 32);
+            this.nomeTextBox.Name = "nomeTextBox";
+            this.nomeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nomeTextBox.TabIndex = 10;
+            // 
+            // moradaTextBox
+            // 
+            this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Morada", true));
+            this.moradaTextBox.Location = new System.Drawing.Point(92, 58);
+            this.moradaTextBox.Name = "moradaTextBox";
+            this.moradaTextBox.Size = new System.Drawing.Size(233, 20);
+            this.moradaTextBox.TabIndex = 11;
+            // 
+            // codPostalTextBox
+            // 
+            this.codPostalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "CodPostal", true));
+            this.codPostalTextBox.Location = new System.Drawing.Point(405, 58);
+            this.codPostalTextBox.MaxLength = 7;
+            this.codPostalTextBox.Name = "codPostalTextBox";
+            this.codPostalTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codPostalTextBox.TabIndex = 12;
+            // 
+            // telefoneTextBox
+            // 
+            this.telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Telefone", true));
+            this.telefoneTextBox.Location = new System.Drawing.Point(92, 84);
+            this.telefoneTextBox.MaxLength = 9;
+            this.telefoneTextBox.Name = "telefoneTextBox";
+            this.telefoneTextBox.Size = new System.Drawing.Size(100, 20);
+            this.telefoneTextBox.TabIndex = 13;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Email", true));
+            this.emailTextBox.Location = new System.Drawing.Point(92, 110);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(413, 20);
+            this.emailTextBox.TabIndex = 14;
+            // 
+            // localidadeTextBox
+            // 
+            this.localidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.escolaSetBindingSource, "Localidade", true));
+            this.localidadeTextBox.Location = new System.Drawing.Point(92, 136);
+            this.localidadeTextBox.Name = "localidadeTextBox";
+            this.localidadeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.localidadeTextBox.TabIndex = 15;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(localidadeLabel);
+            this.groupBox1.Controls.Add(this.localidadeTextBox);
+            this.groupBox1.Controls.Add(this.nomeTextBox);
+            this.groupBox1.Controls.Add(emailLabel);
+            this.groupBox1.Controls.Add(nomeLabel);
+            this.groupBox1.Controls.Add(this.emailTextBox);
+            this.groupBox1.Controls.Add(this.moradaTextBox);
+            this.groupBox1.Controls.Add(telefoneLabel);
+            this.groupBox1.Controls.Add(moradaLabel);
+            this.groupBox1.Controls.Add(this.telefoneTextBox);
+            this.groupBox1.Controls.Add(this.codPostalTextBox);
+            this.groupBox1.Controls.Add(codPostalLabel);
+            this.groupBox1.Location = new System.Drawing.Point(36, 114);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(534, 191);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Inserir Escola";
+            // 
             // EscolasForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 687);
+            this.ClientSize = new System.Drawing.Size(711, 558);
             this.Controls.Add(this.escolaSetDataGridView);
             this.Controls.Add(this.escolaSetBindingNavigator);
             this.Controls.Add(this.lbEscolas);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EscolasForm";
             this.Text = "Escolas";
             this.Load += new System.EventHandler(this.EscolasForm_Load);

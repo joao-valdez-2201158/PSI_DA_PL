@@ -21,16 +21,33 @@ namespace Projeto_DA_BooKids.Forms
         {
             try
             {
-                this.Validate();
-                this.detalheCompraSetBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+                if (this.quantidadeTextBox.TextLength == 0 || this.compraNrCompraTextBox.TextLength == 0 || this.produtoCodProdutoTextBox.TextLength == 0)
+                {
+                    MessageBox.Show("Campos por Preencher !!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else if (this.quantidadeTextBox.TextLength < 4)
+                {
+                    MessageBox.Show("Campo quantidade tem que possuir 4 carateres", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                }
+                /*
+                else if (this.idPessoaTextBox.Text)
+                {
+                    // PessoaSet_IdPessoa
+                }
+                */
+                else
+                {
+                    this.Validate();
+                    this.detalheCompraSetBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Erro : " + ex);
+                MessageBox.Show("Erro ao salvar", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
         private void DetalhesCompraForm_Load(object sender, EventArgs e)

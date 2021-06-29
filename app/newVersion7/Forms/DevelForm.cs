@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_DA_BooKids.Forms
 {
-    public partial class VersForm : Form
+    public partial class Desenvolvedores : Form
     {
-        public VersForm()
+        public Desenvolvedores()
         {
             InitializeComponent();
         }

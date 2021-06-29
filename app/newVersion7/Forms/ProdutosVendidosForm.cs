@@ -22,9 +22,31 @@ namespace Projeto_DA_BooKids.Forms
 
         private void produtoSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.produtoSetBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+            try
+            {
+                if (this.designacaoTextBox.TextLength == 0 || this.precoTextBox.TextLength == 0 || this.stockExistenteTextBox.TextLength == 0 || this.codTipoProdutoTextBox.TextLength == 0)
+                {
+                    MessageBox.Show("Campos por Preencher !!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                /*
+                else if (this.idPessoaTextBox.Text)
+                {
+                    // PessoaSet_IdPessoa
+                }
+                */
+                else
+                {
+                    this.Validate();
+                    this.produtoSetBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao salvar", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
 

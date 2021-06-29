@@ -19,9 +19,35 @@ namespace Projeto_DA_BooKids.Forms
 
         private void detalheCompraSetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.compraSetBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+            try
+            {
+                if (this.produtosCodProdutoTextBox.TextLength == 0|| this.nrCompraTextBox.TextLength == 0 || this.idClienteTextBox.TextLength == 0)
+                {
+                    MessageBox.Show("Campos por Preencher !!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else if (this.nrCompraTextBox.TextLength < 4)
+                {
+                    MessageBox.Show("Campo NrCompra tem que possuir 4 carateres", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                }
+                /*
+                else if (this.idClienteTextBox.Text)
+                {
+                     // PessoaSet_ClienteIdPessoa
+                }
+                */
+                else
+                {
+                    this.Validate();
+                    this.compraSetBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.booKids_DBDataSet);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao salvar", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void VendaProdutos_Load(object sender, EventArgs e)

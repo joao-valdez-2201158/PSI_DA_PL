@@ -15,9 +15,17 @@ namespace Projeto_DA_BooKids
         [STAThread]
         static void Main()
         {
-             Application.EnableVisualStyles();
-             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new BooKids());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new FBooKids());
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro Fatal Desconhecido", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

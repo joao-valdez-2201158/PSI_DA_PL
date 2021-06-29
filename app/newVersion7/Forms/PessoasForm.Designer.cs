@@ -90,70 +90,63 @@ namespace Projeto_DA_BooKids.Forms
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(76, 172);
-            nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            nomeLabel.Location = new System.Drawing.Point(57, 140);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(49, 17);
+            nomeLabel.Size = new System.Drawing.Size(38, 13);
             nomeLabel.TabIndex = 2;
             nomeLabel.Text = "Nome:";
             // 
             // moradaLabel
             // 
             moradaLabel.AutoSize = true;
-            moradaLabel.Location = new System.Drawing.Point(65, 204);
-            moradaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            moradaLabel.Location = new System.Drawing.Point(49, 166);
             moradaLabel.Name = "moradaLabel";
-            moradaLabel.Size = new System.Drawing.Size(60, 17);
+            moradaLabel.Size = new System.Drawing.Size(46, 13);
             moradaLabel.TabIndex = 4;
             moradaLabel.Text = "Morada:";
             // 
             // localidadeLabel
             // 
             localidadeLabel.AutoSize = true;
-            localidadeLabel.Location = new System.Drawing.Point(44, 236);
-            localidadeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            localidadeLabel.Location = new System.Drawing.Point(33, 192);
             localidadeLabel.Name = "localidadeLabel";
-            localidadeLabel.Size = new System.Drawing.Size(81, 17);
+            localidadeLabel.Size = new System.Drawing.Size(62, 13);
             localidadeLabel.TabIndex = 6;
             localidadeLabel.Text = "Localidade:";
             // 
             // codPostalLabel
             // 
             codPostalLabel.AutoSize = true;
-            codPostalLabel.Location = new System.Drawing.Point(439, 204);
-            codPostalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            codPostalLabel.Location = new System.Drawing.Point(329, 166);
             codPostalLabel.Name = "codPostalLabel";
-            codPostalLabel.Size = new System.Drawing.Size(80, 17);
+            codPostalLabel.Size = new System.Drawing.Size(61, 13);
             codPostalLabel.TabIndex = 8;
             codPostalLabel.Text = "Cod Postal:";
             // 
             // telefoneLabel
             // 
             telefoneLabel.AutoSize = true;
-            telefoneLabel.Location = new System.Drawing.Point(57, 268);
-            telefoneLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            telefoneLabel.Location = new System.Drawing.Point(43, 218);
             telefoneLabel.Name = "telefoneLabel";
-            telefoneLabel.Size = new System.Drawing.Size(68, 17);
+            telefoneLabel.Size = new System.Drawing.Size(52, 13);
             telefoneLabel.TabIndex = 10;
             telefoneLabel.Text = "Telefone:";
             // 
             // telemovelLabel
             // 
             telemovelLabel.AutoSize = true;
-            telemovelLabel.Location = new System.Drawing.Point(48, 300);
-            telemovelLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            telemovelLabel.Location = new System.Drawing.Point(36, 244);
             telemovelLabel.Name = "telemovelLabel";
-            telemovelLabel.Size = new System.Drawing.Size(77, 17);
+            telemovelLabel.Size = new System.Drawing.Size(59, 13);
             telemovelLabel.TabIndex = 12;
             telemovelLabel.Text = "Telemovel:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(76, 332);
-            emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            emailLabel.Location = new System.Drawing.Point(57, 270);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(46, 17);
+            emailLabel.Size = new System.Drawing.Size(35, 13);
             emailLabel.TabIndex = 14;
             emailLabel.Text = "Email:";
             // 
@@ -216,7 +209,7 @@ namespace Projeto_DA_BooKids.Forms
             this.pessoaSetBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pessoaSetBindingNavigator.Name = "pessoaSetBindingNavigator";
             this.pessoaSetBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pessoaSetBindingNavigator.Size = new System.Drawing.Size(901, 27);
+            this.pessoaSetBindingNavigator.Size = new System.Drawing.Size(676, 27);
             this.pessoaSetBindingNavigator.TabIndex = 0;
             this.pessoaSetBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -226,13 +219,13 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -242,7 +235,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -251,7 +244,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -260,7 +253,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -274,7 +267,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -289,7 +282,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -298,7 +291,7 @@ namespace Projeto_DA_BooKids.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -311,7 +304,7 @@ namespace Projeto_DA_BooKids.Forms
             this.pessoaSetBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.pessoaSetBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pessoaSetBindingNavigatorSaveItem.Image")));
             this.pessoaSetBindingNavigatorSaveItem.Name = "pessoaSetBindingNavigatorSaveItem";
-            this.pessoaSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.pessoaSetBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.pessoaSetBindingNavigatorSaveItem.Text = "Save Data";
             this.pessoaSetBindingNavigatorSaveItem.Click += new System.EventHandler(this.pessoaSetBindingNavigatorSaveItem_Click);
             // 
@@ -331,12 +324,11 @@ namespace Projeto_DA_BooKids.Forms
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.pessoaSetDataGridView.DataSource = this.pessoaSetBindingSource;
-            this.pessoaSetDataGridView.Location = new System.Drawing.Point(24, 410);
-            this.pessoaSetDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.pessoaSetDataGridView.Location = new System.Drawing.Point(18, 333);
             this.pessoaSetDataGridView.Name = "pessoaSetDataGridView";
             this.pessoaSetDataGridView.ReadOnly = true;
             this.pessoaSetDataGridView.RowHeadersWidth = 51;
-            this.pessoaSetDataGridView.Size = new System.Drawing.Size(822, 271);
+            this.pessoaSetDataGridView.Size = new System.Drawing.Size(616, 220);
             this.pessoaSetDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -414,92 +406,87 @@ namespace Projeto_DA_BooKids.Forms
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSetBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(135, 169);
-            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.nomeTextBox.Location = new System.Drawing.Point(101, 137);
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(132, 22);
+            this.nomeTextBox.Size = new System.Drawing.Size(100, 20);
             this.nomeTextBox.TabIndex = 3;
             // 
             // moradaTextBox
             // 
             this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSetBindingSource, "Morada", true));
-            this.moradaTextBox.Location = new System.Drawing.Point(135, 201);
-            this.moradaTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.moradaTextBox.Location = new System.Drawing.Point(101, 163);
             this.moradaTextBox.Name = "moradaTextBox";
-            this.moradaTextBox.Size = new System.Drawing.Size(279, 22);
+            this.moradaTextBox.Size = new System.Drawing.Size(210, 20);
             this.moradaTextBox.TabIndex = 5;
             // 
             // localidadeTextBox
             // 
             this.localidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSetBindingSource, "Localidade", true));
-            this.localidadeTextBox.Location = new System.Drawing.Point(135, 233);
-            this.localidadeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.localidadeTextBox.Location = new System.Drawing.Point(101, 189);
             this.localidadeTextBox.Name = "localidadeTextBox";
-            this.localidadeTextBox.Size = new System.Drawing.Size(132, 22);
+            this.localidadeTextBox.Size = new System.Drawing.Size(100, 20);
             this.localidadeTextBox.TabIndex = 7;
             // 
             // codPostalTextBox
             // 
             this.codPostalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSetBindingSource, "CodPostal", true));
-            this.codPostalTextBox.Location = new System.Drawing.Point(528, 201);
-            this.codPostalTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.codPostalTextBox.Location = new System.Drawing.Point(396, 163);
+            this.codPostalTextBox.MaxLength = 7;
             this.codPostalTextBox.Name = "codPostalTextBox";
-            this.codPostalTextBox.Size = new System.Drawing.Size(132, 22);
+            this.codPostalTextBox.Size = new System.Drawing.Size(100, 20);
             this.codPostalTextBox.TabIndex = 9;
             // 
             // telefoneTextBox
             // 
             this.telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSetBindingSource, "Telefone", true));
-            this.telefoneTextBox.Location = new System.Drawing.Point(135, 265);
-            this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.telefoneTextBox.Location = new System.Drawing.Point(101, 215);
+            this.telefoneTextBox.MaxLength = 9;
             this.telefoneTextBox.Name = "telefoneTextBox";
-            this.telefoneTextBox.Size = new System.Drawing.Size(132, 22);
+            this.telefoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.telefoneTextBox.TabIndex = 11;
             // 
             // telemovelTextBox
             // 
             this.telemovelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSetBindingSource, "Telemovel", true));
-            this.telemovelTextBox.Location = new System.Drawing.Point(135, 297);
-            this.telemovelTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.telemovelTextBox.Location = new System.Drawing.Point(101, 241);
+            this.telemovelTextBox.MaxLength = 9;
             this.telemovelTextBox.Name = "telemovelTextBox";
-            this.telemovelTextBox.Size = new System.Drawing.Size(132, 22);
+            this.telemovelTextBox.Size = new System.Drawing.Size(100, 20);
             this.telemovelTextBox.TabIndex = 13;
             // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSetBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(135, 329);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.emailTextBox.Location = new System.Drawing.Point(101, 267);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(132, 22);
+            this.emailTextBox.Size = new System.Drawing.Size(100, 20);
             this.emailTextBox.TabIndex = 15;
             // 
             // lbPessoas
             // 
             this.lbPessoas.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPessoas.Location = new System.Drawing.Point(0, 53);
+            this.lbPessoas.Location = new System.Drawing.Point(0, 43);
+            this.lbPessoas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPessoas.Name = "lbPessoas";
-            this.lbPessoas.Size = new System.Drawing.Size(901, 62);
+            this.lbPessoas.Size = new System.Drawing.Size(676, 50);
             this.lbPessoas.TabIndex = 16;
             this.lbPessoas.Text = "Pessoas";
             this.lbPessoas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(24, 142);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(18, 115);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(652, 261);
+            this.groupBox1.Size = new System.Drawing.Size(489, 212);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inserir Pessoa";
             // 
             // PessoasForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 695);
+            this.ClientSize = new System.Drawing.Size(676, 565);
             this.Controls.Add(this.lbPessoas);
             this.Controls.Add(emailLabel);
             this.Controls.Add(this.emailTextBox);
@@ -519,7 +506,6 @@ namespace Projeto_DA_BooKids.Forms
             this.Controls.Add(this.pessoaSetBindingNavigator);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PessoasForm";
             this.Text = "Pessoas";
             this.Load += new System.EventHandler(this.PessoasForm_Load);

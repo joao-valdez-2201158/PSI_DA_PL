@@ -193,11 +193,11 @@
     <Compile Include="Forms\CompraProdutosForm.Designer.cs">
       <DependentUpon>CompraProdutosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\VersForm.cs">
+    <Compile Include="Forms\VersaoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\VersForm.Designer.cs">
-      <DependentUpon>VersForm.cs</DependentUpon>
+    <Compile Include="Forms\VersaoForm.Designer.cs">
+      <DependentUpon>VersaoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Inscricao.cs">
       <DependentUpon>DA_BooKids.tt</DependentUpon>
@@ -261,8 +261,8 @@
     <EmbeddedResource Include="Forms\CompraProdutosForm.resx">
       <DependentUpon>CompraProdutosForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VersForm.resx">
-      <DependentUpon>VersForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\VersaoForm.resx">
+      <DependentUpon>VersaoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

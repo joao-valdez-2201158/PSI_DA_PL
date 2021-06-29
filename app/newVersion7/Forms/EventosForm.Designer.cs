@@ -74,12 +74,12 @@ namespace Projeto_DA_BooKids.Forms
             this.tipoEventoTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BTN_Participacao = new System.Windows.Forms.Button();
+            this.BTN_Inscricao = new System.Windows.Forms.Button();
+            this.BTN_Colaboracao = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BTN_Exportar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BTN_Colaboracao = new System.Windows.Forms.Button();
-            this.BTN_Inscricao = new System.Windows.Forms.Button();
-            this.BTN_Participacao = new System.Windows.Forms.Button();
             descricaoLabel = new System.Windows.Forms.Label();
             localLabel = new System.Windows.Forms.Label();
             dataHoraLabel = new System.Windows.Forms.Label();
@@ -453,6 +453,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.limiteParticipacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "LimiteParticipacao", true));
             this.limiteParticipacaoTextBox.Location = new System.Drawing.Point(120, 160);
+            this.limiteParticipacaoTextBox.MaxLength = 4;
             this.limiteParticipacaoTextBox.Name = "limiteParticipacaoTextBox";
             this.limiteParticipacaoTextBox.Size = new System.Drawing.Size(100, 20);
             this.limiteParticipacaoTextBox.TabIndex = 13;
@@ -461,6 +462,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.idadeInferiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeInferior", true));
             this.idadeInferiorTextBox.Location = new System.Drawing.Point(120, 186);
+            this.idadeInferiorTextBox.MaxLength = 2;
             this.idadeInferiorTextBox.Name = "idadeInferiorTextBox";
             this.idadeInferiorTextBox.Size = new System.Drawing.Size(100, 20);
             this.idadeInferiorTextBox.TabIndex = 14;
@@ -469,6 +471,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.idadeSuperiorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.eventoSetBindingSource, "IdadeSuperior", true));
             this.idadeSuperiorTextBox.Location = new System.Drawing.Point(315, 186);
+            this.idadeSuperiorTextBox.MaxLength = 3;
             this.idadeSuperiorTextBox.Name = "idadeSuperiorTextBox";
             this.idadeSuperiorTextBox.Size = new System.Drawing.Size(100, 20);
             this.idadeSuperiorTextBox.TabIndex = 15;
@@ -516,6 +519,36 @@ namespace Projeto_DA_BooKids.Forms
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalhar Evento";
             // 
+            // BTN_Participacao
+            // 
+            this.BTN_Participacao.Location = new System.Drawing.Point(6, 117);
+            this.BTN_Participacao.Name = "BTN_Participacao";
+            this.BTN_Participacao.Size = new System.Drawing.Size(170, 29);
+            this.BTN_Participacao.TabIndex = 17;
+            this.BTN_Participacao.Text = "Inserir Participação";
+            this.BTN_Participacao.UseVisualStyleBackColor = true;
+            this.BTN_Participacao.Click += new System.EventHandler(this.BTN_Participacao_Click);
+            // 
+            // BTN_Inscricao
+            // 
+            this.BTN_Inscricao.Location = new System.Drawing.Point(6, 71);
+            this.BTN_Inscricao.Name = "BTN_Inscricao";
+            this.BTN_Inscricao.Size = new System.Drawing.Size(170, 29);
+            this.BTN_Inscricao.TabIndex = 16;
+            this.BTN_Inscricao.Text = "Inserir Inscrição";
+            this.BTN_Inscricao.UseVisualStyleBackColor = true;
+            this.BTN_Inscricao.Click += new System.EventHandler(this.BTN_Inscricao_Click);
+            // 
+            // BTN_Colaboracao
+            // 
+            this.BTN_Colaboracao.Location = new System.Drawing.Point(6, 24);
+            this.BTN_Colaboracao.Name = "BTN_Colaboracao";
+            this.BTN_Colaboracao.Size = new System.Drawing.Size(170, 29);
+            this.BTN_Colaboracao.TabIndex = 15;
+            this.BTN_Colaboracao.Text = "Inserir Colaboração";
+            this.BTN_Colaboracao.UseVisualStyleBackColor = true;
+            this.BTN_Colaboracao.Click += new System.EventHandler(this.BTN_Colaboracao_Click);
+            // 
             // BTN_Exportar
             // 
             this.BTN_Exportar.Location = new System.Drawing.Point(6, 29);
@@ -535,36 +568,6 @@ namespace Projeto_DA_BooKids.Forms
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Exportar para PDF";
-            // 
-            // BTN_Colaboracao
-            // 
-            this.BTN_Colaboracao.Location = new System.Drawing.Point(6, 24);
-            this.BTN_Colaboracao.Name = "BTN_Colaboracao";
-            this.BTN_Colaboracao.Size = new System.Drawing.Size(170, 29);
-            this.BTN_Colaboracao.TabIndex = 15;
-            this.BTN_Colaboracao.Text = "Inserir Colaboração";
-            this.BTN_Colaboracao.UseVisualStyleBackColor = true;
-            this.BTN_Colaboracao.Click += new System.EventHandler(this.BTN_Colaboracao_Click);
-            // 
-            // BTN_Inscricao
-            // 
-            this.BTN_Inscricao.Location = new System.Drawing.Point(6, 71);
-            this.BTN_Inscricao.Name = "BTN_Inscricao";
-            this.BTN_Inscricao.Size = new System.Drawing.Size(170, 29);
-            this.BTN_Inscricao.TabIndex = 16;
-            this.BTN_Inscricao.Text = "Inserir Inscrição";
-            this.BTN_Inscricao.UseVisualStyleBackColor = true;
-            this.BTN_Inscricao.Click += new System.EventHandler(this.BTN_Inscricao_Click);
-            // 
-            // BTN_Participacao
-            // 
-            this.BTN_Participacao.Location = new System.Drawing.Point(6, 117);
-            this.BTN_Participacao.Name = "BTN_Participacao";
-            this.BTN_Participacao.Size = new System.Drawing.Size(170, 29);
-            this.BTN_Participacao.TabIndex = 17;
-            this.BTN_Participacao.Text = "Inserir Participação";
-            this.BTN_Participacao.UseVisualStyleBackColor = true;
-            this.BTN_Participacao.Click += new System.EventHandler(this.BTN_Participacao_Click);
             // 
             // EventosForm
             // 

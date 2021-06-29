@@ -229,6 +229,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -328,6 +329,7 @@ namespace Projeto_DA_BooKids.Forms
             // 
             this.nrCartaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaSet_ClienteBindingSource, "NrCartao", true));
             this.nrCartaoTextBox.Location = new System.Drawing.Point(154, 149);
+            this.nrCartaoTextBox.MaxLength = 4;
             this.nrCartaoTextBox.Name = "nrCartaoTextBox";
             this.nrCartaoTextBox.Size = new System.Drawing.Size(100, 20);
             this.nrCartaoTextBox.TabIndex = 11;
